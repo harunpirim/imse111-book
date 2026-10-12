@@ -1,0 +1,30 @@
+---
+description: "Week 13 lecture notes (planned)."
+---
+
+# Planning and Managing Engineering Projects {#sec-week-13}
+
+::: chapter-meta
+[Week 13]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Build a work breakdown structure and Gantt chart.
+2. Find the critical path of a small project.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 13 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- [Project management]{.term} fundamentals
+- [Work breakdown structure]{.term}
+- [Gantt charts]{.term} and the [critical path]{.term}
+- Teams, roles, and communication
+
+::: keyterms
+:::

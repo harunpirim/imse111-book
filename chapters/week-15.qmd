@@ -1,0 +1,30 @@
+---
+description: "Week 15 lecture notes (planned)."
+---
+
+# Ethics, Sustainability, and the Future of IME {#sec-week-15}
+
+::: chapter-meta
+[Week 15]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Analyze an engineering decision using an ethics framework.
+2. Describe trends that will shape IME careers.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 15 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Engineering ethics and codes of conduct
+- Sustainability and the circular economy
+- [Industry 4.0]{.term}, the [Internet of Things]{.term}, and AI
+- [Engineering economics]{.term} for responsible decisions
+
+::: keyterms
+:::

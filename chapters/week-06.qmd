@@ -1,0 +1,29 @@
+---
+description: "Week 6 lecture notes (planned)."
+---
+
+# Work Design, Methods, and Human Factors {#sec-week-06}
+
+::: chapter-meta
+[Week 6]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Analyze a manual task and propose an improved method.
+2. Identify ergonomic risk factors in a workstation.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 6 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Methods engineering and [standard time]{.term}
+- [Ergonomics]{.term} and workplace safety
+- [Human factors]{.term} and error-proof design
+
+::: keyterms
+:::

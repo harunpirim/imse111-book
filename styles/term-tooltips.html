@@ -1,0 +1,34 @@
+<script>
+  // Rich hover cards for highlighted IE terms (falls back to the native title tooltip).
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof window.tippy !== "function") return;
+    document.querySelectorAll("a.ie-term[data-def]").forEach(function (el) {
+      var box = document.createElement("div");
+      box.className = "ie-term-tip";
+      var head = document.createElement("div");
+      head.className = "ie-term-tip-head";
+      var name = document.createElement("span");
+      name.textContent = el.getAttribute("data-term");
+      var cat = document.createElement("span");
+      cat.className = "ie-term-tip-cat";
+      cat.textContent = el.getAttribute("data-category") || "";
+      head.appendChild(name);
+      head.appendChild(cat);
+      var def = document.createElement("div");
+      def.className = "ie-term-tip-def";
+      def.textContent = el.getAttribute("data-def");
+      box.appendChild(head);
+      box.appendChild(def);
+      el.removeAttribute("title");
+      window.tippy(el, {
+        content: box,
+        allowHTML: true,
+        maxWidth: 340,
+        theme: "quarto",
+        placement: "top",
+        delay: [80, 0],
+        appendTo: function () { return document.body; },
+      });
+    });
+  });
+</script>

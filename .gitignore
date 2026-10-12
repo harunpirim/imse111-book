@@ -1,0 +1,11 @@
+/.quarto/
+/_book/
+/_freeze/
+proposal/*.docx
+proposal/*.html
+proposal/*_files/
+**/*.quarto_ipynb
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+~$*

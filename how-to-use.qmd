@@ -1,0 +1,63 @@
+# How to Use This Book {.unnumbered}
+
+Every chapter uses the same small set of building blocks, so once you know them you can read any week quickly. Here's what each one looks like.
+
+## Highlighted terms
+
+Industrial engineering has its own vocabulary. When an important term first appears, it is highlighted like this: [throughput]{.term}, [Little's Law]{.term}, [kaizen]{.term}.
+
+- **Hover** (or tap on a phone) to see a short definition.
+- **Click** to open the full entry in the [Glossary](glossary.qmd).
+- At the end of each chapter, a **Key terms** box lists every term the chapter used.
+
+## Stories from the field
+
+::: {.story title="Why stories?" source="https://www.iise.org/Details.aspx?id=43631" source-title="IISE: What is Industrial and Systems Engineering?"}
+Engineering concepts are easier to remember when they come with a person, a place, and a problem. Each story box gives a short, real example and links to its source so you can read more.
+:::
+
+## In-class activities
+
+::: {.activity title="Try it: one-minute observation"}
+Look around the room. Name one **input**, one **process**, and one **output** of the system you're sitting in right now. Compare your answer with a neighbor's.
+:::
+
+## Career spotlights
+
+::: {.career title="Where IMEs work"}
+Career boxes profile real roles, employers, and pathways, from plant floors to hospitals to distribution centers.
+:::
+
+## Colab notebooks
+
+Each chapter links to a Python notebook that runs in your browser with [Google Colab](https://colab.research.google.com). Click the badge, then choose **File → Save a copy in Drive** so you can edit your own copy.
+
+{{< colab _template.ipynb title="Notebook template" >}}
+
+See [Colab Notebooks](notebooks.qmd) for the full list and a short getting-started guide.
+
+## Callouts
+
+::: {.callout-important title="Learning objectives"}
+Each chapter opens with what you should be able to do by the end of the week.
+:::
+
+::: {.callout-tip title="Check your understanding" collapse="true"}
+Practice questions appear at the end of each chapter. Click to expand the answers.
+:::
+
+## Diagrams and figures
+
+Process maps are drawn as diagrams that stay sharp at any zoom level:
+
+```{mermaid}
+%%| fig-cap: "A simple input-process-output view of a system."
+flowchart LR
+  A[Inputs<br/>people, materials,<br/>information, energy] --> B[Process<br/>transformation]
+  B --> C[Outputs<br/>products, services]
+  C -. feedback .-> B
+```
+
+## References
+
+Sources are cited inline, for example [@taylor1911; @iise-definition]. Hover over a citation to preview it, or see the full [References](references.qmd) list.

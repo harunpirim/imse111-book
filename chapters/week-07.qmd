@@ -1,0 +1,30 @@
+---
+description: "Week 7 lecture notes (planned)."
+---
+
+# Quality and Statistical Thinking {#sec-week-07}
+
+::: chapter-meta
+[Week 7]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Summarize process data with descriptive statistics.
+2. Interpret a simple control chart.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 7 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- What [quality]{.term} means to customers
+- [Variation]{.term} and [descriptive statistics]{.term}
+- [Statistical process control]{.term} and the [control chart]{.term}
+- [Six Sigma]{.term} and [DMAIC]{.term}
+
+::: keyterms
+:::

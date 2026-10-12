@@ -1,0 +1,30 @@
+---
+description: "Week 10 lecture notes (planned)."
+---
+
+# Modeling, Optimization, and Simulation {#sec-week-10}
+
+::: chapter-meta
+[Week 10]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Formulate a simple optimization problem.
+2. Explain when simulation is the right tool.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 10 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- What is [operations research]{.term}?
+- [Optimization]{.term} and a first look at [linear programming]{.term}
+- Discrete-event [simulation]{.term}
+- [Digital twins]{.term}
+
+::: keyterms
+:::

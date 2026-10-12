@@ -1,0 +1,324 @@
+# IMSE 111 glossary of industrial & manufacturing engineering terms.
+#
+# Each entry key is a lowercase, hyphenated slug. In any chapter, write
+#   [Takt time]{.term}                      (key is inferred from the text)
+#   [takt times]{.term key="takt-time"}     (explicit key, any display text)
+# to highlight the term, show its definition on hover, and link here.
+#
+# Fields: term (display name), definition (one or two plain sentences),
+#         category (used for the colored badge on the glossary page).
+
+industrial-engineering:
+  term: Industrial engineering
+  category: Profession
+  definition: The branch of engineering concerned with the design, improvement, and installation of integrated systems of people, materials, information, equipment, and energy.
+
+manufacturing-engineering:
+  term: Manufacturing engineering
+  category: Profession
+  definition: The branch of engineering that plans, designs, and improves the processes, tooling, and equipment used to turn raw materials into finished products.
+
+system:
+  term: System
+  category: Profession
+  definition: A set of interacting components (people, machines, materials, information) organized to achieve a common purpose.
+
+systems-thinking:
+  term: Systems thinking
+  category: Profession
+  definition: An approach that studies how the parts of a system interact and influence the whole, rather than optimizing parts in isolation.
+
+productivity:
+  term: Productivity
+  category: Profession
+  definition: The ratio of outputs produced to inputs consumed, such as units per labor hour.
+
+efficiency:
+  term: Efficiency
+  category: Profession
+  definition: How well a process converts inputs into useful outputs, often expressed as actual output divided by standard or expected output.
+
+scientific-management:
+  term: Scientific management
+  category: History
+  definition: A management approach, associated with Frederick W. Taylor, that uses systematic observation and measurement to find better methods of work.
+
+motion-study:
+  term: Motion study
+  category: Human Factors
+  definition: The analysis of the body motions used to perform a task in order to eliminate unnecessary motions and reduce effort, pioneered by Frank and Lillian Gilbreth.
+
+therblig:
+  term: Therblig
+  category: Human Factors
+  definition: One of the elemental motions (such as search, grasp, transport, and hold) defined by the Gilbreths for analyzing manual work; the word is Gilbreth spelled nearly backward.
+
+time-study:
+  term: Time study
+  category: Human Factors
+  definition: A work measurement technique that times a qualified worker performing a task to establish a standard time.
+
+standard-time:
+  term: Standard time
+  category: Human Factors
+  definition: The time a qualified worker needs to complete a task at a normal pace, including allowances for personal needs, fatigue, and delays.
+
+ergonomics:
+  term: Ergonomics
+  category: Human Factors
+  definition: The science of designing jobs, tools, and workplaces to fit human capabilities and limitations; also called human factors engineering.
+
+human-factors:
+  term: Human factors
+  category: Human Factors
+  definition: The study of how people interact with systems, used to design work that is safe, comfortable, and resistant to error.
+
+throughput:
+  term: Throughput
+  category: Operations
+  definition: The rate at which a system produces good output, such as parts per hour or patients per day.
+
+cycle-time:
+  term: Cycle time
+  category: Operations
+  definition: The time between completions of successive units at a workstation or process; sometimes used for the total time one unit spends in the process.
+
+lead-time:
+  term: Lead time
+  category: Operations
+  definition: The total elapsed time from when an order is placed until it is delivered to the customer.
+
+bottleneck:
+  term: Bottleneck
+  category: Operations
+  definition: The resource or step with the least capacity relative to demand; it limits the throughput of the entire system.
+
+capacity:
+  term: Capacity
+  category: Operations
+  definition: The maximum output a resource or system can produce in a given period under normal conditions.
+
+utilization:
+  term: Utilization
+  category: Operations
+  definition: The fraction of available time a resource is actually busy, calculated as time used divided by time available.
+
+work-in-process:
+  term: Work-in-process
+  category: Operations
+  definition: Inventory that has started production but is not yet finished; often abbreviated WIP.
+
+littles-law:
+  term: Little's Law
+  category: Operations
+  definition: The relationship WIP = throughput × flow time, which holds for any stable system over the long run.
+
+process-flowchart:
+  term: Process flowchart
+  category: Operations
+  definition: A diagram that shows the sequence of steps, decisions, and flows in a process using standard symbols.
+
+takt-time:
+  term: Takt time
+  category: Lean
+  definition: The pace of production required to meet customer demand, equal to available working time divided by customer demand.
+
+lean-manufacturing:
+  term: Lean manufacturing
+  category: Lean
+  definition: A philosophy, derived from the Toyota Production System, that maximizes customer value by systematically eliminating waste.
+
+toyota-production-system:
+  term: Toyota Production System
+  category: Lean
+  definition: Toyota's integrated approach to production built on just-in-time flow and jidoka (automation with a human touch); the origin of lean.
+
+muda:
+  term: Muda
+  category: Lean
+  definition: Japanese for waste; any activity that consumes resources without adding value for the customer.
+
+kaizen:
+  term: Kaizen
+  category: Lean
+  definition: Japanese for continuous improvement; small, ongoing improvements made by everyone in an organization.
+
+kanban:
+  term: Kanban
+  category: Lean
+  definition: A visual signal, often a card or bin, that authorizes production or movement of material only when it is needed downstream.
+
+just-in-time:
+  term: Just-in-time
+  category: Lean
+  definition: A production strategy that makes and delivers exactly what is needed, when it is needed, in the quantity needed.
+
+value-stream-map:
+  term: Value stream map
+  category: Lean
+  definition: A diagram of all the material and information flows required to deliver a product, used to identify waste and plan improvements.
+
+five-s:
+  term: 5S
+  category: Lean
+  definition: A workplace organization method with five steps, Sort, Set in order, Shine, Standardize, and Sustain.
+
+quality:
+  term: Quality
+  category: Quality
+  definition: The degree to which a product or service meets customer requirements and is free of defects.
+
+statistical-process-control:
+  term: Statistical process control
+  category: Quality
+  definition: The use of statistical methods, especially control charts, to monitor a process and detect when it changes.
+
+control-chart:
+  term: Control chart
+  category: Quality
+  definition: A time-ordered plot of a process measurement with statistically calculated control limits used to distinguish common-cause from special-cause variation.
+
+variation:
+  term: Variation
+  category: Quality
+  definition: The natural differences among outputs of a process; reducing unwanted variation is a central goal of quality engineering.
+
+six-sigma:
+  term: Six Sigma
+  category: Quality
+  definition: A data-driven improvement methodology that aims to reduce defects to about 3.4 per million opportunities, typically following the DMAIC cycle.
+
+dmaic:
+  term: DMAIC
+  category: Quality
+  definition: The Six Sigma improvement cycle of Define, Measure, Analyze, Improve, and Control.
+
+pdca:
+  term: PDCA
+  category: Quality
+  definition: The Plan-Do-Check-Act cycle for iterative improvement, popularized by W. Edwards Deming.
+
+root-cause-analysis:
+  term: Root cause analysis
+  category: Quality
+  definition: A structured method for finding the underlying cause of a problem, using tools such as the 5 Whys and fishbone diagrams.
+
+operations-research:
+  term: Operations research
+  category: Modeling
+  definition: The application of mathematical models, statistics, and algorithms to support better decisions in complex systems.
+
+optimization:
+  term: Optimization
+  category: Modeling
+  definition: Finding the best decision, such as minimum cost or maximum profit, subject to constraints.
+
+linear-programming:
+  term: Linear programming
+  category: Modeling
+  definition: An optimization method in which the objective and all constraints are linear functions of the decision variables.
+
+simulation:
+  term: Simulation
+  category: Modeling
+  definition: Imitating the operation of a real system over time with a computer model to evaluate designs and policies without disrupting the real system.
+
+digital-twin:
+  term: Digital twin
+  category: Modeling
+  definition: A virtual model of a physical asset or system that is continuously updated with real data to monitor, predict, and optimize performance.
+
+supply-chain:
+  term: Supply chain
+  category: Supply Chain
+  definition: The network of organizations, facilities, and flows that sources materials, makes products, and delivers them to customers.
+
+logistics:
+  term: Logistics
+  category: Supply Chain
+  definition: Planning and controlling the movement and storage of goods, services, and information from origin to consumption.
+
+inventory:
+  term: Inventory
+  category: Supply Chain
+  definition: Stock of materials, work-in-process, or finished goods held to buffer against uncertainty in supply and demand.
+
+facility-layout:
+  term: Facility layout
+  category: Supply Chain
+  definition: The arrangement of departments, workstations, and equipment within a facility to support efficient flow.
+
+additive-manufacturing:
+  term: Additive manufacturing
+  category: Manufacturing
+  definition: Building parts layer by layer directly from a digital model; commonly called 3D printing.
+
+subtractive-manufacturing:
+  term: Subtractive manufacturing
+  category: Manufacturing
+  definition: Making parts by removing material from a solid workpiece, as in milling, turning, and drilling.
+
+cnc:
+  term: CNC
+  category: Manufacturing
+  definition: Computer numerical control; machine tools whose motions are directed by programmed instructions.
+
+automation:
+  term: Automation
+  category: Manufacturing
+  definition: Using machines and control systems to perform tasks with reduced human intervention.
+
+mass-production:
+  term: Mass production
+  category: History
+  definition: Making large volumes of standardized products, often on assembly lines, to achieve low unit cost.
+
+assembly-line:
+  term: Assembly line
+  category: History
+  definition: A production arrangement in which work moves from station to station in a fixed sequence, with each station adding parts or operations.
+
+industry-4-0:
+  term: Industry 4.0
+  category: Industry 4.0
+  definition: The fourth industrial revolution, in which connected sensors, data analytics, and automation create smart, adaptive production systems.
+
+internet-of-things:
+  term: Internet of Things
+  category: Industry 4.0
+  definition: Networks of physical devices with sensors and connectivity that collect and exchange data; often abbreviated IoT.
+
+project-management:
+  term: Project management
+  category: Project Management
+  definition: Applying knowledge, skills, tools, and techniques to plan and execute a temporary effort that creates a unique result.
+
+gantt-chart:
+  term: Gantt chart
+  category: Project Management
+  definition: A bar chart that shows project tasks against a timeline, including start dates, durations, and dependencies.
+
+critical-path:
+  term: Critical path
+  category: Project Management
+  definition: The longest sequence of dependent tasks in a project; any delay on it delays project completion.
+
+work-breakdown-structure:
+  term: Work breakdown structure
+  category: Project Management
+  definition: A hierarchical decomposition of a project into smaller, manageable deliverables and tasks.
+
+engineering-economics:
+  term: Engineering economics
+  category: Profession
+  definition: The analysis of costs, benefits, and the time value of money to compare engineering alternatives.
+
+data-analytics:
+  term: Data analytics
+  category: Data
+  definition: Examining data to find patterns, draw conclusions, and support decisions.
+
+descriptive-statistics:
+  term: Descriptive statistics
+  category: Data
+  definition: Numerical and graphical summaries of data, such as the mean, median, standard deviation, and histogram.

@@ -1,0 +1,48 @@
+/*-- scss:defaults --*/
+
+$body-bg: #141a19;
+$body-color: #e3e9e6;
+$primary: #5fc29a;
+$link-color: #7fd6b2;
+$sidebar-bg: #182120;
+$code-color: #f0a577;
+$callout-color-important: #5fc29a;
+$term-bg: rgba(255, 200, 46, 0.22);
+$term-bg-hover: rgba(255, 200, 46, 0.4);
+$term-underline: #ffc82e;
+$box-story: #5fc29a;
+$box-activity: #ffc82e;
+$box-career: #6fb3e6;
+$box-tint: 0.1;
+
+/*-- scss:rules --*/
+
+.sidebar-title,
+h1.title,
+.quarto-title .title,
+.colab-card .box-label,
+.colab-card .bi,
+.feature-grid .bi,
+table.schedule td:first-child {
+  color: #7fd6b2;
+}
+.pill,
+.glossary-category {
+  background: rgba(95, 194, 154, 0.18);
+  color: #a9e8cd;
+}
+.pill-draft {
+  background: rgba(255, 200, 46, 0.25);
+  color: #ffe08a;
+}
+.pill-planned {
+  background: rgba(255, 255, 255, 0.1);
+  color: #c4ccc9;
+}
+.feature-grid > div {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+.ie-box .box-source {
+  border-top-color: rgba(255, 255, 255, 0.12);
+}

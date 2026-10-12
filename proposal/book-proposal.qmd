@@ -1,0 +1,116 @@
+---
+title: "Book Proposal"
+subtitle: "Introduction to Industrial & Manufacturing Engineering: Systems, Careers, and the Engineer's Toolkit"
+author: "Instructor Name, North Dakota State University"
+date: last-modified
+format:
+  html:
+    toc: true
+  docx:
+    toc: true
+bibliography: ../references.bib
+csl: ../apa.csl
+---
+
+::: {.callout-note title="How to use this document"}
+This is a working draft of the publisher proposal. Sections marked **[TO DO]** need the author's input. The table of contents below follows `_quarto.yml`; update both together. Render it on its own with:
+
+```bash
+quarto render proposal/book-proposal.qmd --to docx
+```
+:::
+
+## 1. Overview
+
+*Introduction to Industrial & Manufacturing Engineering* is a first-year textbook for the introductory course in industrial and manufacturing engineering (IME). It does two jobs that existing books usually split between separate texts. It introduces the **profession**: what IMEs do, where they work, and how they think about systems of people, materials, information, equipment, and energy [@iise-definition]. It also builds the **toolkit** that first-year students need: spreadsheets and Python for data, project planning, technical writing, and presentations.
+
+The book grows out of the IMSE 111 lecture notes at North Dakota State University, which follow the NDSU catalog description of the course [@ndsu-catalog-ime]. It is written and published with Quarto, so the same source produces an accessible website and a print-ready manuscript.
+
+## 2. Need and rationale
+
+**[TO DO: expand from teaching experience.]** Starting points:
+
+- First-year students often pick a major before they know what industrial engineering is. A readable introduction built on real stories helps recruit and keep students.
+- Most introductory IE texts are either broad surveys with few hands-on computational exercises, or tool manuals with little connection to the profession.
+- Employers expect graduates to be comfortable with data. Introducing Python through browser-based notebooks (Google Colab) removes the installation barrier in the first semester.
+
+## 3. Audience and market
+
+- **Primary:** first-year students in introduction to industrial, manufacturing, or systems engineering courses.
+- **Secondary:** general introduction to engineering courses, community college pre-engineering programs, and professionals moving into operations roles.
+- **Course fit:** one semester, 15 weeks, one chapter per week.
+
+**[TO DO: add enrollment figures for IMSE 111 and comparable courses.]**
+
+## 4. Distinctive features
+
+| Feature | What it gives students |
+|:--|:--|
+| Highlighted IE vocabulary | Key terms are marked in the text, defined on hover in the web edition, and collected in a glossary and per-chapter key-term lists. |
+| Stories from the field | Short, sourced stories (for example, Lillian Gilbreth's kitchen) that tie concepts to people and places. |
+| Colab notebooks | One runnable Python notebook per chapter. No installation needed. |
+| In-class activities and career spotlights | Ready-to-use exercises for active learning, plus profiles of real roles. |
+| Open web edition and print manuscript | One Quarto source produces both. The web edition is searchable, mobile-friendly, and supports dark mode. |
+
+## 5. Competing and complementary titles
+
+| Title | Strength | How this book differs |
+|:--|:--|:--|
+| Turner, Mize, Case & Nazemetz, *Introduction to Industrial and Systems Engineering* [@turner1993] | Classic survey of IE | Current examples, computational notebooks, careers focus |
+| Groover, *Fundamentals of Modern Manufacturing* [@groover2019] | Comprehensive manufacturing processes | First-year level; systems and careers rather than process depth |
+| Freivalds & Niebel, *Niebel's Methods, Standards, and Work Design* [@freivalds2013] | Authoritative on work design | Covers work design as one chapter in a broad introduction |
+| Hopp & Spearman, *Factory Physics* [@hopp2008] | Rigorous operations science | Intuitive first exposure to the same ideas (bottlenecks, Little's Law) |
+
+**[TO DO: add any recent introductory titles the publisher suggests.]**
+
+## 6. Table of contents
+
+**Part I · Discovering IME**
+
+1. What Is Industrial & Manufacturing Engineering? *(sample chapter)*
+2. From Scientific Management to Smart Factories
+3. Careers and Work Environments
+4. Engineering Problem Solving and Systems Thinking
+
+**Part II · How Systems Work**
+
+5. Manufacturing Processes and Production Systems
+6. Work Design, Methods, and Human Factors
+7. Quality and Statistical Thinking
+8. Lean and Continuous Improvement
+9. Supply Chains, Logistics, and Facilities
+10. Modeling, Optimization, and Simulation
+
+**Part III · The Engineer's Toolkit**
+
+11. Working with Data: Spreadsheets and Python
+12. Visualizing Data and Telling Its Story
+13. Planning and Managing Engineering Projects
+14. Technical Reports and Professional Presentations
+15. Ethics, Sustainability, and the Future of IME
+
+**Appendices:** Colab Notebooks · Glossary · References
+
+## 7. Sample chapters
+
+- Chapter 1, *What Is Industrial & Manufacturing Engineering?* (see `chapters/week-01.qmd` or the web edition).
+- **[TO DO: choose a second sample chapter once drafted.]**
+
+## 8. Format and specifications
+
+- **Length:** **[TO DO: estimated word count and page count.]**
+- **Illustrations:** chapter banner illustrations, process diagrams (vector), tables, and data figures generated by the notebooks.
+- **Supplements:** Colab notebooks, glossary, **[TO DO: slides, instructor's guide, question bank]**.
+
+## 9. Author
+
+**[TO DO: author bio, teaching experience, and related publications.]**
+
+## 10. Schedule
+
+**[TO DO: manuscript milestones.]**
+
+## References
+
+::: {#refs}
+:::

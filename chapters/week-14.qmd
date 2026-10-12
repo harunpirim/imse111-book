@@ -1,0 +1,30 @@
+---
+description: "Week 14 lecture notes (planned)."
+---
+
+# Technical Reports and Professional Presentations {#sec-week-14}
+
+::: chapter-meta
+[Week 14]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Write a short technical memo.
+2. Deliver a clear, well-structured presentation.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 14 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Structure of a technical report
+- Writing clearly for engineers and managers
+- Figures, tables, and citations
+- Designing and delivering a presentation
+
+::: keyterms
+:::

@@ -1,0 +1,23 @@
+# Colab Notebooks {#sec-notebooks}
+
+Every chapter has a companion Python notebook. The notebooks run in [Google Colab](https://colab.research.google.com), a free service that runs Python in your web browser, so you don't need to install anything.
+
+## Getting started with Colab
+
+1. Click an **Open in Colab** badge below and sign in with a Google account.
+2. Choose **File → Save a copy in Drive** so your changes are saved to your own copy.
+3. Run a cell with **Shift + Enter**. Run cells top to bottom the first time.
+4. If something breaks, use **Runtime → Restart session and run all**.
+
+::: {.callout-tip title="No Google account?"}
+Click **Download .ipynb** instead and open the file in [Jupyter](https://jupyter.org), VS Code, or Cursor.
+:::
+
+## Notebook index
+
+| Week | Notebook | Open |
+|:----:|:---------|:-----|
+| 1 | IE by the numbers: throughput, bottlenecks, and takt time | {{< colab week01_ie_by_the_numbers.ipynb style="badge" >}} |
+| -- | Template for new notebooks | {{< colab _template.ipynb style="badge" >}} |
+
+: Companion notebooks {.striped}

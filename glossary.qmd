@@ -1,0 +1,6 @@
+# Glossary {#sec-glossary}
+
+This glossary collects the industrial and manufacturing engineering terms highlighted throughout the book. Each entry shows a category badge, which tells you which part of the field the term belongs to.
+
+::: glossary-list
+:::

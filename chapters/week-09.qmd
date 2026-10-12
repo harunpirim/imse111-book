@@ -1,0 +1,30 @@
+---
+description: "Week 9 lecture notes (planned)."
+---
+
+# Supply Chains, Logistics, and Facilities {#sec-week-09}
+
+::: chapter-meta
+[Week 9]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Map the supply chain of an everyday product.
+2. Explain why companies hold inventory.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 9 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Anatomy of a [supply chain]{.term}
+- [Logistics]{.term}, transportation, and warehousing
+- [Inventory]{.term} and [lead time]{.term}
+- [Facility layout]{.term}
+
+::: keyterms
+:::

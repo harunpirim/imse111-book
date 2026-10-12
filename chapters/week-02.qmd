@@ -1,0 +1,31 @@
+---
+description: "Week 2 lecture notes (planned)."
+---
+
+# From Scientific Management to Smart Factories {#sec-week-02}
+
+::: chapter-meta
+[Week 2]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Trace the major eras of industrial engineering.
+2. Connect historical ideas to practices still used today.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 2 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Frederick Taylor and [scientific management]{.term}
+- The Gilbreths, [motion study]{.term}, and [time study]{.term}
+- Ford, the [assembly line]{.term}, and [mass production]{.term}
+- Toyota and the [Toyota Production System]{.term}
+- Computers, [automation]{.term}, and [Industry 4.0]{.term}
+
+::: keyterms
+:::

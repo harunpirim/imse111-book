@@ -1,0 +1,110 @@
+project:
+  type: book
+  output-dir: _book
+  render:
+    - "*.qmd"
+    - "!templates/"
+    - "!drafts/"
+    - "!proposal/"
+  resources:
+    - notebooks/*.ipynb
+
+book:
+  title: "Introduction to Industrial & Manufacturing Engineering"
+  subtitle: "Lecture Notes for IMSE 111 · North Dakota State University"
+  author:
+    - name: "Instructor Name"
+      affiliation: "Industrial & Manufacturing Engineering, North Dakota State University"
+  date: last-modified
+  date-format: "MMMM D, YYYY"
+  output-file: "imse111-lecture-notes"
+  cover-image: images/cover.jpg
+  cover-image-alt: "Illustration of a connected factory, warehouse, and hospital linked by data flows"
+  favicon: images/cover.jpg
+  # Set these once the GitHub repository exists to enable "Edit this page" / "Report an issue".
+  # repo-url: https://github.com/YOUR-GITHUB-USERNAME/imse111-book
+  # repo-actions: [edit, issue]
+  search: true
+  page-navigation: true
+  reader-mode: true
+  sidebar:
+    style: docked
+    collapse-level: 1
+  page-footer:
+    left: "IMSE 111 · North Dakota State University"
+    right: "Built with [Quarto](https://quarto.org)"
+
+  chapters:
+    - index.qmd
+    - how-to-use.qmd
+
+    - part: "Part I · Discovering IME"
+      chapters:
+        - chapters/week-01.qmd
+        - chapters/week-02.qmd
+        - chapters/week-03.qmd
+        - chapters/week-04.qmd
+
+    - part: "Part II · How Systems Work"
+      chapters:
+        - chapters/week-05.qmd
+        - chapters/week-06.qmd
+        - chapters/week-07.qmd
+        - chapters/week-08.qmd
+        - chapters/week-09.qmd
+        - chapters/week-10.qmd
+
+    - part: "Part III · The Engineer's Toolkit"
+      chapters:
+        - chapters/week-11.qmd
+        - chapters/week-12.qmd
+        - chapters/week-13.qmd
+        - chapters/week-14.qmd
+        - chapters/week-15.qmd
+
+  appendices:
+    - notebooks.qmd
+    - glossary.qmd
+    - references.qmd
+
+# Colab links are built from this repository. Notebooks live in notebooks/.
+colab:
+  github-repo: "YOUR-GITHUB-USERNAME/imse111-book"
+  branch: "main"
+  notebooks-dir: "notebooks"
+
+bibliography: references.bib
+csl: apa.csl
+link-citations: true
+
+filters:
+  - lua/ie-terms.lua
+  - lua/boxes.lua
+shortcodes:
+  - lua/colab.lua
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/custom.scss]
+      dark: [cosmo, styles/custom.scss, styles/dark.scss]
+    respect-user-color-scheme: true
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: true
+    number-depth: 2
+    code-copy: true
+    code-overflow: wrap
+    fig-cap-location: bottom
+    lightbox: true
+    smooth-scroll: true
+    citations-hover: true
+    footnotes-hover: true
+    include-after-body: styles/term-tooltips.html
+  docx:
+    toc: true
+    number-sections: true
+
+execute:
+  freeze: auto

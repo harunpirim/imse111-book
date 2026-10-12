@@ -1,0 +1,30 @@
+---
+description: "Week 5 lecture notes (planned)."
+---
+
+# Manufacturing Processes and Production Systems {#sec-week-05}
+
+::: chapter-meta
+[Week 5]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Classify common manufacturing processes.
+2. Relate WIP, throughput, and flow time with Little's Law.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 5 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- [Subtractive manufacturing]{.term}, forming, joining, and [additive manufacturing]{.term}
+- [CNC]{.term} machines and [automation]{.term}
+- Job shops, flow lines, and [capacity]{.term}
+- [Work-in-process]{.term} and [Little's Law]{.term}
+
+::: keyterms
+:::

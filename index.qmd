@@ -1,0 +1,86 @@
+# Welcome {.unnumbered}
+
+These are the lecture notes for **IMSE 111: Introduction to Industrial and Manufacturing Engineering** at North Dakota State University. They're written for first-year students who want to find out what [industrial engineering]{.term} and [manufacturing engineering]{.term} are, where IMEs work, and how they think. They also teach the software skills engineers use every day.
+
+The notes are released one week at a time and will grow into a full textbook.
+
+## About the course
+
+The NDSU catalog describes the course as:
+
+> Overview of industrial engineering and manufacturing engineering professional careers and work environments. Basic skill acquisition using computer software tools to solve engineering problems, prepare reports, plan projects, deliver professional presentations, and manage data. [@ndsu-catalog-ime]
+
+That gives the book two threads. **The profession** covers what IMEs do, where they do it, and why it matters. **The toolkit** covers spreadsheets, Python notebooks, project plans, reports, and presentations.
+
+## What you'll find in each chapter
+
+::: feature-grid
+::: {}
+[]{.bi .bi-highlighter}
+
+**Highlighted terms.** Key IE vocabulary such as [bottleneck]{.term} or [takt time]{.term} is highlighted. Hover over a term for its definition, or click it to open the glossary.
+:::
+
+::: {}
+[]{.bi .bi-newspaper}
+
+**Stories from the field.** Short, sourced stories that show IE at work in real factories, hospitals, and supply chains.
+:::
+
+::: {}
+[]{.bi .bi-journal-code}
+
+**Colab notebooks.** Every concept has a hands-on Python notebook you can run in your browser with one click. No installation needed.
+:::
+
+::: {}
+[]{.bi .bi-people}
+
+**In-class activities.** Short exercises you can do in pairs or teams during lecture.
+:::
+
+::: {}
+[]{.bi .bi-image}
+
+**Illustrations and diagrams.** Process maps, flowcharts, and figures that make systems visible.
+:::
+
+::: {}
+[]{.bi .bi-bookmark-check}
+
+**References.** Every claim is linked to a source. The full list is in [References](references.qmd).
+:::
+:::
+
+## Course schedule
+
+| Week | Topic | Status |
+|:----:|:------|:-------|
+| 1 | [What Is Industrial & Manufacturing Engineering?](chapters/week-01.qmd) | [Sample draft]{.pill .pill-draft} |
+| 2 | [From Scientific Management to Smart Factories](chapters/week-02.qmd) | [Planned]{.pill .pill-planned} |
+| 3 | [Careers and Work Environments](chapters/week-03.qmd) | [Planned]{.pill .pill-planned} |
+| 4 | [Engineering Problem Solving and Systems Thinking](chapters/week-04.qmd) | [Planned]{.pill .pill-planned} |
+| 5 | [Manufacturing Processes and Production Systems](chapters/week-05.qmd) | [Planned]{.pill .pill-planned} |
+| 6 | [Work Design, Methods, and Human Factors](chapters/week-06.qmd) | [Planned]{.pill .pill-planned} |
+| 7 | [Quality and Statistical Thinking](chapters/week-07.qmd) | [Planned]{.pill .pill-planned} |
+| 8 | [Lean and Continuous Improvement](chapters/week-08.qmd) | [Planned]{.pill .pill-planned} |
+| 9 | [Supply Chains, Logistics, and Facilities](chapters/week-09.qmd) | [Planned]{.pill .pill-planned} |
+| 10 | [Modeling, Optimization, and Simulation](chapters/week-10.qmd) | [Planned]{.pill .pill-planned} |
+| 11 | [Working with Data: Spreadsheets and Python](chapters/week-11.qmd) | [Planned]{.pill .pill-planned} |
+| 12 | [Visualizing Data and Telling Its Story](chapters/week-12.qmd) | [Planned]{.pill .pill-planned} |
+| 13 | [Planning and Managing Engineering Projects](chapters/week-13.qmd) | [Planned]{.pill .pill-planned} |
+| 14 | [Technical Reports and Professional Presentations](chapters/week-14.qmd) | [Planned]{.pill .pill-planned} |
+| 15 | [Ethics, Sustainability, and the Future of IME](chapters/week-15.qmd) | [Planned]{.pill .pill-planned} |
+
+: Tentative weekly schedule {.schedule .striped .hover}
+
+## How to read these notes
+
+- Use the **sidebar** to move between weeks, and the **search** box (or press `/`) to find any topic.
+- Turn on **dark mode** or **reader mode** with the toggles at the top of the sidebar.
+- Open the **Colab** notebook in each chapter *before* class and run it alongside the reading.
+- Read [How to Use This Book](how-to-use.qmd) for a one-page tour of every feature.
+
+## Acknowledgments {.unnumbered}
+
+*To be written.*

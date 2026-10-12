@@ -1,0 +1,87 @@
+---
+description: "One-sentence summary of the week (shown in search results and link previews)."
+image: ../images/weekXX/banner.jpg
+---
+
+<!--
+  CHAPTER TEMPLATE. Copy to chapters/week-XX.qmd and replace every XX / placeholder.
+  Keep the section order so every week feels familiar to students.
+  Building blocks:
+    [term]{.term}                    highlighted IE term (must exist in data/glossary.yml)
+    [plural terms]{.term key="slug"} highlight with an explicit glossary key
+    ::: {.story title="" source="" source-title=""}   sourced story
+    ::: {.activity title=""}                          in-class activity
+    ::: {.career title="" source=""}                  career spotlight
+    {{< colab weekXX_name.ipynb title="" >}}          Colab notebook card
+    [@citekey]                                        citation from references.bib
+-->
+
+# Chapter Title {#sec-week-XX}
+
+::: chapter-meta
+[Week XX]{.pill} [Draft v1]{.pill .pill-draft} [≈ 20 min read]{.pill}
+:::
+
+![One-sentence caption that explains the illustration.](../images/weekXX/banner.jpg){.chapter-banner fig-alt="Describe the image for screen readers."}
+
+::: {.callout-important title="Learning objectives" icon="false"}
+By the end of this week you should be able to:
+
+1. Measurable objective (define, calculate, compare, design, ...).
+2. ...
+3. ...
+:::
+
+::: {.story title="Story headline" source="https://example.org/article" source-title="Publisher name"}
+Two or three short paragraphs telling a real story that motivates the week's topic, with citations [@citekey].
+
+**Why it matters:** one sentence connecting the story to the chapter.
+:::
+
+## First main idea
+
+Explain the concept in plain language. Highlight [system]{.term} vocabulary on first use.
+
+## Second main idea
+
+### Worked example: short descriptive name
+
+Step-by-step example with numbers. Use $inline math$ and display math:
+
+$$
+\text{Throughput} = \frac{\text{units}}{\text{time}}
+$$
+
+```{mermaid}
+%%| label: fig-weekXX-flow
+%%| fig-cap: "Caption for the process diagram."
+flowchart LR
+  A[Step 1] --> B[Step 2] --> C[Step 3]
+```
+
+{{< colab weekXX_notebook_name.ipynb title="Notebook title" >}}
+
+::: {.activity title="Activity name (10 minutes, pairs)"}
+1. Instruction.
+2. Instruction.
+:::
+
+## Key takeaways
+
+- Takeaway one.
+- Takeaway two.
+- Takeaway three.
+
+::: {.callout-tip title="Check your understanding" collapse="true"}
+1. **Question?**
+   *Answer.*
+2. **Question?**
+   *Answer.*
+:::
+
+::: keyterms
+:::
+
+## Further reading
+
+- Annotated pointer to a book or article [@citekey].

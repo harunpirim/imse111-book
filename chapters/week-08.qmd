@@ -1,0 +1,30 @@
+---
+description: "Week 8 lecture notes (planned)."
+---
+
+# Lean and Continuous Improvement {#sec-week-08}
+
+::: chapter-meta
+[Week 8]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Identify waste in a process.
+2. Draw a basic value stream map.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 8 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- [Lean manufacturing]{.term} and the eight wastes ([muda]{.term})
+- [Value stream maps]{.term}
+- [5S]{.term}, [kanban]{.term}, and [just-in-time]{.term}
+- [Kaizen]{.term}, [PDCA]{.term}, and [root cause analysis]{.term}
+
+::: keyterms
+:::

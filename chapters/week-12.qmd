@@ -1,0 +1,30 @@
+---
+description: "Week 12 lecture notes (planned)."
+---
+
+# Visualizing Data and Telling Its Story {#sec-week-12}
+
+::: chapter-meta
+[Week 12]{.pill} [Planned, awaiting draft]{.pill .pill-planned}
+:::
+
+::: {.callout-important title="Learning objectives (tentative)" icon="false"}
+By the end of this week you should be able to:
+
+1. Choose an appropriate chart for a given question.
+2. Create a clear, honest figure for a report.
+:::
+
+::: {.callout-note title="Coming soon"}
+These lecture notes will be written from the instructor's Week 12 draft. The topics below are a working outline.
+:::
+
+## Planned topics
+
+- Choosing the right chart
+- Charts in spreadsheets and matplotlib
+- Dashboards and key performance indicators
+- Common visualization mistakes
+
+::: keyterms
+:::

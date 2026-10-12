@@ -1,0 +1,279 @@
+/*-- scss:defaults --*/
+
+// NDSU brand colors
+$ndsu-green: #0a5640 !default;
+$ndsu-gold: #ffc82e !default;
+$ink: #1f2a2e !default;
+
+$primary: $ndsu-green !default;
+$link-color: $ndsu-green !default;
+$body-color: $ink !default;
+$font-family-sans-serif: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif !default;
+$headings-font-family: "Source Serif 4", Georgia, serif !default;
+$headings-font-weight: 600 !default;
+$font-size-root: 17px !default;
+$line-height-base: 1.65 !default;
+$sidebar-bg: #f5f8f6 !default;
+$code-color: #8a3b12 !default;
+$callout-color-important: $ndsu-green !default;
+$callout-color-tip: #2e8b57 !default;
+
+$term-bg: rgba(255, 200, 46, 0.38) !default;
+$term-bg-hover: rgba(255, 200, 46, 0.7) !default;
+$term-underline: #b38600 !default;
+$box-story: $ndsu-green !default;
+$box-activity: #c58a00 !default;
+$box-career: #1d5f8c !default;
+$box-tint: 0.07 !default;
+
+/*-- scss:rules --*/
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
+
+// Book title and sidebar
+.sidebar-title {
+  font-family: $headings-font-family;
+  color: $ndsu-green;
+  font-size: 1.05rem;
+}
+.sidebar-item-section > .sidebar-item-container .sidebar-item-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+
+h1.title,
+.quarto-title .title {
+  color: $ndsu-green;
+}
+
+// ---- Highlighted industrial engineering terms ----
+a.ie-term,
+span.ie-term {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  background: linear-gradient(transparent 45%, $term-bg 45%);
+  border-bottom: 1.5px dotted $term-underline;
+  padding: 0 0.1em;
+  border-radius: 2px;
+  cursor: help;
+  transition: background 0.15s ease;
+}
+a.ie-term:hover,
+a.ie-term:focus {
+  background: linear-gradient(transparent 0%, $term-bg-hover 0%);
+  color: inherit;
+}
+span.ie-term-missing {
+  border-bottom: 2px wavy #c0392b;
+}
+
+.ie-term-tip {
+  text-align: left;
+  .ie-term-tip-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .ie-term-tip-cat {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+  .ie-term-tip-def {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+}
+
+// ---- Story / activity / career boxes ----
+@mixin ie-box($c) {
+  border-left: 5px solid $c;
+  background: rgba($c, $box-tint);
+  .box-label,
+  .bi {
+    color: $c;
+  }
+}
+
+.ie-box {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem 0.75rem;
+  border-radius: 0 10px 10px 0;
+  .box-header {
+    margin-bottom: 0.5rem;
+  }
+  .box-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .box-title {
+    font-family: $headings-font-family;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.15rem;
+  }
+  .box-body > :last-child {
+    margin-bottom: 0.5rem;
+  }
+  .box-source {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 0.4rem;
+    p {
+      margin: 0;
+    }
+  }
+  img {
+    border-radius: 6px;
+  }
+}
+.ie-box-story {
+  @include ie-box($box-story);
+}
+.ie-box-activity {
+  @include ie-box($box-activity);
+}
+.ie-box-career {
+  @include ie-box($box-career);
+}
+
+// ---- Colab notebook card ----
+.colab-card {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.2rem 0.4rem;
+  border: 1px solid rgba($ndsu-green, 0.25);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba($ndsu-gold, 0.14), rgba($ndsu-green, 0.05));
+  .box-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $ndsu-green;
+  }
+  .bi {
+    color: $ndsu-green;
+  }
+  .box-title {
+    font-family: $headings-font-family;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0.1rem 0 0.4rem;
+  }
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+  }
+}
+a.colab-badge img {
+  height: 22px;
+  margin: 0 0.3rem 0 0;
+  vertical-align: middle;
+}
+
+// ---- Chapter header elements ----
+.chapter-banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+.chapter-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.5rem 0 1.25rem;
+  p {
+    margin: 0;
+    display: contents;
+  }
+}
+.pill {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  background: rgba($ndsu-green, 0.1);
+  color: $ndsu-green;
+}
+.pill-draft {
+  background: rgba($ndsu-gold, 0.35);
+  color: #6b4e00;
+}
+.pill-planned {
+  background: rgba(108, 117, 125, 0.15);
+  color: #495057;
+}
+
+// ---- Glossary page ----
+.glossary-entry {
+  padding: 0.5rem 0 0.5rem 0.75rem;
+  border-left: 3px solid transparent;
+  scroll-margin-top: 5rem;
+  p {
+    margin-bottom: 0.2rem;
+  }
+  &:target {
+    border-left-color: $ndsu-gold;
+    background: rgba($ndsu-gold, 0.15);
+  }
+}
+.glossary-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: rgba($ndsu-green, 0.1);
+  color: $ndsu-green;
+  vertical-align: middle;
+}
+
+// ---- Home page ----
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+  margin: 1.25rem 0 1.75rem;
+  > div {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 0.9rem 1rem 0.4rem;
+    background: rgba($ndsu-green, 0.03);
+  }
+  .bi {
+    font-size: 1.4rem;
+    color: $ndsu-green;
+  }
+  p {
+    margin-bottom: 0.4rem;
+  }
+}
+
+table.schedule {
+  td:first-child {
+    white-space: nowrap;
+    font-weight: 600;
+    color: $ndsu-green;
+  }
+}
+
+// Callout refinements
+.callout.callout-style-default {
+  border-radius: 8px;
+}
