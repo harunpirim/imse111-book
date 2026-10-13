@@ -1,0 +1,845 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "",
+    "text": "Welcome\nThese are the lecture notes for IMSE 111: Introduction to Industrial and Manufacturing Systems Engineering (3 credits) at North Dakota State University. They’re written for first-year students who want to find out what industrial engineering and manufacturing engineering are, where IMEs work, and how they think. They also teach the software skills engineers use every day.\nThe notes are released one week at a time and will grow into a full textbook.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#about-the-course",
+    "href": "index.html#about-the-course",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "About the course",
+    "text": "About the course\nThe NDSU catalog lists the course as IMSE 111. Introduction to Industrial and Manufacturing Systems Engineering. 3 Credits. The description reads:\n\nOverview of industrial engineering and manufacturing engineering professional careers and work environments. Basic skill acquisition using computer software tools to solve engineering problems, prepare reports, plan projects, deliver professional presentations, and manage data. (North Dakota State University, n.d.)\n\nThat gives the book two threads. The profession covers what IMEs do, where they do it, and why it matters. The toolkit covers spreadsheets, Python notebooks, project plans, reports, and presentations.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#what-youll-find-in-each-chapter",
+    "href": "index.html#what-youll-find-in-each-chapter",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "What you’ll find in each chapter",
+    "text": "What you’ll find in each chapter\n\n\n\nHighlighted terms. Key IE vocabulary such as bottleneck or takt time is highlighted. Hover over a term for its definition, or click it to open the glossary.\n\n\n\nStories from the field. Short, sourced stories that show IE at work in real factories, hospitals, and supply chains.\n\n\n\nColab notebooks. Every concept has a hands-on Python notebook you can run in your browser with one click. No installation needed.\n\n\n\nIn-class activities. Short exercises you can do in pairs or teams during lecture.\n\n\n\nIllustrations and diagrams. Process maps, flowcharts, and figures that make systems visible.\n\n\n\nReferences. Every claim is linked to a source. The full list is in References.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#course-schedule",
+    "href": "index.html#course-schedule",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "Course schedule",
+    "text": "Course schedule\n\nTentative weekly schedule\n\n\nWeek\nTopic\nStatus\n\n\n\n\n1\nWhat Is Industrial & Manufacturing Engineering?\nSample draft\n\n\n2\nFrom Scientific Management to Smart Factories\nPlanned\n\n\n3\nCareers and Work Environments\nPlanned\n\n\n4\nEngineering Problem Solving and Systems Thinking\nPlanned\n\n\n5\nManufacturing Processes and Production Systems\nPlanned\n\n\n6\nWork Design, Methods, and Human Factors\nPlanned\n\n\n7\nQuality and Statistical Thinking\nPlanned\n\n\n8\nLean and Continuous Improvement\nPlanned\n\n\n9\nSupply Chains, Logistics, and Facilities\nPlanned\n\n\n10\nModeling, Optimization, and Simulation\nPlanned\n\n\n11\nWorking with Data: Spreadsheets and Python\nPlanned\n\n\n12\nVisualizing Data and Telling Its Story\nPlanned\n\n\n13\nPlanning and Managing Engineering Projects\nPlanned\n\n\n14\nTechnical Reports and Professional Presentations\nPlanned\n\n\n15\nEthics, Sustainability, and the Future of IME\nPlanned",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-read-these-notes",
+    "href": "index.html#how-to-read-these-notes",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "How to read these notes",
+    "text": "How to read these notes\n\nUse the sidebar to move between weeks, and the search box (or press /) to find any topic.\nTurn on dark mode or reader mode with the toggles at the top of the sidebar.\nOpen the Colab notebook in each chapter before class and run it alongside the reading.\nRead How to Use This Book for a one-page tour of every feature.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#acknowledgments",
+    "href": "index.html#acknowledgments",
+    "title": "Introduction to Industrial and Manufacturing Systems Engineering",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nTo be written.\n\n\n\n\nNorth Dakota State University. (n.d.). Industrial and manufacturing systems engineering (IMSE) course descriptions. NDSU Undergraduate Catalog. Retrieved October 12, 2026, from https://catalog.ndsu.edu/course-catalog/descriptions/imse/",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html",
+    "href": "how-to-use.html",
+    "title": "How to Use This Book",
+    "section": "",
+    "text": "Highlighted terms\nEvery chapter uses the same small set of building blocks, so once you know them you can read any week quickly. Here’s what each one looks like.\nIndustrial engineering has its own vocabulary. When an important term first appears, it is highlighted like this: throughput, Little’s Law, kaizen.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#highlighted-terms",
+    "href": "how-to-use.html#highlighted-terms",
+    "title": "How to Use This Book",
+    "section": "",
+    "text": "Hover (or tap on a phone) to see a short definition.\nClick to open the full entry in the Glossary.\nAt the end of each chapter, a Key terms box lists every term the chapter used.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#stories-from-the-field",
+    "href": "how-to-use.html#stories-from-the-field",
+    "title": "How to Use This Book",
+    "section": "Stories from the field",
+    "text": "Stories from the field\n\n\n Story from the field\n\nWhy stories?\n\n\n\nEngineering concepts are easier to remember when they come with a person, a place, and a problem. Each story box gives a short, real example and links to its source so you can read more.\n\n\nSource: IISE: What is Industrial and Systems Engineering?",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#in-class-activities",
+    "href": "how-to-use.html#in-class-activities",
+    "title": "How to Use This Book",
+    "section": "In-class activities",
+    "text": "In-class activities\n\n\n In-class activity\n\nTry it: one-minute observation\n\n\n\nLook around the room. Name one input, one process, and one output of the system you’re sitting in right now. Compare your answer with a neighbor’s.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#career-spotlights",
+    "href": "how-to-use.html#career-spotlights",
+    "title": "How to Use This Book",
+    "section": "Career spotlights",
+    "text": "Career spotlights\n\n\n Career spotlight\n\nWhere IMEs work\n\n\n\nCareer boxes profile real roles, employers, and pathways, from plant floors to hospitals to distribution centers.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#colab-notebooks",
+    "href": "how-to-use.html#colab-notebooks",
+    "title": "How to Use This Book",
+    "section": "Colab notebooks",
+    "text": "Colab notebooks\nEach chapter links to a Python notebook that runs in your browser with Google Colab. Click the badge, then choose File → Save a copy in Drive so you can edit your own copy.\n\n\n Hands-on notebook\n\n\nNotebook template\n\n View on GitHub · Download .ipynb\n\nSee Colab Notebooks for the full list and a short getting-started guide.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#callouts",
+    "href": "how-to-use.html#callouts",
+    "title": "How to Use This Book",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nImportantLearning objectives\n\n\n\nEach chapter opens with what you should be able to do by the end of the week.\n\n\n\n\n\n\n\n\nTipCheck your understanding\n\n\n\n\n\nPractice questions appear at the end of each chapter. Click to expand the answers.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#diagrams-and-figures",
+    "href": "how-to-use.html#diagrams-and-figures",
+    "title": "How to Use This Book",
+    "section": "Diagrams and figures",
+    "text": "Diagrams and figures\nProcess maps are drawn as diagrams that stay sharp at any zoom level:\n\n\n\n\n\nflowchart LR\n  A[Inputs&lt;br/&gt;people, materials,&lt;br/&gt;information, energy] --&gt; B[Process&lt;br/&gt;transformation]\n  B --&gt; C[Outputs&lt;br/&gt;products, services]\n  C -. feedback .-&gt; B\n\n\n A simple input-process-output view of a system.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "how-to-use.html#references",
+    "href": "how-to-use.html#references",
+    "title": "How to Use This Book",
+    "section": "References",
+    "text": "References\nSources are cited inline, for example (Institute of Industrial and Systems Engineers, n.d.; Taylor, 1911). Hover over a citation to preview it, or see the full References list.\n\n\n\n\nInstitute of Industrial and Systems Engineers. (n.d.). Industrial and systems engineering body of knowledge. Retrieved October 12, 2026, from https://www.iise.org/Details.aspx?id=43631\n\n\nTaylor, F. W. (1911). The principles of scientific management. Harper & Brothers.",
+    "crumbs": [
+      "How to Use This Book"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html",
+    "href": "chapters/week-01.html",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "",
+    "text": "1.1 Engineering systems, not just things\nMost engineering disciplines are named after what they design. Civil engineers design structures, electrical engineers design circuits, and mechanical engineers design machines. Industrial engineers design how everything works together.\nThe Institute of Industrial and Systems Engineers (IISE) gives the field’s classic definition:\nThe key word is system. A hospital emergency department, an Amazon fulfillment center, and a combine assembly line are all systems. Each one transforms inputs into outputs through a series of steps, and each can be made safer, faster, cheaper, or more humane. An industrial engineer practices systems thinking, which means asking how a change in one place ripples through the whole system.\nManufacturing engineering is the closely related discipline that focuses on the processes and equipment that physically make products: machining, molding, welding, additive manufacturing, and automation. At NDSU, the two fields share a department because modern production needs both. Someone has to design the process, and someone has to design the system it runs in.",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#engineering-systems-not-just-things",
+    "href": "chapters/week-01.html#engineering-systems-not-just-things",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "",
+    "text": "Industrial and systems engineering is concerned with the design, improvement and installation of integrated systems of people, materials, information, equipment and energy. (Institute of Industrial and Systems Engineers, n.d.)\n\n\n\n\n\n\nTable 1.1: Two closely related fields\n\n\n\n\n\n\nIndustrial engineering\nManufacturing engineering\n\n\n\n\nCentral question\nHow should the whole system be designed and run?\nHow should this product be made?\n\n\nTypical decisions\nLayout, staffing, scheduling, quality systems, supply chains\nProcess selection, tooling, machine programming, automation\n\n\nExample tools\nProcess maps, simulation, statistics, optimization\nCAD/CAM, CNC programming, process planning\n\n\nWorks in\nFactories, hospitals, logistics, finance, government\nFactories, suppliers, equipment builders",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#where-imes-work",
+    "href": "chapters/week-01.html#where-imes-work",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "1.2 Where IMEs work",
+    "text": "1.2 Where IMEs work\nBecause every organization runs on processes, IMEs work almost everywhere:\n\nManufacturing. Agricultural equipment, aerospace, electronics, food processing, and medical devices.\nHealthcare. Reducing patient wait times, scheduling operating rooms, and preventing medication errors.\nLogistics and e-commerce. Designing warehouses, routing delivery fleets, and managing inventory.\nService and government. Banks, airlines, theme parks, and public agencies all use IEs to improve service.\n\n\n\n Career spotlight\n\nIndustrial engineers by the numbers\n\n\n\nAccording to the U.S. Bureau of Labor Statistics, industrial engineers held about 365,100 jobs in 2025 and earned a median annual wage of $102,440. Employment is projected to grow 12 percent from 2025 to 2035, much faster than the average for all occupations (U.S. Bureau of Labor Statistics, 2026).\n\n\nSource: U.S. Bureau of Labor Statistics, Occupational Outlook Handbook",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#how-imes-think-measure-model-improve",
+    "href": "chapters/week-01.html#how-imes-think-measure-model-improve",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "1.3 How IMEs think: measure, model, improve",
+    "text": "1.3 How IMEs think: measure, model, improve\nWhen an IME looks at a process, a few questions come first:\n\nHow much does the system produce per hour? This is its throughput.\nHow long does each step take? This is its cycle time.\nWhich step limits the whole system? That step is the bottleneck.\nHow busy is each resource? This is its utilization.\n\n\nWorked example: the morning coffee rush\nA campus coffee cart has three steps. Each customer is served by one worker at each step.\n\n\n\n\n\n\nflowchart LR\n  A([Customer&lt;br/&gt;arrives]) --&gt; B[Take order&lt;br/&gt;30 s]\n  B --&gt; C[Make drink&lt;br/&gt;75 s]\n  C --&gt; D[Pay&lt;br/&gt;20 s]\n  D --&gt; E([Customer&lt;br/&gt;leaves])\n  style C fill:#ffc82e,stroke:#0a5640,stroke-width:2px\n\n\n\n\nFigure 1.1: Process flow at the campus coffee cart, with the time per customer at each step.\n\n\n\n\n\nEach step can serve at most \\(3600 / \\text{time per customer}\\) people per hour:\n\n\n\nTable 1.2: Capacity of each step\n\n\n\n\n\nStep\nTime per customer\nMax customers per hour\n\n\n\n\nTake order\n30 s\n120\n\n\nMake drink\n75 s\n48\n\n\nPay\n20 s\n180\n\n\n\n\n\n\nThe system can never go faster than its slowest step, so making drinks is the bottleneck and the cart serves at most 48 customers per hour (Table 1.2).\nNow suppose 60 customers arrive per hour during the 8 a.m. rush. The takt time, the pace needed to keep up with demand, is\n\\[\n\\text{Takt time} = \\frac{\\text{available time}}{\\text{demand}} = \\frac{3600 \\text{ s}}{60 \\text{ customers}} = 60 \\text{ s per customer}.\n\\]\nDrink-making takes 75 s, which is longer than the 60 s takt time, so the line keeps growing. If a second barista is added, drinks are finished every 37.5 s on average, and the cart’s capacity becomes \\(3600 / 37.5 = 96\\) customers per hour. Each barista is then busy\n\\[\n\\text{Utilization} = \\frac{60 \\times 37.5}{3600} = 62.5\\% \\text{ of the time.}\n\\]\nFind, measure, and relieve the bottleneck, then look for the next one. That habit is the core of the IE approach, and we’ll come back to it with lean in Week 8 and simulation in Week 10.\n\n\n Hands-on notebook\n\n\nIE by the numbers: throughput, bottlenecks, and takt time\n\n View on GitHub · Download .ipynb",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#your-toolkit-this-semester",
+    "href": "chapters/week-01.html#your-toolkit-this-semester",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "1.4 Your toolkit this semester",
+    "text": "1.4 Your toolkit this semester\nAlong with learning about the profession, you’ll build the computer skills engineers use daily:\n\nSpreadsheets and Python to calculate, analyze, and manage data (Weeks 11–12).\nProject planning tools such as a Gantt chart and the critical path (Week 13).\nTechnical writing and presentations to communicate your results (Week 14).\n\n\n\n In-class activity\n\nSpot the system (10 minutes, pairs)\n\n\n\nPick a campus process you used this week, such as the dining center line, the bookstore checkout, or getting a parking permit.\n\nList its inputs, steps, and outputs.\nEstimate the time each step takes.\nWhich step do you think is the bottleneck? What is one change that would relieve it?\n\nBe ready to share your process map with the class.",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#key-takeaways",
+    "href": "chapters/week-01.html#key-takeaways",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "1.5 Key takeaways",
+    "text": "1.5 Key takeaways\n\nIndustrial engineering designs and improves integrated systems of people, materials, information, equipment, and energy. Manufacturing engineering focuses on how products are made.\nIMEs work in nearly every sector: manufacturing, healthcare, logistics, service, and government.\nA system’s throughput is limited by its bottleneck. Improving any other step won’t increase output.\nTakt time connects the system to customer demand.\n\n\n\n\n\n\n\nTipCheck your understanding\n\n\n\n\n\n\nIn one sentence, how does industrial engineering differ from mechanical engineering? Mechanical engineering designs machines and devices. Industrial engineering designs the systems (people, equipment, information, materials) those machines operate within.\nA process has steps of 40 s, 55 s, and 35 s. What is the bottleneck and the maximum hourly throughput? The 55 s step. \\(3600 / 55 \\approx 65\\) units per hour.\nDemand is 80 units in a 4-hour shift. What is the takt time? \\(4 \\times 3600 / 80 = 180\\) s per unit.\n\n\n\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nAdditive manufacturing — Building parts layer by layer directly from a digital model; commonly called 3D printing.\nAutomation — Using machines and control systems to perform tasks with reduced human intervention.\nBottleneck — The resource or step with the least capacity relative to demand; it limits the throughput of the entire system.\nCNC — Computer numerical control; machine tools whose motions are directed by programmed instructions.\nCritical path — The longest sequence of dependent tasks in a project; any delay on it delays project completion.\nCycle time — The time between completions of successive units at a workstation or process; sometimes used for the total time one unit spends in the process.\nGantt chart — A bar chart that shows project tasks against a timeline, including start dates, durations, and dependencies.\nInventory — Stock of materials, work-in-process, or finished goods held to buffer against uncertainty in supply and demand.\nManufacturing engineering — The branch of engineering that plans, designs, and improves the processes, tooling, and equipment used to turn raw materials into finished products.\nMotion study — The analysis of the body motions used to perform a task in order to eliminate unnecessary motions and reduce effort, pioneered by Frank and Lillian Gilbreth.\nScientific management — A management approach, associated with Frederick W. Taylor, that uses systematic observation and measurement to find better methods of work.\nSystem — A set of interacting components (people, machines, materials, information) organized to achieve a common purpose.\nSystems thinking — An approach that studies how the parts of a system interact and influence the whole, rather than optimizing parts in isolation.\nTakt time — The pace of production required to meet customer demand, equal to available working time divided by customer demand.\nTherblig — One of the elemental motions (such as search, grasp, transport, and hold) defined by the Gilbreths for analyzing manual work; the word is Gilbreth spelled nearly backward.\nThroughput — The rate at which a system produces good output, such as parts per hour or patients per day.\nUtilization — The fraction of available time a resource is actually busy, calculated as time used divided by time available.",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-01.html#further-reading",
+    "href": "chapters/week-01.html#further-reading",
+    "title": "1  What Is Industrial & Manufacturing Engineering?",
+    "section": "1.6 Further reading",
+    "text": "1.6 Further reading\n\nKanigel’s biography of Frederick Taylor tells the story of the birth of scientific management (Kanigel, 1997).\nThe Gilbreths’ own account of motion study is Applied Motion Study (Gilbreth & Gilbreth, 1917).\nThe Handbook of Industrial Engineering surveys the whole field (Salvendy, 2001).\n\n\n\n\n\nGilbreth, F. B., & Gilbreth, L. M. (1917). Applied motion study. Sturgis & Walton.\n\n\nHafner, K., & Mayer, J. (2023). This efficiency-obsessed psychologist (and mother of 11) revolutionized kitchen design. In Scientific American. https://www.scientificamerican.com/article/this-efficiency-obsessed-psychologist-and-mother-of-11-revolutionized-kitchen-design/\n\n\nInstitute of Industrial and Systems Engineers. (n.d.). Industrial and systems engineering body of knowledge. Retrieved October 12, 2026, from https://www.iise.org/Details.aspx?id=43631\n\n\nKanigel, R. (1997). The one best way: Frederick winslow taylor and the enigma of efficiency. Viking.\n\n\nNational Museum of American History. (n.d.). On time: Saving time: Lillian gilbreth’s kitchen. Retrieved October 12, 2026, from https://www.americanhistory.si.edu/ontime/saving/kitchen.html\n\n\nSalvendy, G. (Ed.). (2001). Handbook of industrial engineering: Technology and operations management (3rd ed.). Wiley.\n\n\nU.S. Bureau of Labor Statistics. (2026). Industrial engineers. Occupational Outlook Handbook. https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Is Industrial & Manufacturing Engineering?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-02.html",
+    "href": "chapters/week-02.html",
+    "title": "2  From Scientific Management to Smart Factories",
+    "section": "",
+    "text": "2.1 Planned topics",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>From Scientific Management to Smart Factories</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-02.html#planned-topics",
+    "href": "chapters/week-02.html#planned-topics",
+    "title": "2  From Scientific Management to Smart Factories",
+    "section": "",
+    "text": "Frederick Taylor and scientific management\nThe Gilbreths, motion study, and time study\nFord, the assembly line, and mass production\nToyota and the Toyota Production System\nComputers, automation, and Industry 4.0\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nAssembly line — A production arrangement in which work moves from station to station in a fixed sequence, with each station adding parts or operations.\nAutomation — Using machines and control systems to perform tasks with reduced human intervention.\nIndustry 4.0 — The fourth industrial revolution, in which connected sensors, data analytics, and automation create smart, adaptive production systems.\nMass production — Making large volumes of standardized products, often on assembly lines, to achieve low unit cost.\nMotion study — The analysis of the body motions used to perform a task in order to eliminate unnecessary motions and reduce effort, pioneered by Frank and Lillian Gilbreth.\nScientific management — A management approach, associated with Frederick W. Taylor, that uses systematic observation and measurement to find better methods of work.\nTime study — A work measurement technique that times a qualified worker performing a task to establish a standard time.\nToyota Production System — Toyota’s integrated approach to production built on just-in-time flow and jidoka (automation with a human touch); the origin of lean.",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>From Scientific Management to Smart Factories</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-03.html",
+    "href": "chapters/week-03.html",
+    "title": "3  Careers and Work Environments",
+    "section": "",
+    "text": "3.1 Planned topics",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Careers and Work Environments</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-03.html#planned-topics",
+    "href": "chapters/week-03.html#planned-topics",
+    "title": "3  Careers and Work Environments",
+    "section": "",
+    "text": "What IMEs do day to day in manufacturing, healthcare, logistics, and service\nProfessional societies (IISE, SME) and student chapters\nInternships, co-ops, and the NDSU IME curriculum\nLicensure, the FE exam, and professional development",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Careers and Work Environments</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-04.html",
+    "href": "chapters/week-04.html",
+    "title": "4  Engineering Problem Solving and Systems Thinking",
+    "section": "",
+    "text": "4.1 Planned topics",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Engineering Problem Solving and Systems Thinking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-04.html#planned-topics",
+    "href": "chapters/week-04.html#planned-topics",
+    "title": "4  Engineering Problem Solving and Systems Thinking",
+    "section": "",
+    "text": "A structured problem-solving process\nSystems thinking and feedback\nDrawing a process flowchart\nEstimating and checking answers\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nProcess flowchart — A diagram that shows the sequence of steps, decisions, and flows in a process using standard symbols.\nSystems thinking — An approach that studies how the parts of a system interact and influence the whole, rather than optimizing parts in isolation.",
+    "crumbs": [
+      "Part I · Discovering IME",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Engineering Problem Solving and Systems Thinking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-05.html",
+    "href": "chapters/week-05.html",
+    "title": "5  Manufacturing Processes and Production Systems",
+    "section": "",
+    "text": "5.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Manufacturing Processes and Production Systems</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-05.html#planned-topics",
+    "href": "chapters/week-05.html#planned-topics",
+    "title": "5  Manufacturing Processes and Production Systems",
+    "section": "",
+    "text": "Subtractive manufacturing, forming, joining, and additive manufacturing\nCNC machines and automation\nJob shops, flow lines, and capacity\nWork-in-process and Little’s Law\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nAdditive manufacturing — Building parts layer by layer directly from a digital model; commonly called 3D printing.\nAutomation — Using machines and control systems to perform tasks with reduced human intervention.\nCapacity — The maximum output a resource or system can produce in a given period under normal conditions.\nCNC — Computer numerical control; machine tools whose motions are directed by programmed instructions.\nLittle’s Law — The relationship WIP = throughput × flow time, which holds for any stable system over the long run.\nSubtractive manufacturing — Making parts by removing material from a solid workpiece, as in milling, turning, and drilling.\nWork-in-process — Inventory that has started production but is not yet finished; often abbreviated WIP.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Manufacturing Processes and Production Systems</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-06.html",
+    "href": "chapters/week-06.html",
+    "title": "6  Work Design, Methods, and Human Factors",
+    "section": "",
+    "text": "6.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Work Design, Methods, and Human Factors</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-06.html#planned-topics",
+    "href": "chapters/week-06.html#planned-topics",
+    "title": "6  Work Design, Methods, and Human Factors",
+    "section": "",
+    "text": "Methods engineering and standard time\nErgonomics and workplace safety\nHuman factors and error-proof design\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nErgonomics — The science of designing jobs, tools, and workplaces to fit human capabilities and limitations; also called human factors engineering.\nHuman factors — The study of how people interact with systems, used to design work that is safe, comfortable, and resistant to error.\nStandard time — The time a qualified worker needs to complete a task at a normal pace, including allowances for personal needs, fatigue, and delays.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Work Design, Methods, and Human Factors</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-07.html",
+    "href": "chapters/week-07.html",
+    "title": "7  Quality and Statistical Thinking",
+    "section": "",
+    "text": "7.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quality and Statistical Thinking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-07.html#planned-topics",
+    "href": "chapters/week-07.html#planned-topics",
+    "title": "7  Quality and Statistical Thinking",
+    "section": "",
+    "text": "What quality means to customers\nVariation and descriptive statistics\nStatistical process control and the control chart\nSix Sigma and DMAIC\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nControl chart — A time-ordered plot of a process measurement with statistically calculated control limits used to distinguish common-cause from special-cause variation.\nDescriptive statistics — Numerical and graphical summaries of data, such as the mean, median, standard deviation, and histogram.\nDMAIC — The Six Sigma improvement cycle of Define, Measure, Analyze, Improve, and Control.\nQuality — The degree to which a product or service meets customer requirements and is free of defects.\nSix Sigma — A data-driven improvement methodology that aims to reduce defects to about 3.4 per million opportunities, typically following the DMAIC cycle.\nStatistical process control — The use of statistical methods, especially control charts, to monitor a process and detect when it changes.\nVariation — The natural differences among outputs of a process; reducing unwanted variation is a central goal of quality engineering.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Quality and Statistical Thinking</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-08.html",
+    "href": "chapters/week-08.html",
+    "title": "8  Lean and Continuous Improvement",
+    "section": "",
+    "text": "8.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Lean and Continuous Improvement</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-08.html#planned-topics",
+    "href": "chapters/week-08.html#planned-topics",
+    "title": "8  Lean and Continuous Improvement",
+    "section": "",
+    "text": "Lean manufacturing and the eight wastes (muda)\nValue stream maps\n5S, kanban, and just-in-time\nKaizen, PDCA, and root cause analysis\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\n5S — A workplace organization method with five steps, Sort, Set in order, Shine, Standardize, and Sustain.\nJust-in-time — A production strategy that makes and delivers exactly what is needed, when it is needed, in the quantity needed.\nKaizen — Japanese for continuous improvement; small, ongoing improvements made by everyone in an organization.\nKanban — A visual signal, often a card or bin, that authorizes production or movement of material only when it is needed downstream.\nLean manufacturing — A philosophy, derived from the Toyota Production System, that maximizes customer value by systematically eliminating waste.\nMuda — Japanese for waste; any activity that consumes resources without adding value for the customer.\nPDCA — The Plan-Do-Check-Act cycle for iterative improvement, popularized by W. Edwards Deming.\nRoot cause analysis — A structured method for finding the underlying cause of a problem, using tools such as the 5 Whys and fishbone diagrams.\nValue stream map — A diagram of all the material and information flows required to deliver a product, used to identify waste and plan improvements.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Lean and Continuous Improvement</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-09.html",
+    "href": "chapters/week-09.html",
+    "title": "9  Supply Chains, Logistics, and Facilities",
+    "section": "",
+    "text": "9.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supply Chains, Logistics, and Facilities</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-09.html#planned-topics",
+    "href": "chapters/week-09.html#planned-topics",
+    "title": "9  Supply Chains, Logistics, and Facilities",
+    "section": "",
+    "text": "Anatomy of a supply chain\nLogistics, transportation, and warehousing\nInventory and lead time\nFacility layout\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nFacility layout — The arrangement of departments, workstations, and equipment within a facility to support efficient flow.\nInventory — Stock of materials, work-in-process, or finished goods held to buffer against uncertainty in supply and demand.\nLead time — The total elapsed time from when an order is placed until it is delivered to the customer.\nLogistics — Planning and controlling the movement and storage of goods, services, and information from origin to consumption.\nSupply chain — The network of organizations, facilities, and flows that sources materials, makes products, and delivers them to customers.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Supply Chains, Logistics, and Facilities</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-10.html",
+    "href": "chapters/week-10.html",
+    "title": "10  Modeling, Optimization, and Simulation",
+    "section": "",
+    "text": "10.1 Planned topics",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Modeling, Optimization, and Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-10.html#planned-topics",
+    "href": "chapters/week-10.html#planned-topics",
+    "title": "10  Modeling, Optimization, and Simulation",
+    "section": "",
+    "text": "What is operations research?\nOptimization and a first look at linear programming\nDiscrete-event simulation\nDigital twins\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nDigital twin — A virtual model of a physical asset or system that is continuously updated with real data to monitor, predict, and optimize performance.\nLinear programming — An optimization method in which the objective and all constraints are linear functions of the decision variables.\nOperations research — The application of mathematical models, statistics, and algorithms to support better decisions in complex systems.\nOptimization — Finding the best decision, such as minimum cost or maximum profit, subject to constraints.\nSimulation — Imitating the operation of a real system over time with a computer model to evaluate designs and policies without disrupting the real system.",
+    "crumbs": [
+      "Part II · How Systems Work",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Modeling, Optimization, and Simulation</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-11.html",
+    "href": "chapters/week-11.html",
+    "title": "11  Working with Data: Spreadsheets and Python",
+    "section": "",
+    "text": "11.1 Planned topics",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Working with Data: Spreadsheets and Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-11.html#planned-topics",
+    "href": "chapters/week-11.html#planned-topics",
+    "title": "11  Working with Data: Spreadsheets and Python",
+    "section": "",
+    "text": "Organizing engineering data\nSpreadsheet formulas, references, and pivot tables\nPython, pandas, and Colab for data analytics\nCleaning and validating data\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nData analytics — Examining data to find patterns, draw conclusions, and support decisions.",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Working with Data: Spreadsheets and Python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-12.html",
+    "href": "chapters/week-12.html",
+    "title": "12  Visualizing Data and Telling Its Story",
+    "section": "",
+    "text": "12.1 Planned topics",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualizing Data and Telling Its Story</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-12.html#planned-topics",
+    "href": "chapters/week-12.html#planned-topics",
+    "title": "12  Visualizing Data and Telling Its Story",
+    "section": "",
+    "text": "Choosing the right chart\nCharts in spreadsheets and matplotlib\nDashboards and key performance indicators\nCommon visualization mistakes",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Visualizing Data and Telling Its Story</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-13.html",
+    "href": "chapters/week-13.html",
+    "title": "13  Planning and Managing Engineering Projects",
+    "section": "",
+    "text": "13.1 Planned topics",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Planning and Managing Engineering Projects</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-13.html#planned-topics",
+    "href": "chapters/week-13.html#planned-topics",
+    "title": "13  Planning and Managing Engineering Projects",
+    "section": "",
+    "text": "Project management fundamentals\nWork breakdown structure\nGantt charts and the critical path\nTeams, roles, and communication\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nCritical path — The longest sequence of dependent tasks in a project; any delay on it delays project completion.\nGantt chart — A bar chart that shows project tasks against a timeline, including start dates, durations, and dependencies.\nProject management — Applying knowledge, skills, tools, and techniques to plan and execute a temporary effort that creates a unique result.\nWork breakdown structure — A hierarchical decomposition of a project into smaller, manageable deliverables and tasks.",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Planning and Managing Engineering Projects</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-14.html",
+    "href": "chapters/week-14.html",
+    "title": "14  Technical Reports and Professional Presentations",
+    "section": "",
+    "text": "14.1 Planned topics",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Technical Reports and Professional Presentations</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-14.html#planned-topics",
+    "href": "chapters/week-14.html#planned-topics",
+    "title": "14  Technical Reports and Professional Presentations",
+    "section": "",
+    "text": "Structure of a technical report\nWriting clearly for engineers and managers\nFigures, tables, and citations\nDesigning and delivering a presentation",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Technical Reports and Professional Presentations</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-15.html",
+    "href": "chapters/week-15.html",
+    "title": "15  Ethics, Sustainability, and the Future of IME",
+    "section": "",
+    "text": "15.1 Planned topics",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Ethics, Sustainability, and the Future of IME</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/week-15.html#planned-topics",
+    "href": "chapters/week-15.html#planned-topics",
+    "title": "15  Ethics, Sustainability, and the Future of IME",
+    "section": "",
+    "text": "Engineering ethics and codes of conduct\nSustainability and the circular economy\nIndustry 4.0, the Internet of Things, and AI\nEngineering economics for responsible decisions\n\n\n\n\n\n\n\nNoteKey terms in this chapter\n\n\n\n\n\n\nEngineering economics — The analysis of costs, benefits, and the time value of money to compare engineering alternatives.\nIndustry 4.0 — The fourth industrial revolution, in which connected sensors, data analytics, and automation create smart, adaptive production systems.\nInternet of Things — Networks of physical devices with sensors and connectivity that collect and exchange data; often abbreviated IoT.",
+    "crumbs": [
+      "Part III · The Engineer's Toolkit",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Ethics, Sustainability, and the Future of IME</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks.html",
+    "href": "notebooks.html",
+    "title": "Appendix A — Colab Notebooks",
+    "section": "",
+    "text": "A.1 Getting started with Colab\nEvery chapter has a companion Python notebook. The notebooks run in Google Colab, a free service that runs Python in your web browser, so you don’t need to install anything.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Colab Notebooks</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks.html#getting-started-with-colab",
+    "href": "notebooks.html#getting-started-with-colab",
+    "title": "Appendix A — Colab Notebooks",
+    "section": "",
+    "text": "Click an Open in Colab badge below and sign in with a Google account.\nChoose File → Save a copy in Drive so your changes are saved to your own copy.\nRun a cell with Shift + Enter. Run cells top to bottom the first time.\nIf something breaks, use Runtime → Restart session and run all.\n\n\n\n\n\n\n\nTipNo Google account?\n\n\n\nClick Download .ipynb instead and open the file in Jupyter, VS Code, or Cursor.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Colab Notebooks</span>"
+    ]
+  },
+  {
+    "objectID": "notebooks.html#notebook-index",
+    "href": "notebooks.html#notebook-index",
+    "title": "Appendix A — Colab Notebooks",
+    "section": "A.2 Notebook index",
+    "text": "A.2 Notebook index\n\nCompanion notebooks\n\n\nWeek\nNotebook\nOpen\n\n\n\n\n1\nIE by the numbers: throughput, bottlenecks, and takt time\n\n\n\n–\nTemplate for new notebooks",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Colab Notebooks</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html",
+    "href": "glossary.html",
+    "title": "Appendix B — Glossary",
+    "section": "",
+    "text": "0–9\nThis glossary collects the industrial and manufacturing engineering terms highlighted throughout the book. Each entry shows a category badge, which tells you which part of the field the term belongs to.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-0-9",
+    "href": "glossary.html#glossary-0-9",
+    "title": "Appendix B — Glossary",
+    "section": "",
+    "text": "5S Lean\nA workplace organization method with five steps, Sort, Set in order, Shine, Standardize, and Sustain.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-a",
+    "href": "glossary.html#glossary-a",
+    "title": "Appendix B — Glossary",
+    "section": "A",
+    "text": "A\n\nAdditive manufacturing Manufacturing\nBuilding parts layer by layer directly from a digital model; commonly called 3D printing.\n\n\nAssembly line History\nA production arrangement in which work moves from station to station in a fixed sequence, with each station adding parts or operations.\n\n\nAutomation Manufacturing\nUsing machines and control systems to perform tasks with reduced human intervention.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-b",
+    "href": "glossary.html#glossary-b",
+    "title": "Appendix B — Glossary",
+    "section": "B",
+    "text": "B\n\nBottleneck Operations\nThe resource or step with the least capacity relative to demand; it limits the throughput of the entire system.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-c",
+    "href": "glossary.html#glossary-c",
+    "title": "Appendix B — Glossary",
+    "section": "C",
+    "text": "C\n\nCapacity Operations\nThe maximum output a resource or system can produce in a given period under normal conditions.\n\n\nCNC Manufacturing\nComputer numerical control; machine tools whose motions are directed by programmed instructions.\n\n\nControl chart Quality\nA time-ordered plot of a process measurement with statistically calculated control limits used to distinguish common-cause from special-cause variation.\n\n\nCritical path Project Management\nThe longest sequence of dependent tasks in a project; any delay on it delays project completion.\n\n\nCycle time Operations\nThe time between completions of successive units at a workstation or process; sometimes used for the total time one unit spends in the process.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-d",
+    "href": "glossary.html#glossary-d",
+    "title": "Appendix B — Glossary",
+    "section": "D",
+    "text": "D\n\nData analytics Data\nExamining data to find patterns, draw conclusions, and support decisions.\n\n\nDescriptive statistics Data\nNumerical and graphical summaries of data, such as the mean, median, standard deviation, and histogram.\n\n\nDigital twin Modeling\nA virtual model of a physical asset or system that is continuously updated with real data to monitor, predict, and optimize performance.\n\n\nDMAIC Quality\nThe Six Sigma improvement cycle of Define, Measure, Analyze, Improve, and Control.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-e",
+    "href": "glossary.html#glossary-e",
+    "title": "Appendix B — Glossary",
+    "section": "E",
+    "text": "E\n\nEfficiency Profession\nHow well a process converts inputs into useful outputs, often expressed as actual output divided by standard or expected output.\n\n\nEngineering economics Profession\nThe analysis of costs, benefits, and the time value of money to compare engineering alternatives.\n\n\nErgonomics Human Factors\nThe science of designing jobs, tools, and workplaces to fit human capabilities and limitations; also called human factors engineering.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-f",
+    "href": "glossary.html#glossary-f",
+    "title": "Appendix B — Glossary",
+    "section": "F",
+    "text": "F\n\nFacility layout Supply Chain\nThe arrangement of departments, workstations, and equipment within a facility to support efficient flow.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-g",
+    "href": "glossary.html#glossary-g",
+    "title": "Appendix B — Glossary",
+    "section": "G",
+    "text": "G\n\nGantt chart Project Management\nA bar chart that shows project tasks against a timeline, including start dates, durations, and dependencies.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-h",
+    "href": "glossary.html#glossary-h",
+    "title": "Appendix B — Glossary",
+    "section": "H",
+    "text": "H\n\nHuman factors Human Factors\nThe study of how people interact with systems, used to design work that is safe, comfortable, and resistant to error.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-i",
+    "href": "glossary.html#glossary-i",
+    "title": "Appendix B — Glossary",
+    "section": "I",
+    "text": "I\n\nIndustrial engineering Profession\nThe branch of engineering concerned with the design, improvement, and installation of integrated systems of people, materials, information, equipment, and energy.\n\n\nIndustry 4.0 Industry 4.0\nThe fourth industrial revolution, in which connected sensors, data analytics, and automation create smart, adaptive production systems.\n\n\nInternet of Things Industry 4.0\nNetworks of physical devices with sensors and connectivity that collect and exchange data; often abbreviated IoT.\n\n\nInventory Supply Chain\nStock of materials, work-in-process, or finished goods held to buffer against uncertainty in supply and demand.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-j",
+    "href": "glossary.html#glossary-j",
+    "title": "Appendix B — Glossary",
+    "section": "J",
+    "text": "J\n\nJust-in-time Lean\nA production strategy that makes and delivers exactly what is needed, when it is needed, in the quantity needed.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-k",
+    "href": "glossary.html#glossary-k",
+    "title": "Appendix B — Glossary",
+    "section": "K",
+    "text": "K\n\nKaizen Lean\nJapanese for continuous improvement; small, ongoing improvements made by everyone in an organization.\n\n\nKanban Lean\nA visual signal, often a card or bin, that authorizes production or movement of material only when it is needed downstream.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-l",
+    "href": "glossary.html#glossary-l",
+    "title": "Appendix B — Glossary",
+    "section": "L",
+    "text": "L\n\nLead time Operations\nThe total elapsed time from when an order is placed until it is delivered to the customer.\n\n\nLean manufacturing Lean\nA philosophy, derived from the Toyota Production System, that maximizes customer value by systematically eliminating waste.\n\n\nLinear programming Modeling\nAn optimization method in which the objective and all constraints are linear functions of the decision variables.\n\n\nLittle’s Law Operations\nThe relationship WIP = throughput × flow time, which holds for any stable system over the long run.\n\n\nLogistics Supply Chain\nPlanning and controlling the movement and storage of goods, services, and information from origin to consumption.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-m",
+    "href": "glossary.html#glossary-m",
+    "title": "Appendix B — Glossary",
+    "section": "M",
+    "text": "M\n\nManufacturing engineering Profession\nThe branch of engineering that plans, designs, and improves the processes, tooling, and equipment used to turn raw materials into finished products.\n\n\nMass production History\nMaking large volumes of standardized products, often on assembly lines, to achieve low unit cost.\n\n\nMotion study Human Factors\nThe analysis of the body motions used to perform a task in order to eliminate unnecessary motions and reduce effort, pioneered by Frank and Lillian Gilbreth.\n\n\nMuda Lean\nJapanese for waste; any activity that consumes resources without adding value for the customer.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-o",
+    "href": "glossary.html#glossary-o",
+    "title": "Appendix B — Glossary",
+    "section": "O",
+    "text": "O\n\nOperations research Modeling\nThe application of mathematical models, statistics, and algorithms to support better decisions in complex systems.\n\n\nOptimization Modeling\nFinding the best decision, such as minimum cost or maximum profit, subject to constraints.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-p",
+    "href": "glossary.html#glossary-p",
+    "title": "Appendix B — Glossary",
+    "section": "P",
+    "text": "P\n\nPDCA Quality\nThe Plan-Do-Check-Act cycle for iterative improvement, popularized by W. Edwards Deming.\n\n\nProcess flowchart Operations\nA diagram that shows the sequence of steps, decisions, and flows in a process using standard symbols.\n\n\nProductivity Profession\nThe ratio of outputs produced to inputs consumed, such as units per labor hour.\n\n\nProject management Project Management\nApplying knowledge, skills, tools, and techniques to plan and execute a temporary effort that creates a unique result.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-q",
+    "href": "glossary.html#glossary-q",
+    "title": "Appendix B — Glossary",
+    "section": "Q",
+    "text": "Q\n\nQuality Quality\nThe degree to which a product or service meets customer requirements and is free of defects.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-r",
+    "href": "glossary.html#glossary-r",
+    "title": "Appendix B — Glossary",
+    "section": "R",
+    "text": "R\n\nRoot cause analysis Quality\nA structured method for finding the underlying cause of a problem, using tools such as the 5 Whys and fishbone diagrams.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-s",
+    "href": "glossary.html#glossary-s",
+    "title": "Appendix B — Glossary",
+    "section": "S",
+    "text": "S\n\nScientific management History\nA management approach, associated with Frederick W. Taylor, that uses systematic observation and measurement to find better methods of work.\n\n\nSimulation Modeling\nImitating the operation of a real system over time with a computer model to evaluate designs and policies without disrupting the real system.\n\n\nSix Sigma Quality\nA data-driven improvement methodology that aims to reduce defects to about 3.4 per million opportunities, typically following the DMAIC cycle.\n\n\nStandard time Human Factors\nThe time a qualified worker needs to complete a task at a normal pace, including allowances for personal needs, fatigue, and delays.\n\n\nStatistical process control Quality\nThe use of statistical methods, especially control charts, to monitor a process and detect when it changes.\n\n\nSubtractive manufacturing Manufacturing\nMaking parts by removing material from a solid workpiece, as in milling, turning, and drilling.\n\n\nSupply chain Supply Chain\nThe network of organizations, facilities, and flows that sources materials, makes products, and delivers them to customers.\n\n\nSystem Profession\nA set of interacting components (people, machines, materials, information) organized to achieve a common purpose.\n\n\nSystems thinking Profession\nAn approach that studies how the parts of a system interact and influence the whole, rather than optimizing parts in isolation.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-t",
+    "href": "glossary.html#glossary-t",
+    "title": "Appendix B — Glossary",
+    "section": "T",
+    "text": "T\n\nTakt time Lean\nThe pace of production required to meet customer demand, equal to available working time divided by customer demand.\n\n\nTherblig Human Factors\nOne of the elemental motions (such as search, grasp, transport, and hold) defined by the Gilbreths for analyzing manual work; the word is Gilbreth spelled nearly backward.\n\n\nThroughput Operations\nThe rate at which a system produces good output, such as parts per hour or patients per day.\n\n\nTime study Human Factors\nA work measurement technique that times a qualified worker performing a task to establish a standard time.\n\n\nToyota Production System Lean\nToyota’s integrated approach to production built on just-in-time flow and jidoka (automation with a human touch); the origin of lean.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-u",
+    "href": "glossary.html#glossary-u",
+    "title": "Appendix B — Glossary",
+    "section": "U",
+    "text": "U\n\nUtilization Operations\nThe fraction of available time a resource is actually busy, calculated as time used divided by time available.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-v",
+    "href": "glossary.html#glossary-v",
+    "title": "Appendix B — Glossary",
+    "section": "V",
+    "text": "V\n\nValue stream map Lean\nA diagram of all the material and information flows required to deliver a product, used to identify waste and plan improvements.\n\n\nVariation Quality\nThe natural differences among outputs of a process; reducing unwanted variation is a central goal of quality engineering.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "glossary.html#glossary-w",
+    "href": "glossary.html#glossary-w",
+    "title": "Appendix B — Glossary",
+    "section": "W",
+    "text": "W\n\nWork breakdown structure Project Management\nA hierarchical decomposition of a project into smaller, manageable deliverables and tasks.\n\n\nWork-in-process Operations\nInventory that has started production but is not yet finished; often abbreviated WIP.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Gilbreth, F. B., & Gilbreth, L. M. (1917). Applied motion\nstudy. Sturgis & Walton.\n\n\nHafner, K., & Mayer, J. (2023). This efficiency-obsessed\npsychologist (and mother of 11) revolutionized kitchen design. In\nScientific American. https://www.scientificamerican.com/article/this-efficiency-obsessed-psychologist-and-mother-of-11-revolutionized-kitchen-design/\n\n\nInstitute of Industrial and Systems Engineers. (n.d.). Industrial\nand systems engineering body of knowledge. Retrieved October 12,\n2026, from https://www.iise.org/Details.aspx?id=43631\n\n\nKanigel, R. (1997). The one best way: Frederick winslow taylor and\nthe enigma of efficiency. Viking.\n\n\nNational Museum of American History. (n.d.). On time: Saving time:\nLillian gilbreth’s kitchen. Retrieved October 12, 2026, from https://www.americanhistory.si.edu/ontime/saving/kitchen.html\n\n\nNorth Dakota State University. (n.d.). Industrial and manufacturing\nsystems engineering (IMSE) course descriptions. NDSU\nUndergraduate Catalog. Retrieved October 12, 2026, from https://catalog.ndsu.edu/course-catalog/descriptions/imse/\n\n\nSalvendy, G. (Ed.). (2001). Handbook of industrial engineering:\nTechnology and operations management (3rd ed.). Wiley.\n\n\nTaylor, F. W. (1911). The principles of scientific management.\nHarper & Brothers.\n\n\nU.S. Bureau of Labor Statistics. (2026). Industrial engineers.\nOccupational Outlook Handbook. https://www.bls.gov/ooh/architecture-and-engineering/industrial-engineers.htm",
+    "crumbs": [
+      "Appendices",
+      "References"
+    ]
+  }
+]
