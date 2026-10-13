@@ -21,9 +21,8 @@ book:
   cover-image: images/cover.jpg
   cover-image-alt: "Illustration of a connected factory, warehouse, and hospital linked by data flows"
   favicon: images/cover.jpg
-  # Set these once the GitHub repository exists to enable "Edit this page" / "Report an issue".
-  # repo-url: https://github.com/YOUR-GITHUB-USERNAME/imse111-book
-  # repo-actions: [edit, issue]
+  repo-url: https://github.com/harunpirim/imse111-book
+  repo-actions: [edit, issue]
   search: true
   page-navigation: true
   reader-mode: true
@@ -69,7 +68,7 @@ book:
 
 # Colab links are built from this repository. Notebooks live in notebooks/.
 colab:
-  github-repo: "YOUR-GITHUB-USERNAME/imse111-book"
+  github-repo: "harunpirim/imse111-book"
   branch: "main"
   notebooks-dir: "notebooks"
 
