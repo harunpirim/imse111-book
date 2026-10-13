@@ -10,11 +10,11 @@ project:
     - notebooks/*.ipynb
 
 book:
-  title: "Introduction to Industrial & Manufacturing Engineering"
-  subtitle: "Lecture Notes for IMSE 111 · North Dakota State University"
+  title: "Introduction to Industrial and Manufacturing Systems Engineering"
+  subtitle: "Lecture Notes for IMSE 111 · 3 Credits · North Dakota State University"
   author:
-    - name: "Instructor Name"
-      affiliation: "Industrial & Manufacturing Engineering, North Dakota State University"
+    - name: "Harun Pirim"
+      affiliation: "Industrial and Manufacturing Systems Engineering, North Dakota State University"
   date: last-modified
   date-format: "MMMM D, YYYY"
   output-file: "imse111-lecture-notes"

@@ -1,12 +1,12 @@
 # Welcome {.unnumbered}
 
-These are the lecture notes for **IMSE 111: Introduction to Industrial and Manufacturing Engineering** at North Dakota State University. They're written for first-year students who want to find out what [industrial engineering]{.term} and [manufacturing engineering]{.term} are, where IMEs work, and how they think. They also teach the software skills engineers use every day.
+These are the lecture notes for **IMSE 111: Introduction to Industrial and Manufacturing Systems Engineering** (3 credits) at North Dakota State University. They're written for first-year students who want to find out what [industrial engineering]{.term} and [manufacturing engineering]{.term} are, where IMEs work, and how they think. They also teach the software skills engineers use every day.
 
 The notes are released one week at a time and will grow into a full textbook.
 
 ## About the course
 
-The NDSU catalog describes the course as:
+The NDSU catalog lists the course as **IMSE 111. Introduction to Industrial and Manufacturing Systems Engineering. 3 Credits.** The description reads:
 
 > Overview of industrial engineering and manufacturing engineering professional careers and work environments. Basic skill acquisition using computer software tools to solve engineering problems, prepare reports, plan projects, deliver professional presentations, and manage data. [@ndsu-catalog-ime]
 

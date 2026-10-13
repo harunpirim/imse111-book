@@ -1,4 +1,4 @@
-# IMSE 111 glossary of industrial & manufacturing engineering terms.
+# IMSE 111 glossary of industrial and manufacturing systems engineering terms.
 #
 # Each entry key is a lowercase, hyphenated slug. In any chapter, write
 #   [Takt time]{.term}                      (key is inferred from the text)

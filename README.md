@@ -1,4 +1,4 @@
-# IMSE 111 Lecture Notes · Introduction to Industrial & Manufacturing Engineering
+# IMSE 111 Lecture Notes · Introduction to Industrial and Manufacturing Systems Engineering
 
 A [Quarto](https://quarto.org) book of weekly lecture notes for IMSE 111 at North Dakota State University. The same source produces:
 

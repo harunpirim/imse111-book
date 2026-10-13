@@ -1,7 +1,7 @@
 ---
 title: "Book Proposal"
-subtitle: "Introduction to Industrial & Manufacturing Engineering: Systems, Careers, and the Engineer's Toolkit"
-author: "Instructor Name, North Dakota State University"
+subtitle: "Introduction to Industrial and Manufacturing Systems Engineering"
+author: "Harun Pirim, North Dakota State University"
 date: last-modified
 format:
   html:
@@ -22,7 +22,7 @@ quarto render proposal/book-proposal.qmd --to docx
 
 ## 1. Overview
 
-*Introduction to Industrial & Manufacturing Engineering* is a first-year textbook for the introductory course in industrial and manufacturing engineering (IME). It does two jobs that existing books usually split between separate texts. It introduces the **profession**: what IMEs do, where they work, and how they think about systems of people, materials, information, equipment, and energy [@iise-definition]. It also builds the **toolkit** that first-year students need: spreadsheets and Python for data, project planning, technical writing, and presentations.
+*Introduction to Industrial and Manufacturing Systems Engineering* is a first-year textbook for IMSE 111 (3 credits) at North Dakota State University. It does two jobs that existing books usually split between separate texts. It introduces the **profession**: what IMEs do, where they work, and how they think about systems of people, materials, information, equipment, and energy [@iise-definition]. It also builds the **toolkit** that first-year students need: spreadsheets and Python for data, project planning, technical writing, and presentations.
 
 The book grows out of the IMSE 111 lecture notes at North Dakota State University, which follow the NDSU catalog description of the course [@ndsu-catalog-ime]. It is written and published with Quarto, so the same source produces an accessible website and a print-ready manuscript.
 

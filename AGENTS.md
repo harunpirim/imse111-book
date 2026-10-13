@@ -1,6 +1,6 @@
 # Agent instructions: turning a weekly draft into lecture notes
 
-This repository is a Quarto book of IMSE 111 (Introduction to Industrial & Manufacturing Engineering, NDSU) lecture notes. The notes will also become a textbook proposal. The instructor supplies one draft per week in `drafts/`. Your job is to turn that draft into a polished chapter.
+This repository is a Quarto book of IMSE 111 (Introduction to Industrial and Manufacturing Systems Engineering, NDSU) lecture notes. The notes will also become a textbook proposal. The instructor supplies one draft per week in `drafts/`. Your job is to turn that draft into a polished chapter.
 
 ## Inputs and outputs
 
