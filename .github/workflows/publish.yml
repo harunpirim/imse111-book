@@ -19,7 +19,7 @@ jobs:
           node-version: 22
 
       - name: Test game logic
-        run: node --test games/
+        run: node --test "games/**/*.test.js"
 
       - uses: quarto-dev/quarto-actions/setup@v2
 

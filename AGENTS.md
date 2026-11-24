@@ -33,4 +33,4 @@ This repository is a Quarto book of IMSE 111 (Introduction to Industrial and Man
 - Cross-references: `@sec-week-03`, `@fig-...`, `@tbl-...`.
 - Colab URLs come from `colab:` in `_quarto.yml`. Don't hard-code GitHub URLs.
 - Don't edit `lua/` or `styles/` unless the task is about the build or design.
-- Learning games live in `games/<slug>/` as static HTML, CSS, and JavaScript with no build step. Follow `games/README.md` to add one, run `node --test games/` before committing, and list the game in `games.qmd`.
+- Learning games live in `games/<slug>/` as static HTML, CSS, and JavaScript with no build step. Follow `games/README.md` to add one, run `node --test "games/**/*.test.js"` before committing, and list the game in `games.qmd`.

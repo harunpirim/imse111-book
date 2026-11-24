@@ -30,7 +30,7 @@ Games use ES modules, which browsers only load over `http://`, not from a
 `file://` path. From the repository root:
 
 ```bash
-node --test games/                 # unit tests for all pure logic (Node 20+)
+node --test "games/**/*.test.js"   # unit tests for all pure logic (Node 22+)
 quarto preview                     # whole book, games included
 # or just the games:
 python3 -m http.server 8000        # then open http://localhost:8000/games/line-balancer/
@@ -118,7 +118,7 @@ The shell also:
 3. **Put all rules in `logic.js`**: instance generation, scoring, benchmark or
    optimal solutions, rule checks. No DOM access there. Write
    `logic.test.js` with `node:test` and `node:assert/strict`, then run
-   `node --test games/`.
+   `node --test "games/**/*.test.js"`.
 4. **Build the play area in `main.js`** with `h()` / `svg()` from `shared/dom.js`.
    Draw randomness only from `ctx.rng`, so rounds can be replayed by seed.
 5. **Style in `style.css`** using the tokens from `shared/game.css`

@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 22
       - name: Unit tests for game logic
-        run: node --test games/
+        run: node --test "games/**/*.test.js"
 
   render:
     runs-on: ubuntu-latest
