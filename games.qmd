@@ -35,6 +35,36 @@ A bottle-filling line streams live samples. At a hidden moment the process jumps
 
 [Play Spot the Shift](games/spot-the-shift/index.html){.btn .btn-primary} [Read Week 7](chapters/week-07.qmd){.btn .btn-outline-secondary}
 
+## Lift Lab
+
+[Ergonomics]{.pill} [10 to 15 min]{.pill} [Week 6](chapters/week-06.qmd)
+
+**You will learn to** read the six multipliers of the [NIOSH lifting equation]{.term}, find the one that hurts a lifting job most, and bring the job's [Lifting Index]{.term} to 1 or less for the least money.
+
+A worker lifts boxes from a pallet to a shelf, and the job is unsafe. Bring the load closer, change the heights, remove the twist, slow the pace, or improve the grip, and watch the [recommended weight limit]{.term} change as you go. Every change costs money. The results screen shows the cheapest redesign that works. The equation and its tables come from the NIOSH applications manual [@waters1994niosh].
+
+[Play Lift Lab](games/lift-lab/index.html){.btn .btn-primary} [Read Week 6](chapters/week-06.qmd){.btn .btn-outline-secondary}
+
+## Build for Uptime
+
+[Reliability]{.pill} [10 to 15 min]{.pill} [Week 4](chapters/week-04.qmd)
+
+**You will learn to** compute the [reliability]{.term} of parts in a [series system]{.term} and a [parallel system]{.term}, decide where [redundancy]{.term} is worth its cost, and check a calculation against simulated missions.
+
+Build an irrigation system from a shelf of parts. Each part has a reliability and a price, and you can add spares in parallel. Stay within budget, then run 200 missions (a [Monte Carlo simulation]{.term}) and count the failures. The results screen shows the most reliable design the budget allows.
+
+[Play Build for Uptime](games/build-for-uptime/index.html){.btn .btn-primary} [Read Week 4](chapters/week-04.qmd){.btn .btn-outline-secondary}
+
+## Order Chain
+
+[Supply chain]{.pill} [10 to 20 min]{.pill} [Week 9](chapters/week-09.qmd)
+
+**You will learn to** explain how delays and local information turn a small change in demand into large order swings, called the [bullwhip effect]{.term}, and how sharing demand information reduces them.
+
+Run one stage of a four-stage bicycle helmet [supply chain]{.term}: retailer, wholesaler, distributor, or factory. Place one order a week while automated players run the other three stages, or pass one device around a team of four. Afterwards you'll see everyone's orders, [inventory]{.term}, and every [backorder]{.term}, next to the same weeks played with a [base-stock policy]{.term} and shared demand information.
+
+[Play Order Chain](games/order-chain/index.html){.btn .btn-primary} [Read Week 9](chapters/week-09.qmd){.btn .btn-outline-secondary}
+
 ## About the games
 
 - **Private.** The games run entirely in your browser. Nothing you do is sent anywhere. Your best score per level is kept only on your device.

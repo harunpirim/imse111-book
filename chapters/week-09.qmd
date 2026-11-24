@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 9 draft. The topi
 - [Inventory]{.term} and [lead time]{.term}
 - [Facility layout]{.term}
 
+## Play: Order Chain
+
+::: {.callout-tip title="Play: Order Chain (10 to 20 min)" icon="false"}
+Run one stage of a helmet [supply chain]{.term} and place one order a week. Customer demand changes only once, yet orders swing more and more at each stage up the chain. This is the [bullwhip effect]{.term}. Afterwards, compare your team with the same weeks played with shared demand information.
+
+{{< game order-chain title="Order Chain" height="820" >}}
+:::
+
 ::: keyterms
 :::

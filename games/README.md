@@ -19,6 +19,9 @@ games/
     index.html  main.js  style.css  logic.js  logic.test.js
   spot-the-shift/         Game 2 (Week 7): control charts and run rules
     index.html  main.js  style.css  logic.js  logic.test.js
+  lift-lab/               Week 6: NIOSH lifting equation and the Lifting Index
+  build-for-uptime/       Week 4: series and parallel reliability, redundancy
+  order-chain/            Week 9: four-stage supply chain and the bullwhip effect
 ```
 
 Quarto copies everything under `games/` to the site (`resources: games/**` in

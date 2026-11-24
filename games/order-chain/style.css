@@ -1,0 +1,448 @@
+/* Order Chain: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.oc-brief {
+  margin: 0;
+}
+.oc-h {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.oc-h-gap {
+  margin-top: 16px;
+}
+
+/* One color, one dash pattern, and one letter per stage. */
+.oc-s0 {
+  --sc: var(--c1);
+  --dash: none;
+}
+.oc-s1 {
+  --sc: var(--c2);
+  --dash: 7 3;
+}
+.oc-s2 {
+  --sc: var(--c3);
+  --dash: 2 3;
+}
+.oc-s3 {
+  --sc: var(--c4);
+  --dash: 9 3 2 3;
+}
+
+/* ---- Chain strip ---- */
+.oc-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 10px;
+}
+.oc-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border: 1.5px solid var(--border);
+  border-bottom: 4px solid var(--sc, var(--muted));
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.oc-node-cust {
+  border-style: dashed;
+  border-bottom-style: dashed;
+}
+.oc-node.is-you {
+  border-color: var(--ink);
+  border-bottom-color: var(--sc);
+  outline: 2px solid var(--ink);
+}
+.oc-node-badge,
+.oc-seat-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--sc, var(--muted));
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.oc-node-you,
+.oc-node-hidden {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.oc-node-you {
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--bg);
+}
+.oc-node-hidden {
+  color: var(--muted);
+  font-weight: 400;
+}
+.oc-link {
+  display: inline-grid;
+  font-size: 0.62rem;
+  line-height: 1.15;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ---- Setup ---- */
+.oc-setup-lead {
+  margin: 0 0 10px;
+}
+.oc-seats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+.oc-seat {
+  font: inherit;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 2px 8px;
+  align-items: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  text-align: left;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-left: 7px solid var(--sc, var(--muted));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+.oc-seat:hover {
+  background: var(--surface-2);
+  border-color: var(--accent);
+  border-left-color: var(--sc, var(--muted));
+}
+.oc-seat-name {
+  font-weight: 700;
+}
+.oc-seat-does {
+  grid-column: 1 / -1;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---- Pass-and-play cover ---- */
+.oc-cover {
+  text-align: center;
+  padding: 36px 16px;
+}
+.oc-cover-week {
+  margin: 0;
+  color: var(--muted);
+}
+.oc-cover-title {
+  font-family: var(--font-head);
+  color: var(--accent);
+  margin: 4px 0 8px;
+}
+.oc-cover-go {
+  margin-top: 8px;
+}
+
+/* ---- A turn ---- */
+.oc-weekbar {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.oc-week {
+  margin: 0;
+  font-size: 1.15rem;
+}
+.oc-you {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--sc);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+.oc-progress {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.oc-progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.oc-metrics {
+  margin-bottom: 10px;
+}
+.oc-metric-hint {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+.oc-order-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.oc-order-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.oc-qty {
+  font: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  width: 5.2ch;
+  min-height: 48px;
+  padding: 2px 6px;
+  text-align: center;
+  color: var(--ink);
+  background: var(--surface);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+}
+.oc-step {
+  min-width: 48px;
+  min-height: 48px;
+  font-size: 1.3rem;
+  padding: 0;
+}
+.oc-place {
+  margin-left: 6px;
+}
+.oc-quicks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.oc-quick {
+  font: inherit;
+  font-size: 0.85rem;
+  min-height: 36px;
+  padding: 4px 10px;
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.oc-quick:hover {
+  border-color: var(--accent);
+}
+.oc-help {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.oc-own {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .oc-own {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .oc-place {
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+}
+.oc-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.oc-table th,
+.oc-table td {
+  padding: 3px 8px;
+  font-size: 0.88rem;
+}
+.oc-table thead th {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+.oc-bad {
+  color: var(--bad);
+  font-weight: 700;
+}
+
+/* ---- Charts ---- */
+.oc-chart {
+  margin: 0;
+  min-width: 0;
+}
+.oc-chart > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.oc-chart-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.oc-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.oc-zero {
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.oc-tick {
+  font-size: 9.5px;
+  fill: var(--muted);
+  text-anchor: middle;
+  font-variant-numeric: tabular-nums;
+}
+.oc-tick-y {
+  text-anchor: end;
+}
+.oc-axis-name {
+  text-anchor: end;
+}
+.oc-line {
+  fill: none;
+  stroke: var(--sc, var(--ink));
+  stroke-width: 2;
+  stroke-dasharray: var(--dash, none);
+  stroke-linejoin: round;
+}
+.oc-demand {
+  --sc: var(--ink);
+  --dash: none;
+  stroke-width: 5;
+  opacity: 0.28;
+}
+.oc-end {
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--sc, var(--ink));
+}
+.oc-own-in {
+  --sc: var(--c8);
+  --dash: 2 3;
+}
+.oc-own-out {
+  --sc: var(--c1);
+  --dash: none;
+}
+.oc-own-net {
+  --sc: var(--c6);
+  --dash: 7 3;
+}
+.oc-figs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+  margin: 10px 0;
+}
+@media (max-width: 640px) {
+  .oc-figs {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.oc-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 4px 14px;
+  margin: 0;
+  font-size: 0.85rem;
+}
+.oc-legend-own {
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+.oc-key {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.oc-key-line {
+  flex: none;
+  width: 26px;
+  height: 8px;
+}
+.oc-bw-name {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.oc-bw-bar {
+  fill: var(--sc);
+  stroke: var(--ink);
+  stroke-width: 0.6;
+}
+.oc-bw-shared {
+  fill: var(--surface-2);
+  stroke-dasharray: 3 2;
+}
+.oc-bw-val {
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.oc-bw-val-s {
+  font-weight: 400;
+  fill: var(--muted);
+}
+.oc-bw-one {
+  stroke: var(--ink);
+  stroke-dasharray: 2 2;
+}
+.oc-mini caption {
+  caption-side: top;
+}
+.oc-deb-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.oc-deb-list li {
+  margin: 5px 0;
+}
+
+@media (max-width: 480px) {
+  .oc-link-goods,
+  .oc-link-orders,
+  .oc-node-hidden {
+    display: none;
+  }
+  .oc-link::after {
+    content: "⇄";
+    font-size: 0.9rem;
+  }
+  .oc-node {
+    padding: 3px 6px;
+    font-size: 0.8rem;
+  }
+  .oc-table th,
+  .oc-table td {
+    padding: 3px 4px;
+    font-size: 0.82rem;
+  }
+  .oc-table thead th {
+    font-size: 0.7rem;
+  }
+}

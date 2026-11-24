@@ -367,3 +367,58 @@ descriptive-statistics:
   term: Descriptive statistics
   category: Data
   definition: Numerical and graphical summaries of data, such as the mean, median, standard deviation, and histogram.
+
+niosh-lifting-equation:
+  term: NIOSH lifting equation
+  category: Human Factors
+  definition: A formula from the U.S. National Institute for Occupational Safety and Health that gives the recommended weight limit for a two-handed lift from six features of the task, such as reach, height, twisting, and how often the lift is repeated.
+
+recommended-weight-limit:
+  term: Recommended weight limit
+  category: Human Factors
+  definition: The load that nearly all healthy workers could lift in a given task over a work shift without an increased risk of lifting-related low back pain, as computed by the NIOSH lifting equation.
+
+lifting-index:
+  term: Lifting Index
+  category: Human Factors
+  definition: The load actually lifted divided by the recommended weight limit. A value above 1 signals an increased risk for some workers.
+
+reliability:
+  term: Reliability
+  category: Quality
+  definition: The probability that a component or system does its job without failure for a stated time under stated conditions.
+
+redundancy:
+  term: Redundancy
+  category: Quality
+  definition: Extra components, beyond the minimum needed, that let a system keep working when one of them fails.
+
+series-system:
+  term: Series system
+  category: Quality
+  definition: A system that works only if every one of its components works, so its reliability is the product of the component reliabilities.
+
+parallel-system:
+  term: Parallel system
+  category: Quality
+  definition: A system or stage that works if at least one of its components works, so it fails only when all of them fail.
+
+monte-carlo-simulation:
+  term: Monte Carlo simulation
+  category: Modeling
+  definition: A simulation that uses random numbers to imitate chance events many times and then counts how often each outcome occurs.
+
+bullwhip-effect:
+  term: Bullwhip effect
+  category: Supply Chain
+  definition: The tendency of order swings to grow larger at each stage up a supply chain, from retailer to factory, even when customer demand changes only a little.
+
+backorder:
+  term: Backorder
+  category: Supply Chain
+  definition: A customer order that cannot be filled from stock right away and is kept to be filled later.
+
+base-stock-policy:
+  term: Base-stock policy
+  category: Supply Chain
+  definition: An ordering rule that, each period, orders enough to bring stock on hand plus stock on order back up to a fixed target level. Also called an order-up-to policy.
