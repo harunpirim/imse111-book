@@ -1,0 +1,9 @@
+{
+  "name": "imse111-games",
+  "private": true,
+  "description": "Browser learning games for the IMSE 111 book. No dependencies and no build step.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

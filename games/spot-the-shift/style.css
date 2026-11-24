@@ -1,0 +1,223 @@
+/* Spot the Shift: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.ss-brief {
+  margin: 0;
+}
+.ss-lim {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.ss-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.ss-stop {
+  min-width: 200px;
+}
+.ss-speed {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.ss-speed-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-right: 2px;
+}
+.ss-speed-btn {
+  font: inherit;
+  font-size: 0.85rem;
+  min-height: 36px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.ss-speed-btn[aria-checked="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .ss-stop {
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+  .ss-speed {
+    margin-left: 0;
+  }
+}
+.ss-feedback:empty {
+  display: none;
+}
+.ss-fa {
+  margin: 0 0 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--warn);
+  background: var(--warn-bg);
+}
+.ss-chart-card {
+  padding: 8px;
+  margin: 8px 0;
+}
+.ss-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+}
+.ss-readout {
+  margin: 4px 4px 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.ss-counters {
+  margin-top: 4px;
+}
+
+/* chart parts */
+.ss-zone {
+  fill: var(--accent);
+}
+.ss-zone-3 {
+  fill-opacity: 0.05;
+}
+.ss-zone-2 {
+  fill-opacity: 0.05;
+}
+.ss-zone-1 {
+  fill-opacity: 0.06;
+}
+.ss-after {
+  fill: var(--warn);
+  fill-opacity: 0.1;
+}
+.ss-limit {
+  stroke: var(--bad);
+  stroke-width: 1.6;
+}
+.ss-center {
+  stroke: var(--accent);
+  stroke-width: 1.4;
+}
+.ss-sigma {
+  stroke: var(--muted);
+  stroke-width: 0.8;
+  stroke-dasharray: 2 3;
+}
+.ss-axis {
+  stroke: var(--muted);
+  stroke-width: 0.8;
+}
+.ss-divider {
+  stroke: var(--muted);
+  stroke-dasharray: 4 3;
+}
+.ss-axis-label,
+.ss-axis-num,
+.ss-small,
+.ss-panel-label {
+  font-size: 11px;
+  fill: var(--muted);
+}
+.ss-axis-num {
+  text-anchor: end;
+}
+.ss-panel-label {
+  font-weight: 700;
+  fill: var(--ink);
+}
+.ss-line {
+  fill: none;
+  stroke-width: 1.4;
+}
+.ss-line.is-live {
+  stroke: var(--c1);
+}
+.ss-line.is-setup {
+  stroke: var(--muted);
+  stroke-opacity: 0.6;
+}
+.ss-pt.is-live {
+  fill: var(--c1);
+}
+.ss-pt.is-setup {
+  fill: var(--surface);
+  stroke: var(--muted);
+}
+.ss-pt.is-out {
+  fill: var(--bad);
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+.ss-onset {
+  stroke: var(--warn);
+  stroke-width: 2;
+  stroke-dasharray: 6 3;
+}
+.ss-onset-label {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--warn);
+}
+.ss-stop-mark {
+  fill: var(--ink);
+}
+.ss-stop-mark.is-fa {
+  fill: var(--warn);
+}
+.ss-stop-mark.is-hit {
+  fill: var(--good);
+}
+.ss-stop-line {
+  stroke: var(--ink);
+  stroke-width: 1;
+  stroke-dasharray: 1 3;
+}
+.ss-stop-label {
+  font-size: 10px;
+  text-anchor: middle;
+  fill: var(--ink);
+}
+.ss-strip-line {
+  stroke: var(--border);
+}
+.ss-fire.is-fa {
+  fill: var(--warn);
+}
+.ss-fire.is-hit {
+  fill: var(--c1);
+}
+.ss-fire.is-first {
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.ss-legend {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 4px;
+}
+.ss-key-fa {
+  color: var(--warn);
+}
+.ss-key-hit {
+  color: var(--c1);
+}
+.ss-rules td {
+  white-space: nowrap;
+}
+.ss-rule-text {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
