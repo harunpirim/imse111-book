@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 13 draft. The top
 - [Gantt charts]{.term} and the [critical path]{.term}
 - Teams, roles, and communication
 
+## Play: Crash the Project
+
+::: {.callout-tip title="Play: Crash the Project (10 to 15 min)" icon="false"}
+Every day a project runs costs money. Find the [critical path]{.term}, then pay to shorten the right activities. Shorten an activity that has [slack]{.term} and you waste the money. Shorten the cheapest critical one and you save. Afterwards, see the whole [time-cost trade-off]{.term} and the schedule with the lowest total cost. The game practices [crashing]{.term} a project against its [indirect cost]{.term}.
+
+{{< game crash-the-project title="Crash the Project" height="900" >}}
+:::
+
 ::: keyterms
 :::

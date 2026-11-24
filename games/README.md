@@ -19,6 +19,9 @@ games/
     index.html  main.js  style.css  logic.js  logic.test.js
   spot-the-shift/         Game 2 (Week 7): control charts and run rules
     index.html  main.js  style.css  logic.js  logic.test.js
+  invest-or-wait/         Week 15: engineering economics (NPV vs. payback, MARR)
+  crash-the-project/      Week 13: critical path, crashing, time-cost trade-off
+  pay-for-info/           Week 10: expected value and the value of information
 ```
 
 Quarto copies everything under `games/` to the site (`resources: games/**` in

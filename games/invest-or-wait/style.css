@@ -1,0 +1,400 @@
+/* Invest or Wait: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.iw-metrics {
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+}
+.iw-prompt {
+  margin: 4px 0 10px;
+}
+
+/* ---- Project cards ---- */
+.iw-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.iw-cards.is-single {
+  grid-template-columns: minmax(0, 460px);
+}
+.iw-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px 12px;
+  box-shadow: var(--shadow);
+  min-width: 0;
+}
+.iw-card.is-picked {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+}
+.iw-name {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.iw-id {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.6em;
+  height: 1.6em;
+  padding: 0 4px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.iw-badge {
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--good);
+  white-space: nowrap;
+}
+.iw-wait {
+  flex-direction: row;
+  align-items: center;
+  align-self: start;
+  gap: 10px;
+  cursor: pointer;
+  border-style: dashed;
+  min-height: 64px;
+}
+.iw-wait input,
+.iw-choice input {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  accent-color: var(--accent);
+}
+
+/* ---- Cash flow diagram ---- */
+.iw-flow-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+.iw-flow-axis {
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+.iw-flow {
+  stroke-width: 2.4;
+  fill: none;
+}
+.iw-flow.is-cost,
+.iw-flow-head.is-cost {
+  stroke: var(--c6);
+  fill: var(--c6);
+}
+.iw-flow.is-save,
+.iw-flow-head.is-save {
+  stroke: var(--c3);
+  fill: var(--c3);
+}
+.iw-flow.is-maybe,
+.iw-flow.is-maybe-head {
+  stroke: var(--c3);
+  stroke-width: 1.6;
+  stroke-dasharray: 3 2.5;
+}
+.iw-flow.is-maybe-head {
+  stroke-dasharray: none;
+}
+.iw-flow.is-salvage {
+  stroke: var(--c1);
+  stroke-dasharray: 3 2.5;
+}
+.iw-flow-dot {
+  fill: var(--c1);
+}
+.iw-flow-year {
+  font-size: 9.5px;
+  fill: var(--muted);
+}
+.iw-flow-label {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.iw-flow-label.is-muted {
+  font-weight: 400;
+  fill: var(--muted);
+}
+
+/* ---- Facts, tools, reveals ---- */
+.iw-facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  font-size: 0.92rem;
+}
+.iw-facts div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted var(--border);
+}
+.iw-facts dt {
+  color: var(--muted);
+  white-space: nowrap;
+}
+.iw-facts dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.iw-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.iw-tool {
+  font: inherit;
+  font-size: 0.9rem;
+  flex: 1 1 0;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--surface-2);
+  color: var(--ink);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.iw-tool:hover {
+  border-color: var(--accent);
+}
+.iw-tool-name {
+  font-weight: 700;
+}
+.iw-tool-cost {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.iw-tool[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.55;
+}
+.iw-tool.is-used {
+  opacity: 1;
+  border-style: dashed;
+  background: transparent;
+}
+.iw-reveals {
+  margin: 0;
+  padding: 6px 10px 6px 26px;
+  border-radius: 8px;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn);
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+.iw-yesno {
+  border: 0;
+  padding: 0;
+  margin: auto 0 0;
+  display: flex;
+  gap: 8px;
+}
+.iw-yesno .iw-choice {
+  flex: 1 1 0;
+}
+.iw-choice {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  font-weight: 700;
+  cursor: pointer;
+}
+.iw-choice.is-on {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+/* ---- Footer and discount table ---- */
+.iw-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 14px 0 4px;
+}
+.iw-foot-note {
+  color: var(--muted);
+}
+.iw-factors {
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0 12px;
+}
+.iw-factors summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--accent);
+}
+.iw-factors p {
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.iw-factor-table th,
+.iw-factor-table td {
+  text-align: center;
+  padding: 3px 8px;
+}
+.iw-factor-table th[scope="row"] {
+  text-align: center;
+}
+
+/* ---- Results chart ---- */
+.iw-chart-card {
+  margin: 12px 0;
+}
+.iw-chart + .iw-chart {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.iw-chart-title {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.iw-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.iw-bar-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+}
+.iw-bar-name {
+  font-weight: 600;
+  margin-right: 4px;
+}
+.iw-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  white-space: nowrap;
+}
+.iw-tag.is-you {
+  border-color: var(--c1);
+  color: var(--c1);
+}
+.iw-tag.is-best {
+  border-color: var(--good);
+  background: var(--good-bg);
+  color: var(--good);
+}
+.iw-tag.is-payback {
+  border-color: var(--warn);
+  border-style: dashed;
+  color: var(--warn);
+}
+.iw-bar-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.iw-bar-track {
+  position: relative;
+  flex: 1 1 auto;
+  height: 16px;
+  background: var(--surface-2);
+  border-radius: 4px;
+}
+.iw-bar-zero {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--ink);
+}
+.iw-bar {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 3px;
+}
+.iw-bar.is-pos {
+  background: var(--c3);
+}
+.iw-bar.is-neg {
+  background: repeating-linear-gradient(135deg, var(--c6) 0 4px, transparent 4px 7px);
+  outline: 1.5px solid var(--c6);
+  outline-offset: -1.5px;
+}
+.iw-bar-value {
+  flex: none;
+  min-width: 5.2em;
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.iw-bar-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.iw-chart-note {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.g-debrief .g-formula {
+  white-space: normal;
+}
+
+@media (max-width: 480px) {
+  .iw-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .iw-foot .g-btn {
+    flex: 1 1 100%;
+  }
+}

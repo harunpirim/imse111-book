@@ -35,6 +35,36 @@ A bottle-filling line streams live samples. At a hidden moment the process jumps
 
 [Play Spot the Shift](games/spot-the-shift/index.html){.btn .btn-primary} [Read Week 7](chapters/week-07.qmd){.btn .btn-outline-secondary}
 
+## Invest or Wait
+
+[Engineering economics]{.pill} [10 to 15 min]{.pill} [Week 15](chapters/week-15.qmd)
+
+**You will learn to** read a [cash flow diagram]{.term}, judge a project by its [net present value]{.term} at the [MARR]{.term key="minimum-attractive-rate-of-return"}, and explain why the [payback period]{.term} alone can pick the wrong project.
+
+You manage a plant's capital budget. Each decision shows projects with a first cost, yearly savings, salvage value, and life. Your analyst can calculate payback, NPV, or [IRR]{.term key="internal-rate-of-return"}, but only for a few projects, so you have to think about the [time value of money]{.term} yourself. Five levels: accept or reject, pick one of three, a tight budget, unequal lives, and a risky bet. Afterwards you'll see the best NPV choice next to what payback-only thinking would have picked.
+
+[Play Invest or Wait](games/invest-or-wait/index.html){.btn .btn-primary} [Read Week 15](chapters/week-15.qmd){.btn .btn-outline-secondary}
+
+## Crash the Project
+
+[Project management]{.pill} [10 to 15 min]{.pill} [Week 13](chapters/week-13.qmd)
+
+**You will learn to** find the [critical path]{.term} and [slack]{.term} of a project network, shorten the project by [crashing]{.term} the cheapest critical activities first, and stop when another day costs more than it saves.
+
+A project network shows each activity's normal time, crash limit, and cost per day. Every project day costs overhead, and later levels add a deadline with a late penalty. Buy days off activities and watch the critical path move. Afterwards you'll see the lowest-cost schedule and the whole [time-cost trade-off]{.term} curve.
+
+[Play Crash the Project](games/crash-the-project/index.html){.btn .btn-primary} [Read Week 13](chapters/week-13.qmd){.btn .btn-outline-secondary}
+
+## Pay for Info?
+
+[Decision analysis]{.pill} [10 to 15 min]{.pill} [Week 10](chapters/week-10.qmd)
+
+**You will learn to** choose the action with the highest [expected monetary value]{.term} from a [payoff table]{.term}, work out what a forecast is worth before you buy it, and explain why the [expected value of perfect information]{.term} is the ceiling.
+
+A company must choose how big to go before it knows demand. A forecast is for sale: name the most you would pay, see the seller's price, then plan what to do for each thing the forecast might say. The game replays your decision 2,000 times and compares your long-run average with the best policy. One level's forecast is worth nothing at all, and the debrief shows why with [Bayes' rule]{.term key="bayes-rule"}.
+
+[Play Pay for Info?](games/pay-for-info/index.html){.btn .btn-primary} [Read Week 10](chapters/week-10.qmd){.btn .btn-outline-secondary}
+
 ## About the games
 
 - **Private.** The games run entirely in your browser. Nothing you do is sent anywhere. Your best score per level is kept only on your device.

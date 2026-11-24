@@ -367,3 +367,73 @@ descriptive-statistics:
   term: Descriptive statistics
   category: Data
   definition: Numerical and graphical summaries of data, such as the mean, median, standard deviation, and histogram.
+
+time-value-of-money:
+  term: Time value of money
+  category: Profession
+  definition: The idea that a dollar today is worth more than a dollar received later, because today's dollar can be invested and earn interest.
+
+cash-flow-diagram:
+  term: Cash flow diagram
+  category: Profession
+  definition: A timeline of a project's money, with arrows pointing down for costs and up for savings or revenues at the end of each period.
+
+net-present-value:
+  term: Net present value
+  category: Profession
+  definition: The sum of all of a project's cash flows after each one is discounted back to today at a chosen interest rate; a positive value means the project beats leaving the money invested at that rate. Often abbreviated NPV.
+
+payback-period:
+  term: Payback period
+  category: Profession
+  definition: The time a project needs for its savings to add up to its first cost. It is easy to compute but ignores the time value of money and every cash flow after payback.
+
+minimum-attractive-rate-of-return:
+  term: Minimum attractive rate of return
+  category: Profession
+  definition: The lowest interest rate a company will accept on an investment, usually what its money could earn elsewhere at similar risk. Often abbreviated MARR.
+
+internal-rate-of-return:
+  term: Internal rate of return
+  category: Profession
+  definition: The interest rate at which a project's net present value equals zero. Often abbreviated IRR.
+
+slack:
+  term: Slack
+  category: Project Management
+  definition: The time an activity can be delayed without delaying the whole project; activities on the critical path have zero slack. Also called float.
+
+crashing:
+  term: Crashing
+  category: Project Management
+  definition: Shortening a project by paying extra, for example for overtime or more equipment, to speed up activities on the critical path.
+
+time-cost-trade-off:
+  term: Time-cost trade-off
+  category: Project Management
+  definition: The balance between the extra direct cost of finishing activities sooner and the indirect cost saved by a shorter project.
+
+indirect-cost:
+  term: Indirect cost
+  category: Project Management
+  definition: A cost that depends on how long a project or operation runs rather than on any single activity, such as supervision, rent, and equipment rental.
+
+payoff-table:
+  term: Payoff table
+  category: Modeling
+  definition: A table that lists the result, usually profit or cost, of every possible action under every possible state of nature.
+
+expected-monetary-value:
+  term: Expected monetary value
+  category: Modeling
+  definition: The probability-weighted average payoff of an action, which is what it would earn on average if the same decision were repeated many times. Often abbreviated EMV.
+
+expected-value-of-perfect-information:
+  term: Expected value of perfect information
+  category: Modeling
+  definition: The gain in expected payoff from knowing the state of nature before deciding. It is the most any forecast can be worth and is often abbreviated EVPI.
+
+bayes-rule:
+  term: Bayes' rule
+  category: Modeling
+  definition: A formula for updating the probability of an event after new evidence arrives, using how likely that evidence is when the event is true and when it is false.
