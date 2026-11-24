@@ -35,6 +35,36 @@ A bottle-filling line streams live samples. At a hidden moment the process jumps
 
 [Play Spot the Shift](games/spot-the-shift/index.html){.btn .btn-primary} [Read Week 7](chapters/week-07.qmd){.btn .btn-outline-secondary}
 
+## Route Rush
+
+[Routing]{.pill} [10 to 15 min]{.pill} [Week 9](chapters/week-09.qmd)
+
+**You will learn to** build delivery routes that visit every customer and respect truck capacity, and explain why a quick [heuristic]{.term} can miss the shortest route.
+
+Tap customers in the order a truck should visit them. Early levels are a single round trip (the [traveling salesperson problem]{.term}). Later levels add more trucks and a load limit (the [vehicle routing problem]{.term}). When you submit, you'll see your plan next to the nearest-neighbor rule, a 2-opt improvement of it, and the shortest possible plan.
+
+[Play Route Rush](games/route-rush/index.html){.btn .btn-primary} [Read Week 9](chapters/week-09.qmd){.btn .btn-outline-secondary}
+
+## Corner Hunter
+
+[Linear programming]{.pill} [10 to 15 min]{.pill} [Week 10](chapters/week-10.qmd)
+
+**You will learn to** read the [feasible region]{.term} of a two-product [linear programming]{.term} problem, tell a [binding constraint]{.term} from one with [slack]{.term}, and explain why the best plan sits at a [corner point]{.term}.
+
+A small shop makes two products with limited hours and material. Drag a point around the graph to choose a production plan and watch the profit and every [constraint]{.term} update live. Turn on the iso-profit line to see which way "better" lies. Afterwards you'll see the profit at every corner, including a level where two corners tie.
+
+[Play Corner Hunter](games/corner-hunter/index.html){.btn .btn-primary} [Read Week 10](chapters/week-10.qmd){.btn .btn-outline-secondary}
+
+## Open Counters
+
+[Queueing]{.pill} [10 to 20 min]{.pill} [Week 10](chapters/week-10.qmd)
+
+**You will learn to** relate [utilization]{.term} to waiting time, explain why waits grow so fast near 100% utilization, and balance the cost of staff against the cost of waiting.
+
+Decide how many counters a service desk opens each hour, then watch a simulated day as customers arrive, line up, and get served. Afterwards your plan is compared with the staffing that [queueing theory]{.term} recommends from the [arrival rate]{.term} and [service rate]{.term}, both on the day you watched and averaged over 200 simulated days.
+
+[Play Open Counters](games/open-counters/index.html){.btn .btn-primary} [Read Week 10](chapters/week-10.qmd){.btn .btn-outline-secondary}
+
 ## About the games
 
 - **Private.** The games run entirely in your browser. Nothing you do is sent anywhere. Your best score per level is kept only on your device.
