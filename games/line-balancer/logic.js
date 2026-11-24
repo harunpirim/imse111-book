@@ -19,6 +19,21 @@ const TAKT_CHOICES = (() => {
   return out;
 })();
 
+/**
+ * The model's simplifying assumptions, shown on the intro and results screens.
+ * Numbers come from the constants above so the text can't drift from the code.
+ */
+export const ASSUMPTIONS = [
+  "One product on one straight, serial line, with one worker per station.",
+  "Task times are known, fixed, and the same every cycle. There is no variation, learning, or fatigue.",
+  "A station's time is the sum of its task times. There is no walking, transfer, or setup time between tasks.",
+  "Tasks can't be split across stations, and no task is longer than the takt time.",
+  "Apart from takt time, precedence is the only restriction. Any task can go in any station (no zoning, tooling, or skill limits).",
+  "No parallel or duplicated stations, no buffers, no breakdowns, no defects.",
+  `Demand is known and constant. Available time is one ${SHIFT_SECONDS / 60}-minute shift (breaks already removed). Takt time = available time ÷ demand.`,
+  "Goal: meet takt with the fewest stations. Efficiency = total work content ÷ (stations used × takt). Cycle time is the busiest station's load.",
+];
+
 export const LEVELS = [
   { id: "1", name: "Birdhouse kit", blurb: "6 tasks · warm-up", n: 6, target: 3, tmin: 8, tmax: 30 },
   { id: "2", name: "Desk lamp", blurb: "8 tasks", n: 8, target: 3, tmin: 6, tmax: 34 },

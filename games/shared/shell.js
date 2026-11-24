@@ -12,6 +12,7 @@
 
 import { h, replace } from "./dom.js";
 import { createRng, randomSeed } from "./rng.js";
+import { validateGameConfig } from "./config.js";
 
 const STORE_PREFIX = "imse111-games:";
 
@@ -79,6 +80,21 @@ function reportHeight(slug, root) {
   send();
 }
 
+/**
+ * The "Assumptions" box. On the intro it is open, so students read it before
+ * playing; on the results screen it is a closed reminder next to the debrief.
+ */
+function assumptionsBox(list, { open, compact = false }) {
+  if (!Array.isArray(list) || !list.length) return null;
+  return h(
+    "details",
+    { class: `g-assumptions${compact ? " g-assumptions-compact" : ""}`, open: open || null },
+    h("summary", {}, h("h2", { class: "g-assumptions-title" }, compact ? "Assumptions behind this result" : "Assumptions")),
+    h("p", { class: "g-assumptions-lead" }, compact ? "Your result holds only under the game's simplifications:" : "This game simplifies the real world. It assumes:"),
+    h("ul", { class: "g-assumptions-list" }, list.map((t) => h("li", { html: t }))),
+  );
+}
+
 function stars(n, max = 3, label = true) {
   const filled = "★".repeat(n) + "☆".repeat(Math.max(0, max - n));
   return h("span", { class: "g-stars", "aria-label": label ? `${n} of ${max} stars` : null, role: label ? "img" : null }, filled);
@@ -93,12 +109,14 @@ function stars(n, max = 3, label = true) {
  * @param {string} cfg.objective  learning objective ("You will ...")
  * @param {string} [cfg.minutes]  e.g. "10-15"
  * @param {string[]} cfg.howToPlay  short bullet points (plain text or HTML)
+ * @param {string[]} cfg.assumptions  the model's simplifying assumptions, one short point each (HTML allowed)
  * @param {{href:string,label:string}} cfg.chapter  link back to the book
  * @param {{id:string,name:string,blurb?:string}[]} cfg.levels
  * @param {(ctx:object)=>void} cfg.start  builds one round inside ctx.stage
  * @param {string} [cfg.levelNoun]  "Level" (default), "Round", "Scenario", ...
  */
 export function createGame(cfg) {
+  validateGameConfig(cfg).forEach((p) => console.warn(`[${cfg.slug || "game"}] ${p}`));
   const root = document.getElementById("app") || document.body.appendChild(h("div", { id: "app" }));
   root.classList.add("g-app");
   const Noun = cfg.levelNoun || "Level";
@@ -200,6 +218,7 @@ export function createGame(cfg) {
         ),
         h("h2", { class: "g-h2" }, "How to play"),
         h("ul", { class: "g-howto" }, cfg.howToPlay.map((t) => h("li", { html: t }))),
+        assumptionsBox(cfg.assumptions, { open: true }),
         h("h2", { class: "g-h2", id: "g-levels-label" }, `Choose a ${noun}`),
         h("div", { class: "g-levels", role: "radiogroup", "aria-labelledby": "g-levels-label" }, levelButtons),
         h(
@@ -309,6 +328,7 @@ export function createGame(cfg) {
         (r.debrief || []).map((d) =>
           h("section", { class: "g-debrief" }, h("h2", { class: "g-h2" }, d.title), typeof d.body === "string" ? h("div", { html: d.body }) : d.body),
         ),
+        assumptionsBox(cfg.assumptions, { open: false, compact: true }),
         chapterLink,
         h(
           "div",

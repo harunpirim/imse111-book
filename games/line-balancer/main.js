@@ -3,6 +3,7 @@
 import { createGame } from "../shared/shell.js";
 import { h, svg, replace, fmt, pct } from "../shared/dom.js";
 import {
+  ASSUMPTIONS,
   LEVELS,
   generateInstance,
   evaluate,
@@ -40,6 +41,7 @@ createGame({
     "Drag a task onto a station, or tap a task and then tap a station. With a keyboard, press <kbd>Enter</kbd> on a task, then a number key <kbd>1</kbd>-<kbd>9</kbd> for the station (<kbd>0</kbd> sends it back).",
     "A task can't sit in an earlier station than any task it depends on. Use as few stations as you can, then press <b>Submit line</b>.",
   ],
+  assumptions: ASSUMPTIONS,
   levels: LEVELS,
   start,
 });

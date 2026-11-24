@@ -2,6 +2,12 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createRng } from "../shared/rng.js";
 import {
+  ASSUMPTIONS,
+  ONSET_MIN,
+  ONSET_MAX,
+  SETUP,
+  D3,
+  N,
   ROUNDS,
   HORIZON,
   COST,
@@ -131,4 +137,20 @@ test("stars compare the player with the rule book", () => {
   assert.equal(starsFor({ cost: 800, detectIndex: 33 }, bench), 2);
   assert.equal(starsFor({ cost: 2000, detectIndex: 50 }, bench), 1);
   assert.equal(starsFor({ cost: 4000, detectIndex: null }, bench), 0);
+});
+
+test("assumptions text matches the model", () => {
+  const text = ASSUMPTIONS.join(" ");
+  assert.ok(text.includes(`subgroups ${ONSET_MIN + 1} and ${ONSET_MAX + 1} of ${HORIZON}`));
+  assert.ok(text.includes(`$${COST.falseAlarm}`) && text.includes(`$${COST.scrapPerSubgroup}`) && text.includes("$1,000"));
+  assert.ok(text.includes(`${SETUP} setup subgroups`) && text.includes(`D3 = ${D3}`) && text.includes(`n = ${N}`));
+  // The change start is drawn from the stated range and reaches both ends.
+  const seen = new Set();
+  for (let s = 0; s < 3000; s++) seen.add(generateRound(createRng(`onset:${s}`), ROUNDS[0]).onset);
+  assert.equal(Math.min(...seen), ONSET_MIN);
+  assert.equal(Math.max(...seen), ONSET_MAX);
+  // A change never caught costs scrap to the end of the round plus the missed penalty.
+  assert.equal(scoreStops([], 20).cost, (HORIZON - 20) * COST.scrapPerSubgroup + COST.missed);
+  // The R chart has no lower limit: a zero range never fires the R chart rule.
+  assert.ok(!rulesAt([{ xbar: 0, r: 0 }], 0, L).includes("RR"));
 });

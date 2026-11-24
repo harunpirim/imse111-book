@@ -3,6 +3,7 @@
 import { createGame } from "../shared/shell.js";
 import { h, svg, replace, fmt, pct } from "../shared/dom.js";
 import {
+  ASSUMPTIONS,
   ROUNDS,
   RULES,
   ALL_RULE_IDS,
@@ -46,6 +47,7 @@ createGame({
     "Afterwards, see which control-chart rules would have fired, and when. <kbd>P</kbd> pauses.",
   ],
   levelNoun: "Round",
+  assumptions: ASSUMPTIONS,
   levels: ROUNDS,
   start,
 });

@@ -11,6 +11,26 @@ export const SIGMA = 2; // mL, in-control standard deviation of one bottle
 export const SETUP = 20; // subgroups used to set the limits
 export const HORIZON = 60; // live subgroups per round
 export const COST = { falseAlarm: 300, scrapPerSubgroup: 100, missed: 1000 };
+// The change starts at a live subgroup index drawn uniformly from this range
+// (0-based, so students see subgroup ONSET_MIN + 1 to ONSET_MAX + 1).
+export const ONSET_MIN = 12;
+export const ONSET_MAX = 40;
+
+const usd = (x) => `$${x.toLocaleString("en-US")}`;
+
+/**
+ * The model's simplifying assumptions, shown on the intro and results screens.
+ * Numbers come from the constants in this file so the text can't drift from the code.
+ */
+export const ASSUMPTIONS = [
+  `A filler with a ${TARGET} mL target. Individual fills are normal and independent, with σ = ${SIGMA} mL when the process is in control.`,
+  `Each subgroup is ${N} consecutive bottles.`,
+  `Control limits come from ${SETUP} setup subgroups assumed to be in control, and are not recomputed during the round. The R chart has no lower limit (D3 = ${D3} for n = ${N}).`,
+  `Each round has exactly one hidden change, starting between subgroups ${ONSET_MIN + 1} and ${ONSET_MAX + 1} of ${HORIZON}. It stays until found: a step in the mean, a rise in spread, or a steady trend.`,
+  `Stopping the line means an instant, perfect investigation. A false alarm costs ${usd(COST.falseAlarm)} and production restarts.`,
+  `Every subgroup made after the change, up to and including the one where you stop, costs ${usd(COST.scrapPerSubgroup)} in scrap. A change never caught costs scrap to the end of the round plus ${usd(COST.missed)}.`,
+  "The benchmark operators don't know when the change happened. One follows the rule book (Western Electric rules 1-4, 6 points steadily rising or falling, and the R chart limit); the other uses Rule 1 only.",
+];
 
 export const ROUNDS = [
   { id: "1", name: "Big jump", blurb: "warm-up", type: "mean", size: 1.6 },
@@ -82,7 +102,7 @@ export function generateRound(rng, roundSpec) {
   const spec = resolveSpec(rng, roundSpec);
   const setup = Array.from({ length: SETUP }, () => subgroup(rng, TARGET, SIGMA));
   const limits = computeLimits(setup);
-  const onset = rng.int(12, 40);
+  const onset = rng.int(ONSET_MIN, ONSET_MAX);
   const live = Array.from({ length: HORIZON }, (_, i) => {
     const p = processAt(i, onset, spec.type, spec.size);
     return subgroup(rng, p.mean, p.sd);

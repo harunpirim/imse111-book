@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createRng } from "../shared/rng.js";
 import {
+  ASSUMPTIONS,
   LEVELS,
   SHIFT_SECONDS,
   generateInstance,
@@ -116,4 +117,17 @@ test("stars reward reaching the optimum", () => {
   assert.equal(starsFor(4, 4), 3);
   assert.equal(starsFor(5, 4), 2);
   assert.equal(starsFor(7, 4), 1);
+});
+
+test("assumptions text matches the model", () => {
+  assert.ok(ASSUMPTIONS.some((a) => a.includes(`${SHIFT_SECONDS / 60}-minute shift`)));
+  // "No task is longer than the takt time" and "takt = available time / demand" hold on every level.
+  for (const spec of LEVELS) {
+    for (let s = 1; s <= 25; s++) {
+      const inst = generateInstance(createRng(`assume-${spec.id}-${s}`), spec);
+      assert.ok(Math.max(...inst.tasks.map((t) => t.time)) <= inst.takt);
+      assert.equal(inst.availableSec, SHIFT_SECONDS);
+      assert.equal(inst.availableSec / inst.demand, inst.takt);
+    }
+  }
 });

@@ -11,9 +11,10 @@ games/
   shared/
     shell.js              createGame(): intro, play, results, debrief, replay
     game.css              theme tokens (light + dark), buttons, cards, tables
+    config.js             validateGameConfig(): checks a createGame() config
     dom.js                h() / svg() element helpers, fmt(), pct()
     rng.js                seeded random numbers (createRng, randomSeed)
-    rng.test.js
+    config.test.js  rng.test.js
   line-balancer/          Game 1 (Week 5): assembly line balancing
     index.html  main.js  style.css  logic.js  logic.test.js
   spot-the-shift/         Game 2 (Week 7): control charts and run rules
@@ -62,10 +63,35 @@ createGame({
   levelNoun: "Level",                  // optional: "Round", "Scenario", ...
   chapter: { href: "../../chapters/week-05.html", label: "Week 5 · ..." },
   howToPlay: ["Short bullet (HTML allowed)", "..."],
+  assumptions: ["One product on one serial line.", "..."],  // required, see below
   levels: [{ id: "1", name: "Warm-up", blurb: "6 tasks" }, ...],  // any extra fields are yours
   start(ctx) { /* build one round */ },
 });
 ```
+
+### Assumptions (required)
+
+Every game is a simplified model, and students should know what was simplified
+before they play. `assumptions` is an array of short strings (inline HTML
+allowed, like `howToPlay`), one simplification each. The shell shows them:
+
+- on the **intro screen**, after "How to play" and before the level picker, in an
+  open, collapsible box headed "Assumptions" with the lead line "This game
+  simplifies the real world. It assumes:";
+- on the **results screen**, as a closed "Assumptions behind this result" box
+  just above the chapter link, so students can connect the result to the model.
+
+Keep each point to one or two short sentences. Export the list from `logic.js`
+(as `ASSUMPTIONS`) and build any numbers in it from the model's constants, for
+example `` `one ${SHIFT_SECONDS / 60}-minute shift` ``, so the text can't drift
+from the code. Add a test that checks the text against the model. Both games do
+this.
+
+The shell runs `validateGameConfig()` from `shared/config.js` on start and
+prints a console warning for anything missing, including an empty
+`assumptions` list.
+
+### The round context
 
 `start(ctx)` is called every time a round begins. `ctx` gives you:
 
@@ -119,15 +145,18 @@ The shell also:
    optimal solutions, rule checks. No DOM access there. Write
    `logic.test.js` with `node:test` and `node:assert/strict`, then run
    `node --test "games/**/*.test.js"`.
-4. **Build the play area in `main.js`** with `h()` / `svg()` from `shared/dom.js`.
+4. **List the assumptions** as `ASSUMPTIONS` in `logic.js` and pass them to
+   `createGame({ assumptions })`. Build numbers from the model's constants and
+   test the text against the model.
+5. **Build the play area in `main.js`** with `h()` / `svg()` from `shared/dom.js`.
    Draw randomness only from `ctx.rng`, so rounds can be replayed by seed.
-5. **Style in `style.css`** using the tokens from `shared/game.css`
+6. **Style in `style.css`** using the tokens from `shared/game.css`
    (`--accent`, `--surface`, `--good`, `--warn`, `--bad`, `--c1`...`--c8`).
    Never put a color in a game file directly, so dark mode keeps working.
-6. **Check accessibility**: everything reachable by keyboard, a visible focus
+7. **Check accessibility**: everything reachable by keyboard, a visible focus
    ring, an `aria-label` on every SVG chart, and color never the only signal
    (add a label, number, icon, or pattern). Try it at 375 px wide, and in dark mode.
-7. **Publish in the book**: add a section to `games.qmd`, and embed the game in
+8. **Publish in the book**: add a section to `games.qmd`, and embed the game in
    the most relevant chapter with a "Play" callout:
 
    ```markdown
@@ -139,7 +168,7 @@ The shell also:
    ```
 
    Any new IE vocabulary in those pages goes in `data/glossary.yml`.
-8. **Render** with `quarto render --to html`, open `_book/games/<slug>/` and the
+9. **Render** with `quarto render --to html`, open `_book/games/<slug>/` and the
    chapter, and play every level once.
 
 ## Per-game spec template
@@ -158,6 +187,12 @@ Copy this into the pull request or an issue before writing code.
 
 **Levels.** What changes from level to level (size, tightness, noise), and how
 each round is generated from the seed.
+
+**Assumptions (required).** Every simplification the model makes, one short
+point each, as students will read them on the intro screen. Cover the system
+(what is and isn't modeled), the data (known, random, distribution), the rules
+of play, costs or scores, and the benchmark. Check each against the code before
+merging.
 
 **Scoring.** The player's metric(s), and how stars (0 to 3) are awarded.
 
