@@ -26,5 +26,21 @@ These lecture notes will be written from the instructor's Week 10 draft. The top
 - Discrete-event [simulation]{.term}
 - [Digital twins]{.term}
 
+## Play: Corner Hunter
+
+::: {.callout-tip title="Play: Corner Hunter (10 to 15 min)" icon="false"}
+A small shop makes two products with limited hours and material. Which mix earns the most? Drag a production plan around the graph and watch the profit and each [constraint]{.term} respond. The game previews [linear programming]{.term}. You'll meet the [feasible region]{.term}, see the difference between a [binding constraint]{.term} and one with [slack]{.term}, and find out why the best plan is always at a [corner point]{.term}.
+
+{{< game corner-hunter title="Corner Hunter" height="820" >}}
+:::
+
+## Play: Open Counters
+
+::: {.callout-tip title="Play: Open Counters (10 to 20 min)" icon="false"}
+How many counters should a help desk open each hour? Too few and the line explodes. Too many and you pay staff to wait for customers. Set a staffing plan, watch a [simulation]{.term} of one day, and compare your cost with the plan that [queueing theory]{.term} recommends. Watch what happens to waiting time as [utilization]{.term} gets close to 100%.
+
+{{< game open-counters title="Open Counters" height="980" >}}
+:::
+
 ::: keyterms
 :::

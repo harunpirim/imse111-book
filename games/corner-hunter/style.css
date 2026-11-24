@@ -1,0 +1,333 @@
+/* Corner Hunter: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.ch-brief {
+  margin: 0;
+}
+.ch-inline {
+  display: inline-block;
+  padding: 1px 6px;
+}
+.ch-grid {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+  gap: 10px;
+}
+@media (max-width: 760px) {
+  .ch-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.ch-h {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 12px 0 6px;
+}
+
+/* Graph */
+.ch-plot-card {
+  padding: 8px;
+}
+.ch-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ch-svg.is-interactive {
+  touch-action: none;
+  cursor: crosshair;
+}
+.ch-gridline {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.ch-axis {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.ch-tick {
+  font-size: 11px;
+  fill: var(--muted);
+}
+.ch-tick-x {
+  text-anchor: middle;
+}
+.ch-tick-y {
+  text-anchor: end;
+}
+.ch-axis-title {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.ch-axis-title-x {
+  text-anchor: end;
+}
+.ch-region {
+  fill: var(--accent);
+  fill-opacity: 0.16;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.ch-line {
+  stroke-width: 2;
+  fill: none;
+}
+.ch-line-tag circle {
+  fill: var(--surface);
+  stroke-width: 2;
+}
+.ch-line-tag text {
+  font-size: 11px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: var(--ink);
+}
+.ch-iso {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+  stroke-dasharray: 2 5;
+  stroke-linecap: round;
+}
+.ch-iso-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.ch-handle {
+  cursor: grab;
+}
+.ch-handle:focus {
+  outline: none;
+}
+.ch-handle-hit {
+  fill: transparent;
+}
+.ch-handle:focus-visible .ch-handle-hit {
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.ch-handle-dot {
+  fill: var(--gold);
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+.ch-handle.is-bad .ch-handle-dot {
+  fill: var(--surface);
+  stroke: var(--bad);
+  stroke-dasharray: 4 2.5;
+}
+.ch-handle-cross {
+  stroke: var(--gold-ink);
+  stroke-width: 1.8;
+  fill: none;
+}
+.ch-handle.is-bad .ch-handle-cross {
+  stroke: var(--bad);
+}
+.ch-you-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.ch-corner {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.ch-corner.is-best {
+  fill: var(--good);
+  stroke: var(--ink);
+}
+.ch-corner-label {
+  font-size: 11.5px;
+  fill: var(--ink);
+  font-variant-numeric: tabular-nums;
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.ch-corner-label.is-best {
+  font-weight: 700;
+  font-size: 13px;
+}
+.ch-hint {
+  margin: 4px 4px 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Side panel */
+.ch-plan {
+  display: grid;
+  gap: 6px;
+}
+.ch-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ch-var {
+  font-family: var(--mono);
+  font-weight: 700;
+  min-width: 2.2em;
+}
+.ch-input {
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  width: 5.2em;
+  min-height: 40px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+}
+.ch-metrics {
+  margin-top: 10px;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+}
+.ch-metric-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.ch-cons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.ch-con {
+  --k: var(--c1);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  border-left: 6px solid var(--k);
+  background: var(--surface);
+}
+.ch-con[data-state="binding"] {
+  border-color: var(--warn);
+  border-left-color: var(--k);
+  background: var(--warn-bg);
+}
+.ch-con[data-state="violated"] {
+  border-color: var(--bad);
+  border-left-color: var(--k);
+  background: var(--bad-bg);
+}
+.ch-tag {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--k);
+  background: var(--surface);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.ch-con-main {
+  flex: 1;
+  min-width: 0;
+}
+.ch-con-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 10px;
+}
+.ch-con-formula {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.ch-bar {
+  height: 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.ch-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--k);
+}
+.ch-con[data-state="violated"] .ch-bar-fill {
+  background: repeating-linear-gradient(45deg, var(--bad) 0 6px, var(--bad-bg) 6px 10px);
+}
+.ch-con-foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 10px;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+.ch-con-state {
+  font-weight: 700;
+}
+.ch-con[data-state="violated"] .ch-con-state {
+  color: var(--bad);
+}
+.ch-actions {
+  margin-top: 12px;
+}
+.ch-problems {
+  font-size: 0.9rem;
+  color: var(--bad);
+  margin: 6px 0 0;
+}
+.ch-problems.is-ok {
+  color: var(--good);
+  font-weight: 600;
+}
+
+/* Results */
+.ch-figure {
+  margin: 8px auto;
+  max-width: 600px;
+  padding: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.ch-figure figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 4px 4px 0;
+}
+.ch-corner-table td,
+.ch-corner-table th {
+  white-space: nowrap;
+}
+.ch-corner-note {
+  font-weight: 700;
+}
+.ch-limit-list {
+  margin: 4px 0;
+  padding-left: 1.2rem;
+}
+.ch-limit-list li {
+  margin: 4px 0;
+}

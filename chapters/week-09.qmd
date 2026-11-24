@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 9 draft. The topi
 - [Inventory]{.term} and [lead time]{.term}
 - [Facility layout]{.term}
 
+## Play: Route Rush
+
+::: {.callout-tip title="Play: Route Rush (10 to 15 min)" icon="false"}
+In what order should a truck visit its customers? Build delivery routes from a depot and keep the total distance as short as you can. Later levels add more trucks and a load limit. Then compare your plan with a simple [heuristic]{.term} and with the shortest possible plan. The game previews two classic [logistics]{.term} problems, the [traveling salesperson problem]{.term} and the [vehicle routing problem]{.term}.
+
+{{< game route-rush title="Route Rush" height="900" >}}
+:::
+
 ::: keyterms
 :::

@@ -263,10 +263,65 @@ linear-programming:
   category: Modeling
   definition: An optimization method in which the objective and all constraints are linear functions of the decision variables.
 
+decision-variable:
+  term: Decision variable
+  category: Modeling
+  definition: A quantity the decision maker controls in a model, such as how many units of each product to make.
+
+objective-function:
+  term: Objective function
+  category: Modeling
+  definition: The quantity an optimization model maximizes or minimizes, such as profit or cost, written in terms of the decision variables.
+
+constraint:
+  term: Constraint
+  category: Modeling
+  definition: A limit that a solution must respect, such as available machine hours, material, or demand.
+
+feasible-region:
+  term: Feasible region
+  category: Modeling
+  definition: The set of all solutions that satisfy every constraint of an optimization problem.
+
+corner-point:
+  term: Corner point
+  category: Modeling
+  definition: A point where boundary lines of the feasible region meet. In linear programming an optimal solution can always be found at a corner point.
+
+binding-constraint:
+  term: Binding constraint
+  category: Modeling
+  definition: A constraint that is satisfied exactly at the chosen solution, so its resource is completely used.
+
+slack:
+  term: Slack
+  category: Modeling
+  definition: The amount of a resource left unused by a solution. A constraint with slack is not binding.
+
+heuristic:
+  term: Heuristic
+  category: Modeling
+  definition: A rule of thumb that finds a good answer quickly without checking every possibility, with no guarantee that the answer is the best one.
+
 simulation:
   term: Simulation
   category: Modeling
   definition: Imitating the operation of a real system over time with a computer model to evaluate designs and policies without disrupting the real system.
+
+queueing-theory:
+  term: Queueing theory
+  category: Modeling
+  definition: The mathematical study of waiting lines, used to predict waiting times and line lengths from arrival rates and service rates.
+
+arrival-rate:
+  term: Arrival rate
+  category: Operations
+  definition: The average number of customers or jobs that arrive per unit of time.
+
+service-rate:
+  term: Service rate
+  category: Operations
+  definition: The average number of customers or jobs one server can finish per unit of time while it is busy.
 
 digital-twin:
   term: Digital twin
@@ -282,6 +337,16 @@ logistics:
   term: Logistics
   category: Supply Chain
   definition: Planning and controlling the movement and storage of goods, services, and information from origin to consumption.
+
+traveling-salesperson-problem:
+  term: Traveling salesperson problem
+  category: Supply Chain
+  definition: The problem of finding the shortest round trip that visits every location exactly once and returns to the start.
+
+vehicle-routing-problem:
+  term: Vehicle routing problem
+  category: Supply Chain
+  definition: The problem of planning routes for a fleet of vehicles from a depot so that every customer is served, no vehicle is overloaded, and the total distance or cost is as low as possible.
 
 inventory:
   term: Inventory

@@ -1,0 +1,264 @@
+/* Route Rush: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.rr-brief {
+  margin: 0;
+}
+.rr-metrics {
+  margin-bottom: 10px;
+}
+.rr-grid {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 10px;
+}
+@media (max-width: 720px) {
+  .rr-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.rr-h {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+/* Map */
+.rr-map-card {
+  padding: 8px;
+}
+.rr-svg {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--font);
+  touch-action: manipulation;
+}
+.rr-gridline {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.rr-leg {
+  fill: none;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.rr-leg-home {
+  stroke-width: 2;
+  opacity: 0.65;
+}
+.rr-depot rect {
+  fill: var(--ink);
+}
+.rr-depot-icon {
+  fill: var(--bg);
+}
+.rr-node {
+  cursor: default;
+}
+.rr-node[role="button"] {
+  cursor: pointer;
+}
+.rr-hit {
+  fill: transparent;
+}
+.rr-dot {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 2.5;
+}
+.rr-node.is-routed .rr-dot {
+  stroke-width: 4.5;
+  stroke-dasharray: none;
+}
+.rr-node[role="button"]:hover .rr-dot {
+  fill: var(--surface-2);
+}
+.rr-node:focus {
+  outline: none;
+}
+.rr-node:focus-visible .rr-hit {
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.rr-node-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-anchor: middle;
+  fill: var(--ink);
+  pointer-events: none;
+}
+.rr-badge circle {
+  fill: var(--ink);
+}
+.rr-badge text {
+  fill: var(--bg);
+  font-size: 10px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+.rr-demand rect {
+  fill: var(--gold);
+  stroke: var(--ink);
+  stroke-width: 0.8;
+}
+.rr-demand text {
+  fill: var(--gold-ink);
+  font-size: 10px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+.rr-readout {
+  margin: 6px 4px 0;
+  min-height: 1.5em;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+.rr-legend {
+  margin: 2px 4px 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Truck list */
+.rr-trucks {
+  display: grid;
+  gap: 6px;
+}
+.rr-truck {
+  --tk: var(--c1);
+  font: inherit;
+  text-align: left;
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  border-left: 6px solid var(--tk);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.rr-truck.is-active {
+  border-color: var(--accent);
+  border-left-color: var(--tk);
+  outline: 2px solid var(--accent);
+  background: var(--surface-2);
+}
+.rr-truck-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.rr-truck-name {
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.rr-active-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1px 6px;
+  border-radius: 99px;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.rr-truck-km {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.rr-truck-route {
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.rr-load {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rr-load-bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.rr-truck.is-active .rr-load-bar {
+  background: var(--surface);
+}
+.rr-load-fill {
+  display: block;
+  height: 100%;
+  background: var(--tk);
+}
+.rr-load-text {
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rr-swatch {
+  flex: none;
+}
+.rr-note {
+  margin: 8px 0 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background: var(--surface-2);
+}
+.rr-note.is-bad {
+  border: 1.5px solid var(--bad);
+  background: var(--bad-bg);
+  font-weight: 600;
+}
+.rr-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.rr-submit {
+  margin-top: 10px;
+}
+.rr-problems {
+  font-size: 0.9rem;
+  color: var(--bad);
+  margin: 6px 0 0;
+}
+.rr-problems.is-ok {
+  color: var(--good);
+  font-weight: 600;
+}
+
+/* Results */
+.rr-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin: 8px 0;
+}
+.rr-mini {
+  margin: 0;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.rr-mini figcaption {
+  font-size: 0.9rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}

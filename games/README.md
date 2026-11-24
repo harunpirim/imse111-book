@@ -19,6 +19,9 @@ games/
     index.html  main.js  style.css  logic.js  logic.test.js
   spot-the-shift/         Game 2 (Week 7): control charts and run rules
     index.html  main.js  style.css  logic.js  logic.test.js
+  route-rush/             Week 9: delivery routes, heuristics vs. the optimum
+  corner-hunter/          Week 10: two-product linear programming on a graph
+  open-counters/          Week 10: staffing a queue, Erlang C vs. simulation
 ```
 
 Quarto copies everything under `games/` to the site (`resources: games/**` in
