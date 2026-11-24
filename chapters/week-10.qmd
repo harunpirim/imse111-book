@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 10 draft. The top
 - Discrete-event [simulation]{.term}
 - [Digital twins]{.term}
 
+## Play: Pay for Info?
+
+::: {.callout-tip title="Play: Pay for Info? (10 to 15 min)" icon="false"}
+How much is a forecast worth? Read a [payoff table]{.term}, find the action with the best [expected monetary value]{.term}, and name the most you would pay for a market survey before you see its price. The game then replays your decision 2,000 times, a small [simulation]{.term}, so you can watch the long-run average settle. You'll use [Bayes' rule]{.term key="bayes-rule"} and meet the [expected value of perfect information]{.term}, the most any forecast can be worth.
+
+{{< game pay-for-info title="Pay for Info?" height="900" >}}
+:::
+
 ::: keyterms
 :::

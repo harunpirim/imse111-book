@@ -26,5 +26,8 @@ jobs:
         run: |
           test -f _book/games/line-balancer/index.html
           test -f _book/games/spot-the-shift/index.html
+          test -f _book/games/invest-or-wait/index.html
+          test -f _book/games/crash-the-project/index.html
+          test -f _book/games/pay-for-info/index.html
           test -f _book/games/shared/shell.js
           test -f _book/games.html

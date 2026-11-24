@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 15 draft. The top
 - [Industry 4.0]{.term}, the [Internet of Things]{.term}, and AI
 - [Engineering economics]{.term} for responsible decisions
 
+## Play: Invest or Wait
+
+::: {.callout-tip title="Play: Invest or Wait (10 to 15 min)" icon="false"}
+Should a plant spend money now to save money later? Read each project's [cash flow diagram]{.term}, then invest or wait. Your analyst can work out a [payback period]{.term} or a [net present value]{.term}, but there are never enough hours to check everything. Afterwards, compare your choices with the best value at the [MARR]{.term key="minimum-attractive-rate-of-return"} and see where payback alone goes wrong. The game previews [engineering economics]{.term} and the [time value of money]{.term}.
+
+{{< game invest-or-wait title="Invest or Wait" height="900" >}}
+:::
+
 ::: keyterms
 :::

@@ -1,0 +1,274 @@
+/* Pay for Info?: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.pi-story {
+  margin: 0;
+}
+.pi-section {
+  margin-top: 10px;
+}
+.pi-h2 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pi-num {
+  display: inline-grid;
+  place-items: center;
+  width: 1.7em;
+  height: 1.7em;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.pi-note {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+/* ---- Tables ---- */
+.pi-payoff th,
+.pi-payoff td,
+.pi-counts th,
+.pi-counts td {
+  text-align: center;
+}
+.pi-payoff th[scope="row"],
+.pi-counts th[scope="row"] {
+  text-align: left;
+}
+.pi-payoff td {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.pi-prob {
+  font-weight: 400;
+  white-space: nowrap;
+}
+.is-loss {
+  color: var(--bad);
+}
+.pi-payoff tr.is-best th,
+.pi-payoff tr.is-best td {
+  background: var(--good-bg);
+}
+.pi-tag {
+  margin-left: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: var(--good);
+}
+.pi-acc {
+  margin: 0 0 8px;
+  padding-left: 1.2rem;
+}
+.pi-counts caption {
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+.pi-total th,
+.pi-total td {
+  color: var(--muted);
+  border-bottom: 0;
+}
+
+/* ---- Bid ---- */
+.pi-bid p {
+  margin: 0 0 8px;
+}
+.pi-bid-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.pi-step {
+  width: 44px;
+  padding: 0;
+  font-size: 1.3rem;
+}
+.pi-bid-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 10px;
+  min-height: 44px;
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pi-bid-field input {
+  font: inherit;
+  width: 3.2em;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  text-align: right;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.pi-bid-field input::-webkit-outer-spin-button,
+.pi-bid-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.pi-bid-field input:focus-visible {
+  outline: none;
+}
+.pi-bid-field:focus-within {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.pi-bid-unit {
+  color: var(--muted);
+}
+.pi-outcome {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+}
+.pi-outcome p {
+  margin: 2px 0;
+}
+.pi-outcome.is-bought {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+.pi-outcome.is-passed {
+  border-color: var(--warn);
+  background: var(--warn-bg);
+}
+
+/* ---- Plan ---- */
+.pi-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.pi-fieldset legend {
+  padding: 0;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.pi-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pi-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 130px;
+  min-height: 44px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  font-weight: 600;
+  cursor: pointer;
+}
+.pi-option.is-on {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  background: var(--surface-2);
+}
+.pi-option input {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  accent-color: var(--accent);
+}
+
+/* ---- Results chart ---- */
+.pi-chart-card {
+  margin: 12px 0;
+}
+.pi-chart-title {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+}
+.pi-chart {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: var(--font);
+}
+.pi-grid {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.pi-axis {
+  font-size: 11px;
+  fill: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.pi-run {
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+}
+.pi-ref {
+  stroke-width: 1.4;
+  stroke-dasharray: 2 4;
+}
+.pi-run.is-s0,
+.pi-ref.is-s0 {
+  stroke: var(--c1);
+}
+.pi-run.is-s1,
+.pi-ref.is-s1 {
+  stroke: var(--c3);
+}
+.pi-run.is-s1 {
+  stroke-dasharray: 8 3;
+}
+.pi-run.is-s2,
+.pi-ref.is-s2 {
+  stroke: var(--c2);
+}
+.pi-run.is-s2 {
+  stroke-dasharray: 3 3;
+  stroke-width: 1.8;
+}
+.pi-label {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.pi-plays {
+  margin-top: 10px;
+}
+.pi-plays th,
+.pi-plays td {
+  text-align: left;
+}
+.pi-plays td:last-child,
+.pi-plays th:last-child {
+  text-align: right;
+}
+.g-debrief .g-formula {
+  white-space: normal;
+}
+
+@media (max-width: 480px) {
+  .pi-payoff td {
+    font-size: 1rem;
+  }
+  .pi-bid-row .g-btn-primary {
+    flex: 1 1 100%;
+  }
+  .pi-plan .g-btn-lg {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
