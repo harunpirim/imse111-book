@@ -79,6 +79,7 @@ That gives the book two threads. **The profession** covers what IMEs do, where t
 - Use the **sidebar** to move between weeks, and the **search** box (or press `/`) to find any topic.
 - Turn on **dark mode** or **reader mode** with the toggles at the top of the sidebar.
 - Open the **Colab** notebook in each chapter *before* class and run it alongside the reading.
+- Try the [Learning Games](games.qmd): short browser games that let you practice a decision and compare your choice with the best answer.
 - Read [How to Use This Book](how-to-use.qmd) for a one-page tour of every feature.
 
 ## Acknowledgments {.unnumbered}

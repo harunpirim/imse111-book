@@ -118,6 +118,26 @@ process-flowchart:
   category: Operations
   definition: A diagram that shows the sequence of steps, decisions, and flows in a process using standard symbols.
 
+line-balancing:
+  term: Line balancing
+  category: Operations
+  definition: Assigning the tasks of an assembly line to workstations so each station's work fits within the takt time and as few stations as possible are needed.
+
+workstation:
+  term: Workstation
+  category: Operations
+  definition: A place on a production line where one worker or machine performs an assigned group of tasks on each unit.
+
+precedence-diagram:
+  term: Precedence diagram
+  category: Operations
+  definition: A network of tasks drawn with arrows that show which tasks must be finished before others can start.
+
+balance-delay:
+  term: Balance delay
+  category: Operations
+  definition: The share of total station time on a line that is idle, equal to one minus the balance efficiency.
+
 takt-time:
   term: Takt time
   category: Lean
@@ -177,6 +197,31 @@ control-chart:
   term: Control chart
   category: Quality
   definition: A time-ordered plot of a process measurement with statistically calculated control limits used to distinguish common-cause from special-cause variation.
+
+control-limits:
+  term: Control limits
+  category: Quality
+  definition: The upper and lower lines on a control chart, usually three standard deviations from the center line, that mark the range of normal common-cause variation.
+
+western-electric-rules:
+  term: Western Electric rules
+  category: Quality
+  definition: A set of run rules for control charts that flag unusual patterns, such as one point beyond the control limits or eight points in a row on one side of the center line.
+
+type-i-error:
+  term: Type I error
+  category: Quality
+  definition: A false alarm, concluding that a process has changed when it has not.
+
+type-ii-error:
+  term: Type II error
+  category: Quality
+  definition: A missed signal, concluding that a process is unchanged when it has actually changed.
+
+average-run-length:
+  term: Average run length
+  category: Quality
+  definition: The expected number of samples plotted on a control chart before it signals, long when the process is in control and short after a real change.
 
 variation:
   term: Variation

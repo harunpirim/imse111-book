@@ -1,0 +1,45 @@
+---
+description: "Short browser games that let you practice industrial engineering decisions and compare your choices with the best answer."
+---
+
+# Learning Games {#sec-games}
+
+Some ideas only click when you try them yourself. Each game here takes 10 to 20 minutes and runs in your web browser on a laptop or phone. Every game follows the same pattern:
+
+1. **Read the goal.** The intro screen tells you what you'll learn.
+2. **Play a level.** Levels start small and get harder. Each round is randomly generated, so you can replay as often as you like.
+3. **Compare.** The results screen puts your answer next to a benchmark, such as a classic heuristic or the true optimum.
+4. **Debrief.** A short explanation connects what happened to the chapter, with the formulas worked out using your numbers.
+
+::: {.callout-tip title="Playing in class"}
+The results screen shows a **seed** number. Add `?level=2&seed=12345` to a game's address and everyone gets exactly the same round, so a whole class can compete on one puzzle and then compare answers.
+:::
+
+## Line Balancer
+
+[Production]{.pill} [10 to 15 min]{.pill} [Week 5](chapters/week-05.qmd)
+
+**You will learn to** compute [takt time]{.term} from demand, assign tasks to [workstations]{.term key="workstation"} without breaking the [precedence diagram]{.term}, and judge a line by its number of stations, [cycle time]{.term}, and [balance delay]{.term}.
+
+Drag tasks onto stations (or tap a task, then a station) until every station fits within the takt time. When you submit, you'll see your line next to the largest-candidate rule, the ranked positional weight method, and the exact optimum.
+
+[Play Line Balancer](games/line-balancer/index.html){.btn .btn-primary} [Read Week 5](chapters/week-05.qmd){.btn .btn-outline-secondary}
+
+## Spot the Shift
+
+[Quality control]{.pill} [10 to 15 min]{.pill} [Week 7](chapters/week-07.qmd)
+
+**You will learn to** read an X-bar and R [control chart]{.term}, use [control limits]{.term key="control-limits"} and the [Western Electric rules]{.term} to spot a process change, and weigh a [Type I error]{.term} (false alarm) against a [Type II error]{.term} (late detection).
+
+A bottle-filling line streams live samples. At a hidden moment the process jumps, spreads out, or drifts. Stop the line too early and you pay for a false alarm. Stop too late and you pay for scrap. Afterwards you'll see exactly when each rule would have fired and learn about [average run length]{.term}.
+
+[Play Spot the Shift](games/spot-the-shift/index.html){.btn .btn-primary} [Read Week 7](chapters/week-07.qmd){.btn .btn-outline-secondary}
+
+## About the games
+
+- **Private.** The games run entirely in your browser. Nothing you do is sent anywhere. Your best score per level is kept only on your device.
+- **Accessible.** Every game works with a keyboard, uses a color-blind-safe palette, and follows the book's light or dark mode.
+- **More on the way.** Games on routing, linear programming, safe lifting, engineering economics, project crashing, supply chains, reliability, queueing, and machine learning are planned for later chapters.
+
+::: keyterms
+:::

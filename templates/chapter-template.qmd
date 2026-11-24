@@ -13,6 +13,7 @@ image: ../images/weekXX/banner.jpg
     ::: {.activity title=""}                          in-class activity
     ::: {.career title="" source=""}                  career spotlight
     {{< colab weekXX_name.ipynb title="" >}}          Colab notebook card
+    {{< game slug title="" >}}                        embedded learning game (games/<slug>/)
     [@citekey]                                        citation from references.bib
 -->
 
@@ -60,6 +61,14 @@ flowchart LR
 ```
 
 {{< colab weekXX_notebook_name.ipynb title="Notebook title" >}}
+
+<!-- Optional: embed a learning game from games/ (see games/README.md). Keep an
+     existing "Play" section when you rewrite a chapter from a new draft. -->
+::: {.callout-tip title="Play: Game title (10 to 15 min)" icon="false"}
+One or two sentences on what students will practice.
+
+{{< game game-slug title="Game title" >}}
+:::
 
 ::: {.activity title="Activity name (10 minutes, pairs)"}
 1. Instruction.

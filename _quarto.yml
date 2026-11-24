@@ -8,6 +8,8 @@ project:
     - "!proposal/"
   resources:
     - notebooks/*.ipynb
+    # Browser learning games (static HTML/JS/CSS), copied as-is to the site.
+    - games/**
 
 book:
   title: "Introduction to Industrial and Manufacturing Systems Engineering"
@@ -21,6 +23,7 @@ book:
   cover-image: images/cover.jpg
   cover-image-alt: "Illustration of a connected factory, warehouse, and hospital linked by data flows"
   favicon: images/cover.jpg
+  site-url: https://harunpirim.github.io/imse111-book/
   repo-url: https://github.com/harunpirim/imse111-book
   repo-actions: [edit, issue]
   search: true
@@ -63,6 +66,7 @@ book:
 
   appendices:
     - notebooks.qmd
+    - games.qmd
     - glossary.qmd
     - references.qmd
 
@@ -81,6 +85,7 @@ filters:
   - lua/boxes.lua
 shortcodes:
   - lua/colab.lua
+  - lua/game.lua
 
 format:
   html:
