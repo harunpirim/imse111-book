@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 15 draft. The top
 - [Industry 4.0]{.term}, the [Internet of Things]{.term}, and AI
 - [Engineering economics]{.term} for responsible decisions
 
+## Play: Draw the Boundary
+
+::: {.callout-tip title="Play: Draw the Boundary (10 to 20 min)" icon="false"}
+How does a computer learn to predict which machines will fail? Draw the [decision boundary]{.term} yourself and find out why a model with zero [training error]{.term} can still fail on new machines. The game previews [machine learning]{.term}, [overfitting]{.term}, and the reason engineers hold back test data.
+
+{{< game draw-the-boundary title="Draw the Boundary" height="900" >}}
+:::
+
 ::: keyterms
 :::

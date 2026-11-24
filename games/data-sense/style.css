@@ -1,0 +1,314 @@
+/* Data Sense: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.ds-card {
+  padding: 12px 14px 14px;
+}
+.ds-title {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  margin: 0 0 2px;
+  color: var(--ink);
+}
+.ds-sub {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+.ds-rule {
+  margin: 0 0 8px;
+}
+.ds-plot {
+  max-width: 620px;
+}
+.ds-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+  overflow: visible;
+}
+
+/* ---- chart parts ---- */
+.ds-frame {
+  fill: var(--surface);
+  stroke: var(--border);
+}
+.ds-grid {
+  stroke: var(--border);
+  stroke-width: 0.6;
+}
+.ds-axis {
+  stroke: var(--muted);
+  stroke-width: 1.2;
+}
+.ds-tick {
+  font-size: 11px;
+  fill: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.ds-axis-title {
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.ds-dot {
+  fill: var(--c1);
+  stroke: var(--surface);
+  stroke-width: 1;
+}
+.ds-mark.is-flagged .ds-dot {
+  fill: var(--c6);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.ds-mark.is-ghost .ds-dot {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+.ds-ring {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  visibility: hidden;
+}
+.ds-pick[aria-checked="true"] .ds-ring,
+.ds-mark.is-picked .ds-ring {
+  visibility: visible;
+}
+.ds-pick {
+  cursor: pointer;
+  outline: none;
+}
+.ds-hit {
+  fill: transparent;
+  stroke: none;
+}
+.ds-pick:hover .ds-dot {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.ds-pick:focus-visible .ds-hit {
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.ds-pick[aria-checked="true"] .ds-dot {
+  fill: var(--c6);
+}
+.ds-circled {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.8;
+  stroke-dasharray: 3 2;
+}
+.ds-fit {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.ds-fit.is-alt {
+  stroke: var(--c6);
+  stroke-dasharray: 7 4;
+}
+.ds-curve {
+  fill: none;
+  stroke: var(--c6);
+  stroke-width: 2;
+  stroke-dasharray: 7 4;
+}
+.ds-band {
+  fill: var(--gold);
+  fill-opacity: 0.22;
+}
+.ds-fencebox {
+  fill: var(--accent);
+  fill-opacity: 0.05;
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 4;
+}
+.ds-fence {
+  stroke: var(--accent);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 4;
+}
+.ds-fence-label {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.ds-meanline {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.ds-box {
+  fill: var(--surface-2);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.ds-whisker,
+.ds-median {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.ds-median {
+  stroke-width: 2.5;
+}
+
+/* ---- guess panel ---- */
+.ds-guess {
+  max-width: 620px;
+  margin-top: 6px;
+}
+.ds-guess-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-bottom: 4px;
+}
+.ds-guess-head label {
+  font-weight: 600;
+}
+.ds-guess-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  min-width: 5.2em;
+}
+.ds-guess-words {
+  color: var(--muted);
+}
+.ds-slider {
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+  touch-action: pan-y;
+}
+.ds-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin: 0 2px 10px;
+}
+.ds-picked {
+  margin: 6px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+.ds-check {
+  margin-top: 8px;
+}
+
+/* ---- feedback after a guess or a check ---- */
+.ds-feedback:empty {
+  display: none;
+}
+.ds-result {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--warn);
+  background: var(--warn-bg);
+}
+.ds-result.is-good {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+.ds-result-head {
+  margin: 0 0 6px;
+}
+.ds-result p {
+  margin: 6px 0;
+}
+.ds-result .g-formula {
+  background: var(--surface);
+  white-space: normal;
+}
+.ds-result .g-actions {
+  margin-top: 10px;
+}
+.ds-explain {
+  margin: 6px 0;
+}
+.ds-effect {
+  max-width: 460px;
+}
+.ds-strip-wrap {
+  max-width: 460px;
+}
+.ds-strip-you {
+  fill: var(--c1);
+  stroke: var(--surface);
+  stroke-width: 1.5;
+}
+.ds-strip-r {
+  fill: var(--c6);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.ds-gap {
+  stroke: var(--ink);
+  stroke-width: 3;
+  stroke-opacity: 0.45;
+}
+.ds-legend {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 2px 0;
+  white-space: pre-wrap;
+}
+.ds-key {
+  color: var(--ink);
+  font-weight: 700;
+}
+.ds-key-you {
+  color: var(--c1);
+}
+.ds-key-r {
+  color: var(--c6);
+}
+
+/* ---- results recap ---- */
+.ds-recap {
+  margin: 12px 0;
+}
+.ds-recap-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  align-items: center;
+  gap: 4px 12px;
+  padding: 4px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ds-recap-name {
+  font-size: 0.92rem;
+}
+.ds-recap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.ds-recap-fig {
+  margin: 0;
+  min-width: 0;
+}
+.ds-recap-fig figcaption {
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.g-formula {
+  white-space: normal;
+}
+
+@media (max-width: 560px) {
+  .ds-recap-row {
+    grid-template-columns: 1fr;
+  }
+  .ds-card {
+    padding: 10px;
+  }
+}

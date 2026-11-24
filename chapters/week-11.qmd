@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 11 draft. The top
 - Python, pandas, and Colab for [data analytics]{.term}
 - Cleaning and validating data
 
+## Play: Data Sense
+
+::: {.callout-tip title="Play: Data Sense (10 to 15 min)" icon="false"}
+How good is your eye for data? In **Guess r** you estimate the [correlation coefficient]{.term} from a [scatter plot]{.term} and learn its traps. In **Find the Outlier** you tap the points a rule would flag as an [outlier]{.term}, then see how much they move the mean and r. Use it to practice looking at data before you summarize it.
+
+{{< game data-sense title="Data Sense" height="860" >}}
+:::
+
 ::: keyterms
 :::
