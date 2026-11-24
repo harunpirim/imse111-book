@@ -35,6 +35,26 @@ A bottle-filling line streams live samples. At a hidden moment the process jumps
 
 [Play Spot the Shift](games/spot-the-shift/index.html){.btn .btn-primary} [Read Week 7](chapters/week-07.qmd){.btn .btn-outline-secondary}
 
+## Data Sense
+
+[Data analysis]{.pill} [10 to 15 min]{.pill} [Week 11](chapters/week-11.qmd)
+
+**You will learn to** estimate the [correlation coefficient]{.term} r from a [scatter plot]{.term}, flag an [outlier]{.term} with the 1.5 × [interquartile range]{.term} rule and the 3-sigma rule, and explain why a strong r is not proof of cause and effect.
+
+The game has two modes, chosen with the level. In **Guess r** you slide to your guess for r and see how close you were, with traps along the way: a clear curve with r near 0, one point that creates or hides a correlation, and a sample that is too narrow. In **Find the Outlier** you tap the points you think a rule will flag, then watch what removing them does to the mean, the median, and r.
+
+[Play Data Sense](games/data-sense/index.html){.btn .btn-primary} [Read Week 11](chapters/week-11.qmd){.btn .btn-outline-secondary}
+
+## Draw the Boundary
+
+[Machine learning]{.pill} [10 to 20 min]{.pill} [Week 15](chapters/week-15.qmd)
+
+**You will learn to** tell [training error]{.term} from [test error]{.term}, spot [overfitting]{.term}, and explain why a [machine learning]{.term} model is judged on data it has never seen.
+
+Each point is a machine, placed by its vibration and bearing temperature, that either stayed healthy or failed. Draw the [decision boundary]{.term} between the two groups and watch your training error fall. Then the hidden test machines appear. On the last level the computer fits the model and you choose how complex it should be, which traces out the U-shaped test error curve.
+
+[Play Draw the Boundary](games/draw-the-boundary/index.html){.btn .btn-primary} [Read Week 15](chapters/week-15.qmd){.btn .btn-outline-secondary}
+
 ## About the games
 
 - **Private.** The games run entirely in your browser. Nothing you do is sent anywhere. Your best score per level is kept only on your device.

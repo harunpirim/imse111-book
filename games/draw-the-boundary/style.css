@@ -1,0 +1,299 @@
+/* Draw the Boundary: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.db-card {
+  padding: 12px 14px 14px;
+  margin: 8px 0;
+}
+.db-title {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.db-brief {
+  margin: 0;
+}
+.db-plot,
+.db-complexity,
+.db-mini {
+  max-width: 640px;
+}
+.db-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--font);
+  overflow: visible;
+}
+.db-svg.is-live {
+  cursor: crosshair;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ---- plot parts ---- */
+.db-frame {
+  fill: var(--surface);
+  stroke: var(--border);
+}
+.db-grid {
+  stroke: var(--border);
+  stroke-width: 0.6;
+}
+.db-tick {
+  font-size: 11px;
+  fill: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.db-axis-title {
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+.db-pt {
+  stroke: var(--surface);
+  stroke-width: 1;
+}
+.db-pt.is-healthy {
+  fill: var(--c1);
+}
+.db-pt.is-fails {
+  fill: var(--c6);
+}
+.db-pt.is-test {
+  fill: none;
+  stroke-width: 1.1;
+  stroke-opacity: 0.85;
+}
+.db-pt.is-test.is-healthy {
+  stroke: var(--c1);
+}
+.db-pt.is-test.is-fails {
+  stroke: var(--c6);
+}
+.db-region {
+  fill: var(--c6);
+  fill-opacity: 0.13;
+  stroke: none;
+}
+.db-region-label {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.db-boundary {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2.6;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.db-boundary.is-old {
+  stroke-width: 1.6;
+  stroke-dasharray: 3 3;
+}
+.db-fitted {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.4;
+  stroke-dasharray: 9 5;
+}
+.db-truth {
+  fill: none;
+  stroke: var(--c4);
+  stroke-width: 2.4;
+  stroke-dasharray: 1.5 5;
+  stroke-linecap: round;
+}
+.db-wrong {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.8;
+  pointer-events: none;
+}
+.db-flipped {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-dasharray: 2 2.5;
+}
+
+/* ---- handles ---- */
+.db-handle {
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+}
+.db-handle:active {
+  cursor: grabbing;
+}
+.db-handle-hit {
+  fill: transparent;
+}
+.db-handle circle {
+  touch-action: none;
+}
+.db-handle-dot {
+  fill: var(--gold);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+.db-handle.is-anchor .db-handle-dot {
+  fill: var(--surface);
+}
+.db-handle.is-selected .db-handle-dot {
+  stroke-width: 3.5;
+}
+.db-handle:focus-visible .db-handle-hit {
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+
+/* ---- controls ---- */
+.db-metrics {
+  max-width: 640px;
+  margin-top: 8px;
+}
+.db-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.db-note:empty {
+  display: none;
+}
+.db-flash {
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--good);
+  background: var(--good-bg);
+}
+.db-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 14px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 4px 0 6px;
+}
+.db-key-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.db-key {
+  width: 26px;
+  height: 14px;
+  flex: none;
+}
+
+/* ---- complexity slider (level 6) ---- */
+.db-complexity {
+  margin-top: 8px;
+}
+.db-complexity-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.db-complexity-head label {
+  font-weight: 600;
+}
+.db-k {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.db-slider {
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--accent);
+  touch-action: pan-y;
+}
+.db-scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 2px 4px;
+}
+.db-mini {
+  margin-top: 10px;
+}
+.db-mini-title {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.db-series {
+  fill: none;
+  stroke-width: 2.2;
+}
+.db-series.is-train,
+.db-series-pt.is-train {
+  stroke: var(--c1);
+}
+.db-series.is-val,
+.db-series-pt.is-val {
+  stroke: var(--c7);
+}
+.db-series.is-test,
+.db-series-pt.is-test {
+  stroke: var(--c6);
+}
+.db-series.is-val {
+  stroke-dasharray: 6 4;
+}
+.db-series.is-test {
+  stroke-width: 3;
+}
+.db-series-pt {
+  stroke-width: 1.5;
+}
+.db-series-pt.is-train {
+  fill: var(--c1);
+}
+.db-series-pt.is-val {
+  fill: var(--surface);
+}
+.db-series-pt.is-test {
+  fill: var(--c6);
+}
+.db-series-pt.is-current {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+.db-pick-line {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.db-pick-line.is-alt {
+  stroke-dasharray: 4 3;
+}
+.db-pick-label {
+  font-size: 11px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.g-formula {
+  white-space: normal;
+}
+
+@media (max-width: 480px) {
+  .db-card {
+    padding: 10px;
+  }
+  .db-controls .g-btn {
+    flex: 1 1 auto;
+    padding: 8px 10px;
+  }
+}

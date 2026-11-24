@@ -363,6 +363,51 @@ data-analytics:
   category: Data
   definition: Examining data to find patterns, draw conclusions, and support decisions.
 
+scatter-plot:
+  term: Scatter plot
+  category: Data
+  definition: A chart that shows pairs of measurements as points, with one measurement on each axis, so you can see how the two move together.
+
+correlation-coefficient:
+  term: Correlation coefficient
+  category: Data
+  definition: A number r between -1 and +1 that measures how closely two measurements follow a straight line. It shows association, not cause and effect.
+
+outlier:
+  term: Outlier
+  category: Data
+  definition: A data point that lies far from the rest. It may be an error or a real rare event, so it should be investigated before it is removed.
+
+interquartile-range:
+  term: Interquartile range
+  category: Data
+  definition: The width of the middle half of a dataset, found as the third quartile minus the first quartile. Points more than 1.5 times this width beyond the quartiles are often flagged as outliers.
+
+machine-learning:
+  term: Machine learning
+  category: Data
+  definition: Methods that let a computer learn a rule from example data instead of being given the rule by a programmer.
+
+decision-boundary:
+  term: Decision boundary
+  category: Data
+  definition: The line or curve that a classification model uses to separate one class from another, such as machines predicted to fail from machines predicted to stay healthy.
+
+training-error:
+  term: Training error
+  category: Data
+  definition: The share of mistakes a model makes on the data it was built from. It always looks better than the model's performance on new data.
+
+test-error:
+  term: Test error
+  category: Data
+  definition: The share of mistakes a model makes on held-out data it never saw while it was being built. It estimates how the model will do on new cases.
+
+overfitting:
+  term: Overfitting
+  category: Data
+  definition: Fitting a model so closely to its training data that it learns the noise, which gives a low training error but a high test error.
+
 descriptive-statistics:
   term: Descriptive statistics
   category: Data

@@ -19,6 +19,8 @@ games/
     index.html  main.js  style.css  logic.js  logic.test.js
   spot-the-shift/         Game 2 (Week 7): control charts and run rules
     index.html  main.js  style.css  logic.js  logic.test.js
+  data-sense/             Week 11: guess the correlation r, find the outliers
+  draw-the-boundary/      Week 15: decision boundaries, training vs. test error, overfitting
 ```
 
 Quarto copies everything under `games/` to the site (`resources: games/**` in
