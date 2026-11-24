@@ -36,6 +36,12 @@ Each chapter links to a Python notebook that runs in your browser with [Google C
 
 See [Colab Notebooks](notebooks.qmd) for the full list and a short getting-started guide.
 
+## Learning games
+
+Some chapters include a short browser game, embedded right in the page. Each one takes 10 to 20 minutes, works on a phone or laptop, and ends with a results screen that compares your answer with a benchmark and explains the idea behind it. Click **Open full screen** under a game for more room.
+
+See [Learning Games](games.qmd) for the full list.
+
 ## Callouts
 
 ::: {.callout-important title="Learning objectives"}

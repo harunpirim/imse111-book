@@ -1,0 +1,30 @@
+name: Check book and games
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  games-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests for game logic
+        run: node --test games/
+
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Render website
+        run: quarto render --to html
+      - name: Games were copied to the site
+        run: |
+          test -f _book/games/line-balancer/index.html
+          test -f _book/games/spot-the-shift/index.html
+          test -f _book/games/shared/shell.js
+          test -f _book/games.html

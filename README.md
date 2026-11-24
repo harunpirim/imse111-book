@@ -30,6 +30,8 @@ index.qmd                Welcome page + course schedule (update status pills her
 how-to-use.qmd           Student tour of the book's features
 chapters/week-XX.qmd     One chapter per week (week-01 is a full sample)
 notebooks/               Colab notebooks (_template.ipynb + one per week)
+games/                   Browser learning games (static HTML/JS, see games/README.md)
+games.qmd                Index page listing every learning game
 data/glossary.yml        IE terms: the single source for highlights and the glossary
 references.bib, apa.csl  Bibliography (APA 7)
 images/                  Cover and per-week illustrations (images/weekXX/)
@@ -53,6 +55,7 @@ AGENTS.md                Step-by-step instructions for draft → chapter convers
 | `::: {.career title="..." source="URL"}` | "Career spotlight" box |
 | `{{< colab week01_ie_by_the_numbers.ipynb title="..." >}}` | Notebook card: Open in Colab, View on GitHub, Download |
 | `{{< colab file.ipynb style="badge" >}}` | Just the Colab badge (for tables) |
+| `{{< game line-balancer title="Line Balancer" >}}` | Embedded learning game from `games/line-balancer/` (auto-resizing iframe) |
 | `[@taylor1911]` | APA citation, added to References automatically |
 | ` ```{mermaid} ` | Process diagram / flowchart |
 

@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 5 draft. The topi
 - Job shops, flow lines, and [capacity]{.term}
 - [Work-in-process]{.term} and [Little's Law]{.term}
 
+## Play: Line Balancer
+
+::: {.callout-tip title="Play: Line Balancer (10 to 15 min)" icon="false"}
+How should the work on a flow line be split up? Assign each task to a [workstation]{.term} so the line keeps pace with customer demand, without breaking the order the tasks must follow. Then compare your line with the best possible one. The game previews [line balancing]{.term}, [takt time]{.term}, and the [bottleneck]{.term}.
+
+{{< game line-balancer title="Line Balancer" height="760" >}}
+:::
+
 ::: keyterms
 :::

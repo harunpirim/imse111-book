@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 7 draft. The topi
 - [Statistical process control]{.term} and the [control chart]{.term}
 - [Six Sigma]{.term} and [DMAIC]{.term}
 
+## Play: Spot the Shift
+
+::: {.callout-tip title="Play: Spot the Shift (10 to 15 min)" icon="false"}
+Can you tell real trouble from normal [variation]{.term}? Watch a live [control chart]{.term} from a bottle-filling line and stop the line when you think the process has changed. False alarms cost money, and so does scrap from a late call. Afterwards, see which [control limits]{.term key="control-limits"} and run rules would have caught the change, and when.
+
+{{< game spot-the-shift title="Spot the Shift" height="820" >}}
+:::
+
 ::: keyterms
 :::

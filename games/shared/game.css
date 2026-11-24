@@ -1,0 +1,492 @@
+/* Shared styles for IMSE 111 learning games.
+ *
+ * Colors are tokens on :root so each game reads var(--...) and both themes
+ * work. The categorical palette (--c1 ... --c8) is Okabe-Ito, which stays
+ * distinguishable for the common forms of color blindness. Never use color
+ * alone to carry meaning: pair it with a label, number, icon, or pattern.
+ */
+
+:root {
+  --bg: #fbfaf6;
+  --surface: #ffffff;
+  --surface-2: #f2f5f3;
+  --ink: #1f2a2e;
+  --muted: #5b6b70;
+  --border: #d5ddd9;
+  --accent: #0a5640; /* NDSU green */
+  --accent-ink: #ffffff;
+  --gold: #ffc82e; /* NDSU gold */
+  --gold-ink: #1f2a2e;
+  --focus: #0072b2;
+
+  --good: #007a5a;
+  --warn: #a86b00;
+  --bad: #c2410c;
+  --good-bg: #e3f3ec;
+  --warn-bg: #fdf1d6;
+  --bad-bg: #fde8df;
+
+  --c1: #0072b2;
+  --c2: #e69f00;
+  --c3: #009e73;
+  --c4: #cc79a7;
+  --c5: #56b4e9;
+  --c6: #d55e00;
+  --c7: #8c7a00;
+  --c8: #555555;
+
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.05);
+  --font: "Source Sans 3", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  --font-head: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #121a1c;
+  --surface: #1a2427;
+  --surface-2: #223034;
+  --ink: #e7eeec;
+  --muted: #a3b4b2;
+  --border: #34474b;
+  --accent: #3fae86;
+  --accent-ink: #0c1a16;
+  --gold: #ffd45c;
+  --focus: #56b4e9;
+  --good: #4cc79d;
+  --warn: #f0b542;
+  --bad: #ff8a5c;
+  --good-bg: #173a2f;
+  --warn-bg: #3b2f14;
+  --bad-bg: #42241a;
+  --c1: #56a8e0;
+  --c7: #d8c33a;
+  --c8: #b0b0b0;
+  --shadow: none;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121a1c;
+    --surface: #1a2427;
+    --surface-2: #223034;
+    --ink: #e7eeec;
+    --muted: #a3b4b2;
+    --border: #34474b;
+    --accent: #3fae86;
+    --accent-ink: #0c1a16;
+    --gold: #ffd45c;
+    --focus: #56b4e9;
+    --good: #4cc79d;
+    --warn: #f0b542;
+    --bad: #ff8a5c;
+    --good-bg: #173a2f;
+    --warn-bg: #3b2f14;
+    --bad-bg: #42241a;
+    --c1: #56a8e0;
+    --c7: #d8c33a;
+    --c8: #b0b0b0;
+    --shadow: none;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+html.g-embedded,
+.g-embedded body {
+  background: transparent;
+}
+
+.g-app {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 12px 16px 24px;
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.g-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---- Top bar ---- */
+.g-topbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+  font-size: 0.85rem;
+}
+.g-brand {
+  font-weight: 700;
+  text-decoration: none;
+}
+.g-topbar-title {
+  color: var(--muted);
+}
+.g-embedded .g-topbar {
+  display: none;
+}
+
+/* ---- Typography ---- */
+.g-title,
+.g-verdict-title,
+.g-playtitle {
+  font-family: var(--font-head);
+  color: var(--accent);
+  margin: 0;
+  line-height: 1.2;
+}
+.g-title {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+}
+.g-playtitle {
+  font-size: 1.15rem;
+}
+.g-tagline {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 4px 0 14px;
+}
+.g-h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin: 20px 0 8px;
+}
+.g-objective {
+  background: var(--surface-2);
+  border-left: 4px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.g-time {
+  color: var(--muted);
+}
+.g-howto {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.g-howto li {
+  margin: 4px 0;
+}
+kbd,
+.g-kbd {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  padding: 1px 6px;
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--surface);
+}
+
+/* ---- Buttons ---- */
+.g-btn {
+  font: inherit;
+  font-weight: 600;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent);
+  background: var(--surface);
+  color: var(--accent);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.g-btn:hover {
+  background: var(--surface-2);
+}
+.g-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.g-btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.g-btn-primary:hover {
+  background: var(--accent);
+  filter: brightness(1.1);
+}
+.g-btn-ghost {
+  border-color: transparent;
+  background: transparent;
+}
+.g-btn-lg {
+  font-size: 1.1rem;
+  padding: 10px 28px;
+}
+.g-btn-danger {
+  background: var(--bad);
+  border-color: var(--bad);
+  color: #fff;
+}
+.g-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+/* ---- Level picker ---- */
+.g-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+.g-level {
+  font: inherit;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+.g-level[aria-checked="true"] {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  background: var(--surface-2);
+}
+.g-level-num {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.g-level-name {
+  font-weight: 700;
+}
+.g-level-blurb {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.g-level-best {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.g-stars {
+  color: var(--warn);
+  letter-spacing: 2px;
+}
+
+/* ---- Play screen ---- */
+.g-playbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.g-status {
+  margin: 8px 0;
+}
+.g-stage {
+  position: relative;
+}
+.g-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  box-shadow: var(--shadow);
+}
+.g-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 6px;
+}
+.g-metric {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.g-metric-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.g-metric-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.g-metric[data-state="good"] {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+.g-metric[data-state="warn"] {
+  border-color: var(--warn);
+  background: var(--warn-bg);
+}
+.g-metric[data-state="bad"] {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+
+/* ---- Results ---- */
+.g-verdict {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+}
+.g-verdict-icon {
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+.g-verdict-win {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+.g-verdict-win .g-verdict-icon {
+  background: var(--good);
+}
+.g-verdict-ok {
+  border-color: var(--warn);
+  background: var(--warn-bg);
+}
+.g-verdict-ok .g-verdict-icon {
+  background: var(--warn);
+}
+.g-verdict-miss {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+.g-verdict-miss .g-verdict-icon {
+  background: var(--bad);
+}
+.g-verdict-title {
+  font-size: 1.35rem;
+}
+.g-summary {
+  margin: 12px 0;
+}
+.g-table-wrap {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+.g-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+  background: var(--surface);
+}
+.g-table caption {
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-bottom: 4px;
+}
+.g-table th,
+.g-table td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+}
+.g-table th[scope="row"] {
+  text-align: left;
+  font-weight: 600;
+}
+.g-table thead th {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.g-table .g-you {
+  background: var(--surface-2);
+  font-weight: 700;
+}
+.g-debrief {
+  margin-top: 8px;
+}
+.g-debrief p {
+  margin: 6px 0;
+}
+.g-chapter {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.g-seed {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 14px;
+}
+.g-formula {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  background: var(--surface-2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .g-app {
+    padding: 8px 10px 16px;
+  }
+  .g-actions .g-btn {
+    flex: 1 1 auto;
+  }
+  .g-table th,
+  .g-table td {
+    padding: 5px 6px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
