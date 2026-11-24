@@ -26,5 +26,13 @@ These lecture notes will be written from the instructor's Week 4 draft. The topi
 - Drawing a [process flowchart]{.term}
 - Estimating and checking answers
 
+## Play: Build for Uptime
+
+::: {.callout-tip title="Play: Build for Uptime (10 to 15 min)" icon="false"}
+A [system]{.term} is only as dependable as the way its parts are connected. Build an irrigation system from parts in series, add spares in parallel, and stay within budget. Then run 200 missions and count the failures. The game previews [reliability]{.term} and [redundancy]{.term}.
+
+{{< game build-for-uptime title="Build for Uptime" height="820" >}}
+:::
+
 ::: keyterms
 :::

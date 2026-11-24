@@ -1,0 +1,366 @@
+/* Build for Uptime: game-specific styles. Shared tokens come from ../shared/game.css. */
+
+.bu-brief {
+  margin: 0;
+}
+.bu-metrics {
+  margin-bottom: 10px;
+}
+.bu-h {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+.bu-muted {
+  color: var(--muted);
+}
+.bu-tier-0 {
+  --tier: var(--c5);
+}
+.bu-tier-1 {
+  --tier: var(--c2);
+}
+.bu-tier-2 {
+  --tier: var(--c3);
+}
+.bu-part-tier {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ---- Block diagram: stages left to right, spares stacked ---- */
+.bu-diagram {
+  display: flex;
+  align-items: center;
+}
+.bu-end {
+  flex: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 6px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--surface-2);
+}
+.bu-wire {
+  flex: 0 0 12px;
+  height: 3px;
+  background: var(--ink);
+}
+.bu-stage {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 6px 0;
+  border-radius: 8px;
+  outline-offset: 3px;
+}
+.bu-stage.is-over {
+  outline: 3px dashed var(--accent);
+  background: var(--surface-2);
+}
+.bu-stage-name {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.bu-need {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--muted);
+}
+.bu-rail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  min-height: 58px;
+  padding: 6px 10px;
+  border-left: 3px solid var(--ink);
+  border-right: 3px solid var(--ink);
+}
+.bu-unit,
+.bu-slot {
+  position: relative;
+  min-height: 44px;
+  border-radius: 7px;
+}
+.bu-unit {
+  font: inherit;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 4px 6px 4px 8px;
+  text-align: left;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1.5px solid var(--ink);
+  border-left: 7px solid var(--tier);
+  cursor: pointer;
+}
+.bu-unit::before,
+.bu-unit::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: var(--ink);
+}
+.bu-unit::before {
+  left: -17px;
+}
+.bu-unit::after {
+  right: -11.5px;
+}
+.bu-unit:hover {
+  background: var(--bad-bg);
+}
+.bu-unit-name {
+  font-size: 0.82rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.bu-unit-r {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.bu-unit-x {
+  color: var(--bad);
+  font-weight: 700;
+}
+.bu-slot {
+  display: grid;
+  place-items: center;
+  padding: 2px 4px;
+  border: 2px dashed var(--border);
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+}
+.bu-slot:empty {
+  display: none;
+}
+.bu-stage.is-empty .bu-slot {
+  border-color: var(--warn);
+  color: var(--ink);
+}
+.bu-stage-r {
+  margin: 4px 0 0;
+  text-align: center;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.bu-stage.is-empty .bu-stage-r {
+  font-weight: 400;
+  color: var(--muted);
+}
+.bu-tag {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--bad);
+}
+.bu-stage-f {
+  margin: 0;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.bu-system {
+  margin: 10px 0 0;
+  white-space: normal;
+}
+
+@media (max-width: 640px) {
+  /* Phone: the chain runs top to bottom; each stage keeps its two bus bars. */
+  .bu-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .bu-end {
+    align-self: center;
+  }
+  .bu-wire {
+    flex-basis: 12px;
+    width: 3px;
+    height: 12px;
+    align-self: center;
+  }
+  .bu-stage {
+    flex: none;
+    padding: 0;
+  }
+  .bu-rail {
+    min-height: 0;
+  }
+  .bu-need,
+  .bu-tag {
+    display: inline;
+    margin-left: 6px;
+  }
+}
+
+/* ---- Parts shelf ---- */
+.bu-shelf-card {
+  margin-top: 12px;
+}
+.bu-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+}
+.bu-shelf-row {
+  padding: 8px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.bu-shelf-name {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+.bu-parts {
+  display: grid;
+  gap: 5px;
+}
+.bu-part {
+  font: inherit;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 4px 8px;
+  text-align: left;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-left: 7px solid var(--tier);
+  border-radius: 7px;
+  cursor: grab;
+  touch-action: manipulation;
+}
+.bu-part:hover:not(:disabled) {
+  background: var(--surface-2);
+  border-color: var(--accent);
+  border-left-color: var(--tier);
+}
+.bu-part:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.bu-part-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.bu-part-nums {
+  display: grid;
+  justify-items: end;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+.bu-part-r {
+  font-size: 0.8rem;
+}
+.bu-part-cost {
+  font-weight: 700;
+}
+.bu-note {
+  font-size: 0.9rem;
+  color: var(--bad);
+  margin: 6px 0 0;
+}
+.bu-note.is-ok {
+  color: var(--good);
+  font-weight: 600;
+}
+
+/* ---- Mission log ---- */
+.bu-log {
+  margin-top: 12px;
+}
+.bu-grid svg {
+  display: block;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+}
+.bu-cell-wait {
+  fill: none;
+  stroke: var(--border);
+}
+.bu-cell-ok {
+  fill: var(--good);
+  opacity: 0.55;
+}
+.bu-cell-fail {
+  fill: var(--bad);
+}
+.bu-cell-x {
+  stroke: #fff;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+.bu-grid-key {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 4px 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.bu-key {
+  display: inline-grid;
+  place-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 700;
+  color: #fff;
+}
+.bu-key-ok {
+  background: var(--good);
+  opacity: 0.55;
+}
+.bu-key-fail {
+  background: var(--bad);
+  margin-left: 8px;
+}
+.bu-log-sum {
+  margin: 8px 0 0;
+}
+
+/* ---- Results ---- */
+.bu-result-fig {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 8px 0;
+}
+.bu-fig {
+  margin: 0;
+}
+.bu-fig figcaption {
+  font-weight: 700;
+  margin: 4px 0;
+}
+.bu-design-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+.bu-mini {
+  width: auto;
+  min-width: 300px;
+}

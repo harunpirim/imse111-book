@@ -25,5 +25,13 @@ These lecture notes will be written from the instructor's Week 6 draft. The topi
 - [Ergonomics]{.term} and workplace safety
 - [Human factors]{.term} and error-proof design
 
+## Play: Lift Lab
+
+::: {.callout-tip title="Play: Lift Lab (10 to 15 min)" icon="false"}
+Is this lift safe? Redesign a lifting job until its [Lifting Index]{.term} is 1 or less, for as little money as you can. The game uses the [NIOSH lifting equation]{.term} [@waters1994niosh] and shows how reach, height, twisting, pace, and grip each shrink the [recommended weight limit]{.term}.
+
+{{< game lift-lab title="Lift Lab" height="820" >}}
+:::
+
 ::: keyterms
 :::
